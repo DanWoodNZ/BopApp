@@ -93,6 +93,21 @@
                     p1:layout_width="match_parent"
                     p1:layout_height="300px"
                     p1:id="@+id/test5" />
+                <ImageButton
+                    p1:src="@drawable/citizenpark2"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="300px"
+                    p1:id="@+id/test6" />
+                <ImageButton
+                    p1:src="@drawable/citizenpark3"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="300px"
+                    p1:id="@+id/test7" />
+                <ImageButton
+                    p1:src="@drawable/citizenpark2"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="300px"
+                    p1:id="@+id/test8" />
             </LinearLayout>
         </ScrollView>
         <LinearLayout

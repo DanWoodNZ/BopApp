@@ -388,14 +388,14 @@ namespace Bop
 			// aapt resource value: 0x7f0b000a
 			public const int auto = 2131427338;
 			
-			// aapt resource value: 0x7f0b0021
-			public const int button1 = 2131427361;
+			// aapt resource value: 0x7f0b0027
+			public const int button1 = 2131427367;
 			
 			// aapt resource value: 0x7f0b000b
 			public const int dark = 2131427339;
 			
-			// aapt resource value: 0x7f0b0022
-			public const int googlemap = 2131427362;
+			// aapt resource value: 0x7f0b0028
+			public const int googlemap = 2131427368;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int hybrid = 2131427328;
@@ -403,8 +403,8 @@ namespace Bop
 			// aapt resource value: 0x7f0b0007
 			public const int icon_only = 2131427335;
 			
-			// aapt resource value: 0x7f0b0020
-			public const int imageButton1 = 2131427360;
+			// aapt resource value: 0x7f0b0024
+			public const int imageButton1 = 2131427364;
 			
 			// aapt resource value: 0x7f0b0010
 			public const int imageButton2 = 2131427344;
@@ -412,14 +412,14 @@ namespace Bop
 			// aapt resource value: 0x7f0b0013
 			public const int imageButton20 = 2131427347;
 			
-			// aapt resource value: 0x7f0b001d
-			public const int imageButton25 = 2131427357;
+			// aapt resource value: 0x7f0b0020
+			public const int imageButton25 = 2131427360;
 			
-			// aapt resource value: 0x7f0b001e
-			public const int imageButton26 = 2131427358;
+			// aapt resource value: 0x7f0b0021
+			public const int imageButton26 = 2131427361;
 			
-			// aapt resource value: 0x7f0b001f
-			public const int imageButton27 = 2131427359;
+			// aapt resource value: 0x7f0b0022
+			public const int imageButton27 = 2131427362;
 			
 			// aapt resource value: 0x7f0b000c
 			public const int light = 2131427340;
@@ -430,8 +430,17 @@ namespace Bop
 			// aapt resource value: 0x7f0b0016
 			public const int linearLayout2 = 2131427350;
 			
-			// aapt resource value: 0x7f0b001c
-			public const int linearLayout3 = 2131427356;
+			// aapt resource value: 0x7f0b001f
+			public const int linearLayout3 = 2131427359;
+			
+			// aapt resource value: 0x7f0b0025
+			public const int locationHeader = 2131427365;
+			
+			// aapt resource value: 0x7f0b0026
+			public const int locationSubheader = 2131427366;
+			
+			// aapt resource value: 0x7f0b0023
+			public const int mainHeader = 2131427363;
 			
 			// aapt resource value: 0x7f0b0001
 			public const int none = 2131427329;
@@ -468,6 +477,15 @@ namespace Bop
 			
 			// aapt resource value: 0x7f0b001b
 			public const int test5 = 2131427355;
+			
+			// aapt resource value: 0x7f0b001c
+			public const int test6 = 2131427356;
+			
+			// aapt resource value: 0x7f0b001d
+			public const int test7 = 2131427357;
+			
+			// aapt resource value: 0x7f0b001e
+			public const int test8 = 2131427358;
 			
 			// aapt resource value: 0x7f0b0011
 			public const int textView1 = 2131427345;
