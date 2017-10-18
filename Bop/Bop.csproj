@@ -18,7 +18,7 @@
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
@@ -156,20 +156,6 @@
     <Compile Include="Resources\Resource.Designer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\balloon.png" />
-    <AndroidResource Include="Resources\drawable\citizenCROP.jpg" />
-    <AndroidResource Include="Resources\drawable\fork.png" />
-    <AndroidResource Include="Resources\drawable\kitekiteCROP.jpg" />
-    <AndroidResource Include="Resources\drawable\logo_main.png" />
-    <AndroidResource Include="Resources\drawable\missionbayCROP.jpg" />
-    <AndroidResource Include="Resources\drawable\profile.png" />
-    <AndroidResource Include="Resources\drawable\settings.png" />
-    <AndroidResource Include="Resources\drawable\tree.png" />
-    <AndroidResource Include="Resources\drawable\user.png" />
-    <AndroidResource Include="Resources\drawable\zooCROP.jpg" />
-    <AndroidResource Include="Resources\layout\Main.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\layout\Map.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -185,9 +171,25 @@
     </None>
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Resources\AboutResources.txt" />
-    <AndroidResource Include="Resources\layout\ListView.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ListView.axml" />
+    <AndroidResource Include="Resources\layout\LocationView.axml" />
+    <AndroidResource Include="Resources\drawable\citizenpark.jpg" />
+    <AndroidResource Include="Resources\drawable\citizenpark2.jpg" />
+    <AndroidResource Include="Resources\drawable\citizenpark3.jpg" />
+    <AndroidResource Include="Resources\drawable\cp.jpeg" />
+    <AndroidResource Include="Resources\drawable\dining.png" />
+    <AndroidResource Include="Resources\drawable\download.jpeg" />
+    <AndroidResource Include="Resources\drawable\entertainment.png" />
+    <AndroidResource Include="Resources\drawable\forkknife.png" />
+    <AndroidResource Include="Resources\drawable\heart.png" />
+    <AndroidResource Include="Resources\drawable\leftarrow.png" />
+    <AndroidResource Include="Resources\drawable\nature.png" />
+    <AndroidResource Include="Resources\drawable\profile.png" />
+    <AndroidResource Include="Resources\drawable\settings.png" />
+    <AndroidResource Include="Resources\drawable\settingsnew.png" />
+    <AndroidResource Include="Resources\drawable\test.jpg" />
+    <AndroidResource Include="Resources\drawable\user.png" />
+    <AndroidResource Include="Resources\drawable\waiheke.jpg" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -217,6 +219,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Compat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Compat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets')" />

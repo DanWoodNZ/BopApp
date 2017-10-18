@@ -1,7 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="vertical"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/linearLayout1">
+    <Toolbar
+        p1:background="?android:attr/colorPrimary"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/toolbar1">
+        <ImageButton
+            p1:src="@drawable/user"
+            p1:layout_width="70px"
+            p1:layout_height="70px"
+            p1:id="@+id/imageButton2"
+            p1:layout_gravity="right"
+            p1:background="@android:color/transparent"
+            p1:layout_marginRight="20px"
+            p1:scaleType="fitCenter"
+            p1:adjustViewBounds="true"
+            p1:cropToPadding="true" />
+        <TextView
+            p1:text="BOP"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView1"
+            p1:layout_gravity="center"
+            p1:typeface="sans"
+            p1:textStyle="bold"
+            p1:textColor="@android:color/white"
+            p1:textSize="30dp" />
+        <TextView
+            p1:text="Dan"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView2"
+            p1:layout_gravity="right"
+            p1:layout_marginRight="20px" />
+        <ImageButton
+            p1:src="@drawable/settingsnew"
+            p1:layout_width="70px"
+            p1:layout_height="70px"
+            p1:id="@+id/imageButton20"
+            p1:adjustViewBounds="true"
+            p1:cropToPadding="true"
+            p1:scaleType="fitCenter"
+            p1:background="@android:color/transparent" />
+    </Toolbar>
+    <RelativeLayout
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:id="@+id/relativeLayout1">
+        <ScrollView
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:id="@+id/scrollView1">
+            <LinearLayout
+                p1:orientation="vertical"
+                p1:layout_width="match_parent"
+                p1:layout_height="match_parent"
+                p1:id="@+id/linearLayout2">
+                <ImageButton
+                    p1:src="@drawable/citizenpark"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="300px"
+                    p1:id="@+id/test1" />
+                <ImageButton
+                    p1:src="@drawable/waiheke"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="300px"
+                    p1:id="@+id/test2" />
+                <ImageButton
+                    p1:src="@drawable/test"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="300px"
+                    p1:id="@+id/test3"
+                    p1:scaleType="center" />
+                <ImageButton
+                    p1:src="@drawable/citizenpark2"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="300px"
+                    p1:id="@+id/test4"
+                    p1:scaleType="center" />
+                <ImageButton
+                    p1:src="@drawable/citizenpark3"
+                    p1:layout_width="match_parent"
+                    p1:layout_height="300px"
+                    p1:id="@+id/test5" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="100px"
+            p1:id="@+id/linearLayout3"
+            p1:layout_alignParentBottom="true"
+            p1:background="#f9ffffff">
+            <ImageButton
+                p1:src="@drawable/dining"
+                p1:layout_width="70px"
+                p1:layout_height="70px"
+                p1:id="@+id/imageButton25"
+                p1:layout_weight="100"
+                p1:adjustViewBounds="true"
+                p1:cropToPadding="true"
+                p1:scaleType="fitCenter"
+                p1:background="@android:color/transparent"
+                p1:layout_gravity="center" />
+            <ImageButton
+                p1:src="@drawable/nature"
+                p1:layout_width="70px"
+                p1:layout_height="70px"
+                p1:id="@+id/imageButton26"
+                p1:layout_weight="100"
+                p1:layout_gravity="center"
+                p1:background="@android:color/transparent"
+                p1:scaleType="fitCenter"
+                p1:adjustViewBounds="true"
+                p1:cropToPadding="true" />
+            <ImageButton
+                p1:src="@drawable/entertainment"
+                p1:layout_width="70px"
+                p1:layout_height="70px"
+                p1:id="@+id/imageButton27"
+                p1:layout_weight="100"
+                p1:layout_gravity="center"
+                p1:background="@android:color/transparent"
+                p1:cropToPadding="true"
+                p1:adjustViewBounds="true"
+                p1:scaleType="fitCenter" />
+        </LinearLayout>
+    </RelativeLayout>
 </LinearLayout>
