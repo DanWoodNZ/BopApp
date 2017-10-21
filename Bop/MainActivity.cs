@@ -21,8 +21,8 @@ namespace Bop
         {
             RequestWindowFeature(Android.Views.WindowFeatures.NoTitle);
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.Map);
-            SetUpMap();
+            SetContentView(Resource.Layout.ListView);
+            //SetUpMap();
         }
 
         private void SetUpMap()
