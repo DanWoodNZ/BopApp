@@ -21,8 +21,38 @@ namespace Bop
         {
             RequestWindowFeature(Android.Views.WindowFeatures.NoTitle);
             base.OnCreate(savedInstanceState);
+            
             SetContentView(Resource.Layout.ListView);
+            SetupGoToLocationButton();
+
             //SetUpMap();
+        }
+
+
+        //Setups the the button the the LocationView to go back to the ListView
+        private void SetupBackButton()
+        {
+            ImageButton button1 = FindViewById<ImageButton>(Resource.Id.imageButton1);
+            button1.Click += (o, e) =>
+            {
+                Toast.MakeText(this, "Pressed imageButton1", ToastLength.Short).Show();
+                SetContentView(Resource.Layout.ListView);
+                SetupGoToLocationButton();
+            };
+        }
+
+
+        //Setups the ImageButton to go from a item in the list view to that items page.
+        private void SetupGoToLocationButton()
+        {
+            //Controlling the first image button with a click event
+            ImageButton button = FindViewById<ImageButton>(Resource.Id.test1); //Select the FIrstImage button in the list view
+            button.Click += (o, e) =>
+            {
+                Toast.MakeText(this, "Pressed test1", ToastLength.Short).Show(); //When clicked, shows a toast message on screen
+                SetContentView(Resource.Layout.LocationView);
+                SetupBackButton();
+            };
         }
 
         private void SetUpMap()
