@@ -167,9 +167,6 @@
     <AndroidResource Include="Resources\drawable\tree.png" />
     <AndroidResource Include="Resources\drawable\user.png" />
     <AndroidResource Include="Resources\drawable\zooCROP.jpg" />
-    <AndroidResource Include="Resources\layout\Main.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\layout\Map.axml">
       <SubType>Designer</SubType>
     </AndroidResource>

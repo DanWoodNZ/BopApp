@@ -57,6 +57,22 @@ namespace Bop
 			}
 		}
 		
+		public partial class Array
+		{
+			
+			// aapt resource value: 0x7f0a0000
+			public const int androidcolors = 2131361792;
+			
+			static Array()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Array()
+			{
+			}
+		}
+		
 		public partial class Attribute
 		{
 			
@@ -160,14 +176,14 @@ namespace Bop
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f090009
-			public const int bop_dark = 2131296265;
-			
 			// aapt resource value: 0x7f090008
-			public const int bop_orange = 2131296264;
+			public const int blue = 2131296264;
 			
-			// aapt resource value: 0x7f09000a
-			public const int common_google_signin_btn_text_dark = 2131296266;
+			// aapt resource value: 0x7f090010
+			public const int boporange = 2131296272;
+			
+			// aapt resource value: 0x7f090011
+			public const int common_google_signin_btn_text_dark = 2131296273;
 			
 			// aapt resource value: 0x7f090000
 			public const int common_google_signin_btn_text_dark_default = 2131296256;
@@ -181,8 +197,8 @@ namespace Bop
 			// aapt resource value: 0x7f090003
 			public const int common_google_signin_btn_text_dark_pressed = 2131296259;
 			
-			// aapt resource value: 0x7f09000b
-			public const int common_google_signin_btn_text_light = 2131296267;
+			// aapt resource value: 0x7f090012
+			public const int common_google_signin_btn_text_light = 2131296274;
 			
 			// aapt resource value: 0x7f090004
 			public const int common_google_signin_btn_text_light_default = 2131296260;
@@ -196,8 +212,29 @@ namespace Bop
 			// aapt resource value: 0x7f090007
 			public const int common_google_signin_btn_text_light_pressed = 2131296263;
 			
+			// aapt resource value: 0x7f090013
+			public const int common_google_signin_btn_tint = 2131296275;
+			
+			// aapt resource value: 0x7f09000d
+			public const int darkblue = 2131296269;
+			
+			// aapt resource value: 0x7f09000f
+			public const int darkgreen = 2131296271;
+			
+			// aapt resource value: 0x7f09000e
+			public const int darkpurple = 2131296270;
+			
+			// aapt resource value: 0x7f09000a
+			public const int green = 2131296266;
+			
+			// aapt resource value: 0x7f09000b
+			public const int orange = 2131296267;
+			
+			// aapt resource value: 0x7f090009
+			public const int purple = 2131296265;
+			
 			// aapt resource value: 0x7f09000c
-			public const int common_google_signin_btn_tint = 2131296268;
+			public const int red = 2131296268;
 			
 			static Color()
 			{
@@ -324,89 +361,50 @@ namespace Bop
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0a0005
-			public const int adjust_height = 2131361797;
+			// aapt resource value: 0x7f0b0005
+			public const int adjust_height = 2131427333;
 			
-			// aapt resource value: 0x7f0a0006
-			public const int adjust_width = 2131361798;
+			// aapt resource value: 0x7f0b0006
+			public const int adjust_width = 2131427334;
 			
-			// aapt resource value: 0x7f0a000a
-			public const int auto = 2131361802;
+			// aapt resource value: 0x7f0b000a
+			public const int auto = 2131427338;
 			
-			// aapt resource value: 0x7f0a0014
-			public const int citizenButton = 2131361812;
+			// aapt resource value: 0x7f0b000b
+			public const int dark = 2131427339;
 			
-			// aapt resource value: 0x7f0a000b
-			public const int dark = 2131361803;
+			// aapt resource value: 0x7f0b000e
+			public const int googlemap = 2131427342;
 			
-			// aapt resource value: 0x7f0a0018
-			public const int filterBar = 2131361816;
+			// aapt resource value: 0x7f0b0000
+			public const int hybrid = 2131427328;
 			
-			// aapt resource value: 0x7f0a001b
-			public const int googlemap = 2131361819;
+			// aapt resource value: 0x7f0b0007
+			public const int icon_only = 2131427335;
 			
-			// aapt resource value: 0x7f0a0000
-			public const int hybrid = 2131361792;
+			// aapt resource value: 0x7f0b000c
+			public const int light = 2131427340;
 			
-			// aapt resource value: 0x7f0a0007
-			public const int icon_only = 2131361799;
+			// aapt resource value: 0x7f0b0001
+			public const int none = 2131427329;
 			
-			// aapt resource value: 0x7f0a0019
-			public const int imageButton1 = 2131361817;
+			// aapt resource value: 0x7f0b0002
+			public const int normal = 2131427330;
 			
-			// aapt resource value: 0x7f0a001a
-			public const int imageButton2 = 2131361818;
+			// aapt resource value: 0x7f0b0003
+			public const int satellite = 2131427331;
 			
-			// aapt resource value: 0x7f0a0016
-			public const int kitekiteButton = 2131361814;
+			// aapt resource value: 0x7f0b0008
+			public const int standard = 2131427336;
 			
-			// aapt resource value: 0x7f0a000c
-			public const int light = 2131361804;
+			// aapt resource value: 0x7f0b0004
+			public const int terrain = 2131427332;
 			
-			// aapt resource value: 0x7f0a000e
-			public const int linearLayout1 = 2131361806;
+			// aapt resource value: 0x7f0b000d
+			public const int webview = 2131427341;
 			
-			// aapt resource value: 0x7f0a0013
-			public const int linearLayout2 = 2131361811;
-			
-			// aapt resource value: 0x7f0a0010
-			public const int logoButton = 2131361808;
-			
-			// aapt resource value: 0x7f0a0017
-			public const int missionbayButton = 2131361815;
-			
-			// aapt resource value: 0x7f0a0001
-			public const int none = 2131361793;
-			
-			// aapt resource value: 0x7f0a0002
-			public const int normal = 2131361794;
-			
-			// aapt resource value: 0x7f0a0003
-			public const int satellite = 2131361795;
-			
-			// aapt resource value: 0x7f0a0012
-			public const int settingsButton = 2131361810;
-			
-			// aapt resource value: 0x7f0a0008
-			public const int standard = 2131361800;
-			
-			// aapt resource value: 0x7f0a0004
-			public const int terrain = 2131361796;
-			
-			// aapt resource value: 0x7f0a000f
-			public const int toolbar1 = 2131361807;
-			
-			// aapt resource value: 0x7f0a0011
-			public const int userButton = 2131361809;
-			
-			// aapt resource value: 0x7f0a000d
-			public const int webview = 2131361805;
-			
-			// aapt resource value: 0x7f0a0009
-			public const int wide = 2131361801;
-			
-			// aapt resource value: 0x7f0a0015
-			public const int zooButton = 2131361813;
+			// aapt resource value: 0x7f0b0009
+			public const int wide = 2131427337;
 			
 			static Id()
 			{
@@ -444,10 +442,7 @@ namespace Bop
 			public const int ListView = 2130968577;
 			
 			// aapt resource value: 0x7f040002
-			public const int Main = 2130968578;
-			
-			// aapt resource value: 0x7f040003
-			public const int Map = 2130968579;
+			public const int Map = 2130968578;
 			
 			static Layout()
 			{
