@@ -13,7 +13,7 @@
             p1:src="@drawable/iconuser"
             p1:layout_width="40px"
             p1:layout_height="40px"
-            p1:id="@+id/imageButton2"
+            p1:id="@+id/profileButton"
             p1:layout_gravity="right"
             p1:background="@android:color/transparent"
             p1:layout_marginRight="20px"
@@ -43,7 +43,7 @@
             p1:src="@drawable/iconsettings"
             p1:layout_width="40px"
             p1:layout_height="40px"
-            p1:id="@+id/imageButton20"
+            p1:id="@+id/settingsButton"
             p1:adjustViewBounds="true"
             p1:cropToPadding="true"
             p1:scaleType="fitCenter"
@@ -70,7 +70,6 @@
                     p1:layout_width="match_parent"
                     p1:layout_height="200px"
                     p1:id="@+id/test1"
-                    p1:scaleType="center"
                     p1:background="@drawable/listaucklandzoo" />
                 <ImageButton
                     p1:layout_width="match_parent"
@@ -81,13 +80,11 @@
                     p1:layout_width="match_parent"
                     p1:layout_height="200px"
                     p1:id="@+id/test3"
-                    p1:scaleType="center"
                     p1:background="@drawable/listcassettenine" />
                 <ImageButton
                     p1:layout_width="match_parent"
                     p1:layout_height="200px"
                     p1:id="@+id/test4"
-                    p1:scaleType="center"
                     p1:background="@drawable/listcitizenpark" />
                 <ImageButton
                     p1:layout_width="match_parent"
@@ -95,20 +92,25 @@
                     p1:id="@+id/test5"
                     p1:background="@drawable/listaucklandbungy" />
                 <ImageButton
-                    p1:src="@drawable/listbcc"
                     p1:layout_width="match_parent"
                     p1:layout_height="200px"
-                    p1:id="@+id/test6" />
+                    p1:id="@+id/test6"
+                    p1:background="@drawable/listaucklandbungy" />
                 <ImageButton
-                    p1:src="@drawable/listbcc"
                     p1:layout_width="match_parent"
                     p1:layout_height="200px"
-                    p1:id="@+id/test7" />
+                    p1:id="@+id/test7"
+                    p1:background="@drawable/listaucklandbungy" />
                 <ImageButton
-                    p1:src="@drawable/listbcc"
                     p1:layout_width="match_parent"
                     p1:layout_height="200px"
-                    p1:id="@+id/test8" />
+                    p1:id="@+id/test8"
+                    p1:background="@drawable/listaucklandbungy" />
+                <ImageButton
+                    p1:layout_width="match_parent"
+                    p1:layout_height="200px"
+                    p1:id="@+id/test9"
+                    p1:background="@drawable/listaucklandbungy" />
             </LinearLayout>
         </ScrollView>
         <ImageButton
@@ -139,7 +141,7 @@
             <ImageButton
                 p1:layout_width="50px"
                 p1:layout_height="50px"
-                p1:id="@+id/imageButton25"
+                p1:id="@+id/diningButton"
                 p1:layout_weight="100"
                 p1:adjustViewBounds="true"
                 p1:cropToPadding="true"
@@ -151,7 +153,7 @@
                 p1:src="@drawable/iconnature"
                 p1:layout_width="50px"
                 p1:layout_height="50px"
-                p1:id="@+id/imageButton26"
+                p1:id="@+id/natureButton"
                 p1:layout_weight="100"
                 p1:layout_gravity="center"
                 p1:background="@android:color/transparent"
@@ -162,7 +164,7 @@
                 p1:src="@drawable/iconentertainment"
                 p1:layout_width="50px"
                 p1:layout_height="50px"
-                p1:id="@+id/imageButton27"
+                p1:id="@+id/entertainmentButton"
                 p1:layout_weight="100"
                 p1:layout_gravity="center"
                 p1:background="@android:color/transparent"

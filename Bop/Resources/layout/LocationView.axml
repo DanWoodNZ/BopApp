@@ -13,7 +13,7 @@
         android:id="@+id/mainHeader"
         android:background="@drawable/citizenpark">
         <ImageButton
-            android:src="@drawable/leftarrow"
+            android:src="@drawable/iconbackarrow"
             android:layout_width="40px"
             android:layout_height="40px"
             android:id="@+id/imageButton1"
@@ -45,7 +45,7 @@
             android:textSize="20dp"
             android:layout_below="@id/locationHeader" />
         <ImageButton
-            android:src="@drawable/heart"
+            android:src="@drawable/iconheart"
             android:layout_width="40px"
             android:layout_height="40px"
             android:id="@+id/imageButton2"
