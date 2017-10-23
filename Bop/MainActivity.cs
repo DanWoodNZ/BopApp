@@ -25,9 +25,9 @@ namespace Bop
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.ListView);
 
-            SetupGoToLocationButton();
+            SetupListView();
 
-            //SetUpMap();
+            
         }
 
 
@@ -40,20 +40,15 @@ namespace Bop
                 Toast.MakeText(this, "Pressed imageButton1", ToastLength.Short).Show();
                 SetContentView(Resource.Layout.ListView);
 
-                
-
                 RetrieveLocationData();
 
-
-                SetupGoToLocationButton();
-
-
+                SetupListView();
             };
         }
 
 
         //Setups the ImageButton to go from a item in the list view to that items page.
-        private void SetupGoToLocationButton()
+        private void SetupListView()
         {
             //Controlling the first image button with a click event
             ImageButton button = FindViewById<ImageButton>(Resource.Id.test1); //Select the FIrstImage button in the list view
@@ -64,10 +59,29 @@ namespace Bop
                 PopulateLocationPage(2);
                 SetupBackButton();
             };
+
+            ImageButton mapButton = FindViewById<ImageButton>(Resource.Id.floatMapButton);
+            mapButton.Click += (o, e) =>
+            {
+                Toast.MakeText(this, "Pressed map button", ToastLength.Short).Show();
+                SetContentView(Resource.Layout.Map);
+                SetUpMap();
+
+            };
+
         }
 
         private void SetUpMap()
         {
+            Button backButton = FindViewById<Button>(Resource.Id.mapBackButton);
+            backButton.Click += (o, e) =>
+            {
+                SetContentView(Resource.Layout.ListView);
+                SetupListView();
+
+            };
+
+
             if (GMap == null)
             {
                 FragmentManager.FindFragmentById<MapFragment>(Resource.Id.googlemap).GetMapAsync(this);

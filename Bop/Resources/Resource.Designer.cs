@@ -404,7 +404,7 @@ namespace Bop
 			public const int dark = 2131427339;
 			
 			// aapt resource value: 0x7f0b001f
-			public const int floatButton = 2131427359;
+			public const int floatMapButton = 2131427359;
 			
 			// aapt resource value: 0x7f0b0029
 			public const int googlemap = 2131427369;
@@ -450,6 +450,9 @@ namespace Bop
 			
 			// aapt resource value: 0x7f0b0024
 			public const int mainHeader = 2131427364;
+			
+			// aapt resource value: 0x7f0b002a
+			public const int mapBackButton = 2131427370;
 			
 			// aapt resource value: 0x7f0b0001
 			public const int none = 2131427329;

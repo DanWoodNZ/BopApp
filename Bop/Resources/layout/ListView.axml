@@ -115,7 +115,7 @@
             p1:src="@drawable/common_google_signin_btn_icon_light_normal"
             p1:layout_width="120px"
             p1:layout_height="120px"
-            p1:id="@+id/floatButton"
+            p1:id="@+id/floatMapButton"
             p1:layout_weight="100"
             p1:layout_gravity="center"
             p1:background="@android:color/transparent"
