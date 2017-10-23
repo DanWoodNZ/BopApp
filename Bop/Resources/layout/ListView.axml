@@ -7,10 +7,10 @@
     <Toolbar
         p1:background="?android:attr/colorPrimary"
         p1:layout_width="match_parent"
-        p1:layout_height="80px"
+        p1:layout_height="70px"
         p1:id="@+id/toolbar1">
         <ImageButton
-            p1:src="@drawable/user"
+            p1:src="@drawable/iconuser"
             p1:layout_width="40px"
             p1:layout_height="40px"
             p1:id="@+id/imageButton2"
@@ -40,7 +40,7 @@
             p1:layout_gravity="right"
             p1:layout_marginRight="20px" />
         <ImageButton
-            p1:src="@drawable/settingsnew"
+            p1:src="@drawable/iconsettings"
             p1:layout_width="40px"
             p1:layout_height="40px"
             p1:id="@+id/imageButton20"
@@ -71,41 +71,41 @@
                     p1:layout_height="200px"
                     p1:id="@+id/test1"
                     p1:scaleType="center"
-                    p1:src="@drawable/citizenpark" />
+                    p1:background="@drawable/listaucklandzoo" />
                 <ImageButton
-                    p1:src="@drawable/waiheke"
                     p1:layout_width="match_parent"
                     p1:layout_height="200px"
-                    p1:id="@+id/test2" />
+                    p1:id="@+id/test2"
+                    p1:background="@drawable/listbcc" />
                 <ImageButton
-                    p1:src="@drawable/test"
                     p1:layout_width="match_parent"
                     p1:layout_height="200px"
                     p1:id="@+id/test3"
-                    p1:scaleType="center" />
+                    p1:scaleType="center"
+                    p1:background="@drawable/listcassettenine" />
                 <ImageButton
-                    p1:src="@drawable/citizenpark2"
                     p1:layout_width="match_parent"
                     p1:layout_height="200px"
                     p1:id="@+id/test4"
-                    p1:scaleType="center" />
+                    p1:scaleType="center"
+                    p1:background="@drawable/listcitizenpark" />
                 <ImageButton
-                    p1:src="@drawable/citizenpark3"
                     p1:layout_width="match_parent"
                     p1:layout_height="200px"
-                    p1:id="@+id/test5" />
+                    p1:id="@+id/test5"
+                    p1:background="@drawable/listaucklandbungy" />
                 <ImageButton
-                    p1:src="@drawable/citizenpark2"
+                    p1:src="@drawable/listbcc"
                     p1:layout_width="match_parent"
                     p1:layout_height="200px"
                     p1:id="@+id/test6" />
                 <ImageButton
-                    p1:src="@drawable/citizenpark3"
+                    p1:src="@drawable/listbcc"
                     p1:layout_width="match_parent"
                     p1:layout_height="200px"
                     p1:id="@+id/test7" />
                 <ImageButton
-                    p1:src="@drawable/citizenpark2"
+                    p1:src="@drawable/listbcc"
                     p1:layout_width="match_parent"
                     p1:layout_height="200px"
                     p1:id="@+id/test8" />
@@ -132,12 +132,11 @@
             p1:minWidth="25px"
             p1:minHeight="25px"
             p1:layout_width="match_parent"
-            p1:layout_height="80px"
+            p1:layout_height="70px"
             p1:id="@+id/bottomNavbar"
             p1:layout_alignParentBottom="true"
             p1:background="#f6ffffff">
             <ImageButton
-                p1:src="@drawable/dining"
                 p1:layout_width="50px"
                 p1:layout_height="50px"
                 p1:id="@+id/imageButton25"
@@ -146,9 +145,10 @@
                 p1:cropToPadding="true"
                 p1:scaleType="fitCenter"
                 p1:background="@android:color/transparent"
-                p1:layout_gravity="center" />
+                p1:layout_gravity="center"
+                p1:src="@drawable/icondining" />
             <ImageButton
-                p1:src="@drawable/nature"
+                p1:src="@drawable/iconnature"
                 p1:layout_width="50px"
                 p1:layout_height="50px"
                 p1:id="@+id/imageButton26"
@@ -159,7 +159,7 @@
                 p1:adjustViewBounds="true"
                 p1:cropToPadding="true" />
             <ImageButton
-                p1:src="@drawable/entertainment"
+                p1:src="@drawable/iconentertainment"
                 p1:layout_width="50px"
                 p1:layout_height="50px"
                 p1:id="@+id/imageButton27"
