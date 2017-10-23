@@ -366,6 +366,9 @@ namespace Bop
 			// aapt resource value: 0x7f020026
 			public const int ListCitizenPark = 2130837542;
 			
+			// aapt resource value: 0x7f020027
+			public const int uberlogosmall = 2130837543;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -390,9 +393,6 @@ namespace Bop
 			
 			// aapt resource value: 0x7f0b0020
 			public const int bottomNavbar = 2131427360;
-			
-			// aapt resource value: 0x7f0b002e
-			public const int button1 = 2131427374;
 			
 			// aapt resource value: 0x7f0b000b
 			public const int dark = 2131427339;
@@ -420,6 +420,9 @@ namespace Bop
 			
 			// aapt resource value: 0x7f0b002b
 			public const int imageButton2 = 2131427371;
+			
+			// aapt resource value: 0x7f0b002e
+			public const int imageButton3 = 2131427374;
 			
 			// aapt resource value: 0x7f0b0024
 			public const int imageView1 = 2131427364;

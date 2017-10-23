@@ -192,6 +192,7 @@
     <AndroidResource Include="Resources\drawable\IconUserGrey.png" />
     <AndroidResource Include="Resources\drawable\BopLogo.png" />
     <AndroidResource Include="Resources\drawable\BopLogoFancy.png" />
+    <AndroidResource Include="Resources\drawable\uberlogosmall.png" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
