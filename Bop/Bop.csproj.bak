@@ -176,24 +176,23 @@
     <AndroidResource Include="Resources\layout\ListView.axml" />
     <AndroidResource Include="Resources\layout\LocationView.axml" />
     <AndroidResource Include="Resources\drawable\citizenpark.jpg" />
-    <AndroidResource Include="Resources\drawable\citizenpark2.jpg" />
-    <AndroidResource Include="Resources\drawable\citizenpark3.jpg" />
-    <AndroidResource Include="Resources\drawable\cp.jpeg" />
-    <AndroidResource Include="Resources\drawable\dining.png" />
-    <AndroidResource Include="Resources\drawable\download.jpeg" />
-    <AndroidResource Include="Resources\drawable\entertainment.png" />
-    <AndroidResource Include="Resources\drawable\forkknife.png" />
-    <AndroidResource Include="Resources\drawable\heart.png" />
-    <AndroidResource Include="Resources\drawable\leftarrow.png" />
-    <AndroidResource Include="Resources\drawable\nature.png" />
-    <AndroidResource Include="Resources\drawable\profile.png" />
-    <AndroidResource Include="Resources\drawable\settings.png" />
-    <AndroidResource Include="Resources\drawable\settingsnew.png" />
-    <AndroidResource Include="Resources\drawable\test.jpg" />
-    <AndroidResource Include="Resources\drawable\user.png" />
-    <AndroidResource Include="Resources\drawable\waiheke.jpg" />
-    <AndroidResource Include="Resources\drawable\cptest1.jpg" />
-    <AndroidResource Include="Resources\drawable\cptest2.jpg" />
+    <AndroidResource Include="Resources\drawable\ListAucklandBungy.png" />
+    <AndroidResource Include="Resources\drawable\ListAucklandZoo.png" />
+    <AndroidResource Include="Resources\drawable\ListBCC.png" />
+    <AndroidResource Include="Resources\drawable\ListCassetteNine.png" />
+    <AndroidResource Include="Resources\drawable\ListCitizenPark.png" />
+    <AndroidResource Include="Resources\drawable\IconBackArrow.png" />
+    <AndroidResource Include="Resources\drawable\IconDining.png" />
+    <AndroidResource Include="Resources\drawable\IconEntertainment.png" />
+    <AndroidResource Include="Resources\drawable\IconHeart.png" />
+    <AndroidResource Include="Resources\drawable\IconNature.png" />
+    <AndroidResource Include="Resources\drawable\IconSettings.png" />
+    <AndroidResource Include="Resources\drawable\IconUser.png" />
+    <AndroidResource Include="Resources\drawable\IconSettingsGrey.png" />
+    <AndroidResource Include="Resources\drawable\IconUserGrey.png" />
+    <AndroidResource Include="Resources\drawable\BopLogo.png" />
+    <AndroidResource Include="Resources\drawable\BopLogoFancy.png" />
+    <AndroidResource Include="Resources\drawable\uberlogosmall.png" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
