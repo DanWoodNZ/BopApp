@@ -319,52 +319,58 @@ namespace Bop
 			public const int cp = 2130837526;
 			
 			// aapt resource value: 0x7f020017
-			public const int dining = 2130837527;
+			public const int cptest1 = 2130837527;
 			
 			// aapt resource value: 0x7f020018
-			public const int download = 2130837528;
+			public const int cptest2 = 2130837528;
 			
 			// aapt resource value: 0x7f020019
-			public const int entertainment = 2130837529;
+			public const int dining = 2130837529;
 			
 			// aapt resource value: 0x7f02001a
-			public const int forkknife = 2130837530;
+			public const int download = 2130837530;
 			
 			// aapt resource value: 0x7f02001b
-			public const int googleg_disabled_color_18 = 2130837531;
+			public const int entertainment = 2130837531;
 			
 			// aapt resource value: 0x7f02001c
-			public const int googleg_standard_color_18 = 2130837532;
+			public const int forkknife = 2130837532;
 			
 			// aapt resource value: 0x7f02001d
-			public const int heart = 2130837533;
+			public const int googleg_disabled_color_18 = 2130837533;
 			
 			// aapt resource value: 0x7f02001e
-			public const int ic_arrow_back = 2130837534;
+			public const int googleg_standard_color_18 = 2130837534;
 			
 			// aapt resource value: 0x7f02001f
-			public const int leftarrow = 2130837535;
+			public const int heart = 2130837535;
 			
 			// aapt resource value: 0x7f020020
-			public const int nature = 2130837536;
+			public const int ic_arrow_back = 2130837536;
 			
 			// aapt resource value: 0x7f020021
-			public const int profile = 2130837537;
+			public const int leftarrow = 2130837537;
 			
 			// aapt resource value: 0x7f020022
-			public const int settings = 2130837538;
+			public const int nature = 2130837538;
 			
 			// aapt resource value: 0x7f020023
-			public const int settingsnew = 2130837539;
+			public const int profile = 2130837539;
 			
 			// aapt resource value: 0x7f020024
-			public const int test = 2130837540;
+			public const int settings = 2130837540;
 			
 			// aapt resource value: 0x7f020025
-			public const int user = 2130837541;
+			public const int settingsnew = 2130837541;
 			
 			// aapt resource value: 0x7f020026
-			public const int waiheke = 2130837542;
+			public const int test = 2130837542;
+			
+			// aapt resource value: 0x7f020027
+			public const int user = 2130837543;
+			
+			// aapt resource value: 0x7f020028
+			public const int waiheke = 2130837544;
 			
 			static Drawable()
 			{
@@ -388,14 +394,20 @@ namespace Bop
 			// aapt resource value: 0x7f0b000a
 			public const int auto = 2131427338;
 			
-			// aapt resource value: 0x7f0b0027
-			public const int button1 = 2131427367;
+			// aapt resource value: 0x7f0b0020
+			public const int bottomNavbar = 2131427360;
+			
+			// aapt resource value: 0x7f0b0028
+			public const int button1 = 2131427368;
 			
 			// aapt resource value: 0x7f0b000b
 			public const int dark = 2131427339;
 			
-			// aapt resource value: 0x7f0b0028
-			public const int googlemap = 2131427368;
+			// aapt resource value: 0x7f0b001f
+			public const int floatButton = 2131427359;
+			
+			// aapt resource value: 0x7f0b0029
+			public const int googlemap = 2131427369;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int hybrid = 2131427328;
@@ -403,8 +415,8 @@ namespace Bop
 			// aapt resource value: 0x7f0b0007
 			public const int icon_only = 2131427335;
 			
-			// aapt resource value: 0x7f0b0024
-			public const int imageButton1 = 2131427364;
+			// aapt resource value: 0x7f0b0025
+			public const int imageButton1 = 2131427365;
 			
 			// aapt resource value: 0x7f0b0010
 			public const int imageButton2 = 2131427344;
@@ -412,14 +424,14 @@ namespace Bop
 			// aapt resource value: 0x7f0b0013
 			public const int imageButton20 = 2131427347;
 			
-			// aapt resource value: 0x7f0b0020
-			public const int imageButton25 = 2131427360;
-			
 			// aapt resource value: 0x7f0b0021
-			public const int imageButton26 = 2131427361;
+			public const int imageButton25 = 2131427361;
 			
 			// aapt resource value: 0x7f0b0022
-			public const int imageButton27 = 2131427362;
+			public const int imageButton26 = 2131427362;
+			
+			// aapt resource value: 0x7f0b0023
+			public const int imageButton27 = 2131427363;
 			
 			// aapt resource value: 0x7f0b000c
 			public const int light = 2131427340;
@@ -430,17 +442,14 @@ namespace Bop
 			// aapt resource value: 0x7f0b0016
 			public const int linearLayout2 = 2131427350;
 			
-			// aapt resource value: 0x7f0b001f
-			public const int linearLayout3 = 2131427359;
-			
-			// aapt resource value: 0x7f0b0025
-			public const int locationHeader = 2131427365;
-			
 			// aapt resource value: 0x7f0b0026
-			public const int locationSubheader = 2131427366;
+			public const int locationHeader = 2131427366;
 			
-			// aapt resource value: 0x7f0b0023
-			public const int mainHeader = 2131427363;
+			// aapt resource value: 0x7f0b0027
+			public const int locationSubheader = 2131427367;
+			
+			// aapt resource value: 0x7f0b0024
+			public const int mainHeader = 2131427364;
 			
 			// aapt resource value: 0x7f0b0001
 			public const int none = 2131427329;

@@ -7,7 +7,7 @@
     <Toolbar
         p1:background="?android:attr/colorPrimary"
         p1:layout_width="match_parent"
-        p1:layout_height="wrap_content"
+        p1:layout_height="150px"
         p1:id="@+id/toolbar1">
         <ImageButton
             p1:src="@drawable/user"
@@ -67,10 +67,11 @@
                 p1:layout_height="match_parent"
                 p1:id="@+id/linearLayout2">
                 <ImageButton
-                    p1:src="@drawable/citizenpark"
                     p1:layout_width="match_parent"
                     p1:layout_height="300px"
-                    p1:id="@+id/test1" />
+                    p1:id="@+id/test1"
+                    p1:scaleType="center"
+                    p1:background="@drawable/cptest2" />
                 <ImageButton
                     p1:src="@drawable/waiheke"
                     p1:layout_width="match_parent"
@@ -110,15 +111,31 @@
                     p1:id="@+id/test8" />
             </LinearLayout>
         </ScrollView>
+        <ImageButton
+            p1:src="@drawable/common_google_signin_btn_icon_light_normal"
+            p1:layout_width="150px"
+            p1:layout_height="150px"
+            p1:id="@+id/floatButton"
+            p1:layout_weight="100"
+            p1:layout_gravity="center"
+            p1:background="@android:color/transparent"
+            p1:scaleType="fitCenter"
+            p1:adjustViewBounds="true"
+            p1:cropToPadding="true"
+            p1:layout_centerInParent="true"
+            p1:layout_alignParentBottom="true"
+            p1:layout_alignParentRight="true"
+            p1:layout_marginRight="20px"
+            p1:layout_marginBottom="120px" />
         <LinearLayout
             p1:orientation="horizontal"
             p1:minWidth="25px"
             p1:minHeight="25px"
             p1:layout_width="match_parent"
             p1:layout_height="100px"
-            p1:id="@+id/linearLayout3"
+            p1:id="@+id/bottomNavbar"
             p1:layout_alignParentBottom="true"
-            p1:background="#f9ffffff">
+            p1:background="#f6ffffff">
             <ImageButton
                 p1:src="@drawable/dining"
                 p1:layout_width="70px"
