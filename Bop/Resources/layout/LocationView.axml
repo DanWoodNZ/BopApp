@@ -9,13 +9,13 @@
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="600px"
+        android:layout_height="400px"
         android:id="@+id/mainHeader"
         android:background="@drawable/citizenpark">
         <ImageButton
             android:src="@drawable/leftarrow"
-            android:layout_width="70px"
-            android:layout_height="70px"
+            android:layout_width="40px"
+            android:layout_height="40px"
             android:id="@+id/imageButton1"
             android:background="@android:color/transparent"
             android:scaleType="fitCenter"
@@ -46,8 +46,8 @@
             android:layout_below="@id/locationHeader" />
         <ImageButton
             android:src="@drawable/heart"
-            android:layout_width="70px"
-            android:layout_height="70px"
+            android:layout_width="40px"
+            android:layout_height="40px"
             android:id="@+id/imageButton2"
             android:background="@android:color/transparent"
             android:scaleType="fitCenter"
@@ -71,7 +71,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/textView2"
             android:textColor="@android:color/black"
-            android:textSize="17dp"
+            android:textSize="14dp"
             android:textStyle="bold"
             android:layout_marginLeft="50px"
             android:layout_marginTop="50px"
@@ -87,7 +87,8 @@
             android:layout_marginTop="20px"
             android:layout_marginLeft="50px"
             android:layout_marginRight="50px"
-            android:layout_marginBottom="50px" />
+            android:layout_marginBottom="20px"
+            android:textSize="12dp" />
         <TextView
             android:text="CONTACT"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -95,10 +96,10 @@
             android:layout_height="wrap_content"
             android:id="@+id/textView2"
             android:textColor="@android:color/black"
-            android:textSize="17dp"
+            android:textSize="14dp"
             android:textStyle="bold"
             android:layout_marginLeft="50px"
-            android:layout_marginTop="50px"
+            android:layout_marginTop="20px"
             android:layout_marginRight="50px"
             android:layout_marginBottom="20px" />
         <TextView
@@ -110,7 +111,8 @@
             android:textColor="@android:color/black"
             android:layout_marginTop="10px"
             android:layout_marginLeft="50px"
-            android:layout_marginRight="50px" />
+            android:layout_marginRight="50px"
+            android:textSize="12dp" />
         <TextView
             android:text="Hours: 10am - 10pm"
             android:textAppearance="?android:attr/textAppearanceSmall"
@@ -120,7 +122,8 @@
             android:textColor="@android:color/black"
             android:layout_marginTop="10px"
             android:layout_marginLeft="50px"
-            android:layout_marginRight="50px" />
+            android:layout_marginRight="50px"
+            android:textSize="12dp" />
         <TextView
             android:text="Email: info@citizenpark.co.nz"
             android:textAppearance="?android:attr/textAppearanceSmall"
@@ -130,17 +133,18 @@
             android:textColor="@android:color/black"
             android:layout_marginTop="10px"
             android:layout_marginLeft="50px"
-            android:layout_marginRight="50px" />
+            android:layout_marginRight="50px"
+            android:textSize="12dp" />
     </LinearLayout>
     <Toolbar
         android:background="@android:color/white"
         android:layout_width="match_parent"
-        android:layout_height="300px"
+        android:layout_height="100px"
         android:id="@+id/toolbar1">
         <Button
             android:text="UBER"
             android:layout_width="150px"
-            android:layout_height="150px"
+            android:layout_height="50px"
             android:id="@+id/button1"
             android:layout_gravity="right"
             android:textStyle="bold"
