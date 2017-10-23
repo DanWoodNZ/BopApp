@@ -150,6 +150,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatabaseConnection.cs" />
     <Compile Include="Controllers.cs" />
     <Compile Include="Locations.cs" />
     <Compile Include="MainActivity.cs" />

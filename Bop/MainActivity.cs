@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.WindowsAzure.MobileServices;
 using Newtonsoft.Json.Linq;
+using System.Threading;
 
 namespace Bop
 {
@@ -19,10 +20,11 @@ namespace Bop
         private List<Locations> locations;
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            RetrieveLocationData();
             RequestWindowFeature(Android.Views.WindowFeatures.NoTitle);
             base.OnCreate(savedInstanceState);
-            
             SetContentView(Resource.Layout.ListView);
+
             SetupGoToLocationButton();
 
             //SetUpMap();
@@ -37,7 +39,15 @@ namespace Bop
             {
                 Toast.MakeText(this, "Pressed imageButton1", ToastLength.Short).Show();
                 SetContentView(Resource.Layout.ListView);
+
+                
+
+                RetrieveLocationData();
+
+
                 SetupGoToLocationButton();
+
+
             };
         }
 
@@ -51,6 +61,7 @@ namespace Bop
             {
                 Toast.MakeText(this, "Pressed test1", ToastLength.Short).Show(); //When clicked, shows a toast message on screen
                 SetContentView(Resource.Layout.LocationView);
+                PopulateLocationPage(2);
                 SetupBackButton();
             };
         }
@@ -65,7 +76,6 @@ namespace Bop
 
         public void OnMapReady(GoogleMap googleMap)
         {
-            RetrieveLocationData();
             this.GMap = googleMap;
             GMap.SetMapStyle(MapStyleOptions.LoadRawResourceStyle(this, Resource.Raw.style_json));
             GMap.UiSettings.ZoomControlsEnabled = true;
@@ -103,7 +113,7 @@ namespace Bop
             }
         }
 
-        public void RetrieveLocationData()
+        public void RetrieveLocationData ()
         {
             Task.Run(async () =>
             {
@@ -146,6 +156,17 @@ namespace Bop
             }).Wait();
 
             Console.WriteLine("retrieveLocationData");
+        }
+
+        public void PopulateLocationPage(int SelectedLocation)
+        {
+            SetContentView(Resource.Layout.LocationView);
+
+            TextView locationName = FindViewById<TextView>(Resource.Id.locationHeader);
+            locationName.Text = locations[SelectedLocation].LocationName;
+
+            TextView locationDescription = FindViewById<TextView>(Resource.Id.textView1);
+            locationDescription.Text = locations[SelectedLocation].LocationDescription;
         }
     }
 }
