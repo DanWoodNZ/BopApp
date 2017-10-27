@@ -9,9 +9,9 @@
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="400px"
         android:id="@+id/mainHeader"
-        android:background="@drawable/citizenpark">
+        android:background="@drawable/citizenpark"
+        android:layout_height="500px">
         <ImageButton
             android:src="@drawable/iconbackarrow"
             android:layout_width="40px"
@@ -140,15 +140,18 @@
         android:background="@android:color/white"
         android:layout_width="match_parent"
         android:layout_height="100px"
-        android:id="@+id/toolbar1">
-        <Button
-            android:text="UBER"
-            android:layout_width="150px"
-            android:layout_height="50px"
-            android:id="@+id/button1"
-            android:layout_gravity="right"
-            android:textStyle="bold"
-            android:background="@color/boporange"
-            android:layout_margin="20px" />
+        android:id="@+id/toolbar1"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <ImageButton
+            android:src="@drawable/uberlogosmall"
+            android:id="@+id/imageButton3"
+            android:layout_width="300px"
+            android:layout_height="65px"
+            android:layout_gravity="left"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="35px"
+            android:layout_marginLeft="35px" />
     </Toolbar>
 </LinearLayout>
