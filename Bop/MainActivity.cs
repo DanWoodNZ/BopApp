@@ -60,6 +60,7 @@ namespace Bop
                 SetupBackButton();
             };
 
+            //Add a event to the map button click, which takes the user to the map screen
             ImageButton mapButton = FindViewById<ImageButton>(Resource.Id.floatMapButton);
             mapButton.Click += (o, e) =>
             {
@@ -182,6 +183,17 @@ namespace Bop
             TextView locationDescription = FindViewById<TextView>(Resource.Id.textView1);
             locationDescription.Text = locations[SelectedLocation].LocationDescription;
         }
+
+       //method to get images adreseses stored in the rsources/drable folder and add them to 
+       public void getImageAdresses()
+        {
+            for (int i = 0; i < locations.Count; i++)
+            {
+                string locationName = locations[i].LocationName;
+                locationName = locationName.Replace(" ", String.Empty);
+                locations[i].ImageAdresses.Add( "Resource/drawable/List" + locationName);
+            }
+        } 
     }
 }
 

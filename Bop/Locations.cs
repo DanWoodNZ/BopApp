@@ -11,6 +11,8 @@ using Android.Views;
 using Android.Widget;
 using Android.Gms.Maps.Model;
 using Newtonsoft.Json;
+using Android.Media;
+using System.Collections;
 
 namespace Bop
 {
@@ -43,9 +45,7 @@ namespace Bop
         [JsonProperty("locationY")]
         public double LocationY { get; set; }
 
-
-
-
+        public ArrayList ImageAdresses { get; set; }
 
         public Locations()
         {
