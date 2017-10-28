@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:weightSum="100"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="Create An Account"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:textColor="#368EEB"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:id="@+id/txtCreateAccount" />
+    <Button
+        android:text="Sign In"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="0dp"
+        android:layout_weight="15"
+        android:id="@+id/btnSignIn"
+        android:background="@drawable/ButtonSignInStyle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="15sp" />
+    <TextView
+        android:text="Or"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtOr"
+        android:height="0dp"
+        android:layout_weight="15"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textSize="25sp" />
+    <Button
+        android:text="Sign Up With Mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="0dp"
+        android:layout_weight="15"
+        android:id="@+id/btnSignUp"
+        android:background="@drawable/ButtonSignUpStyle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="15sp" />
+</LinearLayout>
