@@ -162,7 +162,7 @@
     <Compile Include="view\SignIn.cs" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\Map.axml">
+    <AndroidResource Include="Resources\layout\mapView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\raw\style_json.json" />
@@ -177,8 +177,8 @@
     </None>
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Resources\AboutResources.txt" />
-    <AndroidResource Include="Resources\layout\ListView.axml" />
-    <AndroidResource Include="Resources\layout\LocationView.axml" />
+    <AndroidResource Include="Resources\layout\listView.axml" />
+    <AndroidResource Include="Resources\layout\locationView.axml" />
     <AndroidResource Include="Resources\drawable\citizenpark.jpg" />
     <AndroidResource Include="Resources\drawable\ListAucklandBungy.png" />
     <AndroidResource Include="Resources\drawable\ListAucklandZoo.png" />
@@ -197,9 +197,30 @@
     <AndroidResource Include="Resources\drawable\BopLogo.png" />
     <AndroidResource Include="Resources\drawable\BopLogoFancy.png" />
     <AndroidResource Include="Resources\drawable\uberlogosmall.png" />
-    <AndroidResource Include="Resources\layout\dialog_sign_in.axml" />
-    <AndroidResource Include="Resources\layout\dialog_sign_up.axml" />
-    <AndroidResource Include="Resources\layout\frontView.axml" />
+    <AndroidResource Include="Resources\layout\sign_in_popup.axml" />
+    <AndroidResource Include="Resources\layout\sign_up_popup.axml" />
+    <AndroidResource Include="Resources\layout\loginView.axml" />
+    <AndroidResource Include="Resources\drawable\ListAucklandBridge.png" />
+    <AndroidResource Include="Resources\drawable\ListAucklandMuseum.png" />
+    <AndroidResource Include="Resources\drawable\ListCocos.png" />
+    <AndroidResource Include="Resources\drawable\ListFedDeli.png" />
+    <AndroidResource Include="Resources\drawable\ListHunuaFalls.png" />
+    <AndroidResource Include="Resources\drawable\ListKarekareFalls.png" />
+    <AndroidResource Include="Resources\drawable\ListKellyTarltons.png" />
+    <AndroidResource Include="Resources\drawable\ListKitekiteFalls.png" />
+    <AndroidResource Include="Resources\drawable\ListLaZeppa.png" />
+    <AndroidResource Include="Resources\drawable\ListMissionBay.png" />
+    <AndroidResource Include="Resources\drawable\ListMotat.png" />
+    <AndroidResource Include="Resources\drawable\ListMtEden.png" />
+    <AndroidResource Include="Resources\drawable\ListOneTreeHill.png" />
+    <AndroidResource Include="Resources\drawable\ListOrphansKitchen.png" />
+    <AndroidResource Include="Resources\drawable\ListParnellGardens.png" />
+    <AndroidResource Include="Resources\drawable\ListPiha.png" />
+    <AndroidResource Include="Resources\drawable\ListPiha2.png" />
+    <AndroidResource Include="Resources\drawable\ListRangitotoIsland.png" />
+    <AndroidResource Include="Resources\drawable\ListSwashbucklers.png" />
+    <AndroidResource Include="Resources\drawable\ListViewLocation.psd" />
+    <AndroidResource Include="Resources\drawable\ListWaiheke.png" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="googleplayservices-location">
