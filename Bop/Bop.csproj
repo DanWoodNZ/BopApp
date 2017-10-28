@@ -159,7 +159,7 @@
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="view\DialogSignIn.cs" />
     <Compile Include="view\DialogSignUp.cs" />
-    <Compile Include="view\singIn.cs" />
+    <Compile Include="view\SignIn.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Map.axml">
@@ -230,13 +230,13 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ButtonSignInStyle.xml" />
+    <AndroidResource Include="Resources\Style\ButtonSignInStyle.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ButtonSignUpStyle.xml" />
+    <AndroidResource Include="Resources\Style\ButtonSignUpStyle.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\edit_text_style.xml" />
+    <AndroidResource Include="Resources\Style\edit_text_style.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\anim\slideRight.xml" />

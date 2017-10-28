@@ -24,7 +24,6 @@ namespace Bop
             RequestWindowFeature(Android.Views.WindowFeatures.NoTitle);
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.ListView);
-
             SetupListView();
 
             
