@@ -226,7 +226,7 @@
     <AndroidResource Include="Resources\drawable\Bop_Logo_White.png" />
     <AndroidResource Include="Resources\drawable\facebookButton.png" />
     <AndroidResource Include="Resources\drawable\signinButton.png" />
-    <AndroidResource Include="Resources\layout\Layout.axml" />
+    <AndroidResource Include="Resources\layout\loginView.axml" />
     <AndroidResource Include="Resources\drawable\signupText.png" />
   </ItemGroup>
   <ItemGroup>
