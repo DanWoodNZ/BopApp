@@ -262,190 +262,196 @@ namespace Bop
 			public const int BopLogoFancy = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int ButtonSignInStyle = 2130837506;
+			public const int button_obround = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int ButtonSignUpStyle = 2130837507;
+			public const int ButtonSignInStyle = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int citizenpark = 2130837508;
+			public const int ButtonSignUpStyle = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int common_full_open_on_phone = 2130837509;
+			public const int citizenpark = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int common_google_signin_btn_icon_dark = 2130837510;
+			public const int common_full_open_on_phone = 2130837510;
 			
 			// aapt resource value: 0x7f020007
-			public const int common_google_signin_btn_icon_dark_focused = 2130837511;
+			public const int common_google_signin_btn_icon_dark = 2130837511;
 			
 			// aapt resource value: 0x7f020008
-			public const int common_google_signin_btn_icon_dark_normal = 2130837512;
+			public const int common_google_signin_btn_icon_dark_focused = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public const int common_google_signin_btn_icon_dark_normal_background = 2130837513;
+			public const int common_google_signin_btn_icon_dark_normal = 2130837513;
 			
 			// aapt resource value: 0x7f02000a
-			public const int common_google_signin_btn_icon_disabled = 2130837514;
+			public const int common_google_signin_btn_icon_dark_normal_background = 2130837514;
 			
 			// aapt resource value: 0x7f02000b
-			public const int common_google_signin_btn_icon_light = 2130837515;
+			public const int common_google_signin_btn_icon_disabled = 2130837515;
 			
 			// aapt resource value: 0x7f02000c
-			public const int common_google_signin_btn_icon_light_focused = 2130837516;
+			public const int common_google_signin_btn_icon_light = 2130837516;
 			
 			// aapt resource value: 0x7f02000d
-			public const int common_google_signin_btn_icon_light_normal = 2130837517;
+			public const int common_google_signin_btn_icon_light_focused = 2130837517;
 			
 			// aapt resource value: 0x7f02000e
-			public const int common_google_signin_btn_icon_light_normal_background = 2130837518;
+			public const int common_google_signin_btn_icon_light_normal = 2130837518;
 			
 			// aapt resource value: 0x7f02000f
-			public const int common_google_signin_btn_text_dark = 2130837519;
+			public const int common_google_signin_btn_icon_light_normal_background = 2130837519;
 			
 			// aapt resource value: 0x7f020010
-			public const int common_google_signin_btn_text_dark_focused = 2130837520;
+			public const int common_google_signin_btn_text_dark = 2130837520;
 			
 			// aapt resource value: 0x7f020011
-			public const int common_google_signin_btn_text_dark_normal = 2130837521;
+			public const int common_google_signin_btn_text_dark_focused = 2130837521;
 			
 			// aapt resource value: 0x7f020012
-			public const int common_google_signin_btn_text_dark_normal_background = 2130837522;
+			public const int common_google_signin_btn_text_dark_normal = 2130837522;
 			
 			// aapt resource value: 0x7f020013
-			public const int common_google_signin_btn_text_disabled = 2130837523;
+			public const int common_google_signin_btn_text_dark_normal_background = 2130837523;
 			
 			// aapt resource value: 0x7f020014
-			public const int common_google_signin_btn_text_light = 2130837524;
+			public const int common_google_signin_btn_text_disabled = 2130837524;
 			
 			// aapt resource value: 0x7f020015
-			public const int common_google_signin_btn_text_light_focused = 2130837525;
+			public const int common_google_signin_btn_text_light = 2130837525;
 			
 			// aapt resource value: 0x7f020016
-			public const int common_google_signin_btn_text_light_normal = 2130837526;
+			public const int common_google_signin_btn_text_light_focused = 2130837526;
 			
 			// aapt resource value: 0x7f020017
-			public const int common_google_signin_btn_text_light_normal_background = 2130837527;
+			public const int common_google_signin_btn_text_light_normal = 2130837527;
 			
 			// aapt resource value: 0x7f020018
-			public const int edit_text_style = 2130837528;
+			public const int common_google_signin_btn_text_light_normal_background = 2130837528;
 			
 			// aapt resource value: 0x7f020019
-			public const int googleg_disabled_color_18 = 2130837529;
+			public const int edit_text_style = 2130837529;
 			
 			// aapt resource value: 0x7f02001a
-			public const int googleg_standard_color_18 = 2130837530;
+			public const int googleg_disabled_color_18 = 2130837530;
 			
 			// aapt resource value: 0x7f02001b
-			public const int ic_arrow_back = 2130837531;
+			public const int googleg_standard_color_18 = 2130837531;
 			
 			// aapt resource value: 0x7f02001c
-			public const int IconBackArrow = 2130837532;
+			public const int ic_arrow_back = 2130837532;
 			
 			// aapt resource value: 0x7f02001d
-			public const int IconDining = 2130837533;
+			public const int IconBackArrow = 2130837533;
 			
 			// aapt resource value: 0x7f02001e
-			public const int IconEntertainment = 2130837534;
+			public const int IconDining = 2130837534;
 			
 			// aapt resource value: 0x7f02001f
-			public const int IconHeart = 2130837535;
+			public const int IconEntertainment = 2130837535;
 			
 			// aapt resource value: 0x7f020020
-			public const int IconNature = 2130837536;
+			public const int IconHeart = 2130837536;
 			
 			// aapt resource value: 0x7f020021
-			public const int IconSettings = 2130837537;
+			public const int IconNature = 2130837537;
 			
 			// aapt resource value: 0x7f020022
-			public const int IconSettingsGrey = 2130837538;
+			public const int IconSettings = 2130837538;
 			
 			// aapt resource value: 0x7f020023
-			public const int IconUser = 2130837539;
+			public const int IconSettingsGrey = 2130837539;
 			
 			// aapt resource value: 0x7f020024
-			public const int IconUserGrey = 2130837540;
+			public const int IconUser = 2130837540;
 			
 			// aapt resource value: 0x7f020025
-			public const int ListAucklandBridge = 2130837541;
+			public const int IconUserGrey = 2130837541;
 			
 			// aapt resource value: 0x7f020026
-			public const int ListAucklandBungy = 2130837542;
+			public const int ListAucklandBridge = 2130837542;
 			
 			// aapt resource value: 0x7f020027
-			public const int ListAucklandMuseum = 2130837543;
+			public const int ListAucklandBungy = 2130837543;
 			
 			// aapt resource value: 0x7f020028
-			public const int ListAucklandZoo = 2130837544;
+			public const int ListAucklandMuseum = 2130837544;
 			
 			// aapt resource value: 0x7f020029
-			public const int ListBCC = 2130837545;
+			public const int ListAucklandZoo = 2130837545;
 			
 			// aapt resource value: 0x7f02002a
-			public const int ListCassetteNine = 2130837546;
+			public const int ListBCC = 2130837546;
 			
 			// aapt resource value: 0x7f02002b
-			public const int ListCitizenPark = 2130837547;
+			public const int ListCassetteNine = 2130837547;
 			
 			// aapt resource value: 0x7f02002c
-			public const int ListCocos = 2130837548;
+			public const int ListCitizenPark = 2130837548;
 			
 			// aapt resource value: 0x7f02002d
-			public const int ListFedDeli = 2130837549;
+			public const int ListCocos = 2130837549;
 			
 			// aapt resource value: 0x7f02002e
-			public const int ListHunuaFalls = 2130837550;
+			public const int ListFedDeli = 2130837550;
 			
 			// aapt resource value: 0x7f02002f
-			public const int ListKarekareFalls = 2130837551;
+			public const int ListHunuaFalls = 2130837551;
 			
 			// aapt resource value: 0x7f020030
-			public const int ListKellyTarltons = 2130837552;
+			public const int ListKarekareFalls = 2130837552;
 			
 			// aapt resource value: 0x7f020031
-			public const int ListKitekiteFalls = 2130837553;
+			public const int ListKellyTarltons = 2130837553;
 			
 			// aapt resource value: 0x7f020032
-			public const int ListLaZeppa = 2130837554;
+			public const int ListKitekiteFalls = 2130837554;
 			
 			// aapt resource value: 0x7f020033
-			public const int ListMissionBay = 2130837555;
+			public const int ListLaZeppa = 2130837555;
 			
 			// aapt resource value: 0x7f020034
-			public const int ListMotat = 2130837556;
+			public const int ListMissionBay = 2130837556;
 			
 			// aapt resource value: 0x7f020035
-			public const int ListMtEden = 2130837557;
+			public const int ListMotat = 2130837557;
 			
 			// aapt resource value: 0x7f020036
-			public const int ListOneTreeHill = 2130837558;
+			public const int ListMtEden = 2130837558;
 			
 			// aapt resource value: 0x7f020037
-			public const int ListOrphansKitchen = 2130837559;
+			public const int ListOneTreeHill = 2130837559;
 			
 			// aapt resource value: 0x7f020038
-			public const int ListParnellGardens = 2130837560;
+			public const int ListOrphansKitchen = 2130837560;
 			
 			// aapt resource value: 0x7f020039
-			public const int ListPiha = 2130837561;
+			public const int ListParnellGardens = 2130837561;
 			
 			// aapt resource value: 0x7f02003a
-			public const int ListPiha2 = 2130837562;
+			public const int ListPiha = 2130837562;
 			
 			// aapt resource value: 0x7f02003b
-			public const int ListRangitotoIsland = 2130837563;
+			public const int ListPiha2 = 2130837563;
 			
 			// aapt resource value: 0x7f02003c
-			public const int ListSwashbucklers = 2130837564;
+			public const int ListRangitotoIsland = 2130837564;
 			
 			// aapt resource value: 0x7f02003d
-			public const int ListViewLocation = 2130837565;
+			public const int ListSwashbucklers = 2130837565;
 			
 			// aapt resource value: 0x7f02003e
-			public const int ListWaiheke = 2130837566;
+			public const int ListViewLocation = 2130837566;
 			
 			// aapt resource value: 0x7f02003f
-			public const int uberlogosmall = 2130837567;
+			public const int ListWaiheke = 2130837567;
+			
+			// aapt resource value: 0x7f020040
+			public const int skytowerBlurred = 2130837568;
+			
+			// aapt resource value: 0x7f020041
+			public const int uberlogosmall = 2130837569;
 			
 			static Drawable()
 			{

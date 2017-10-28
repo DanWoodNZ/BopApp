@@ -194,12 +194,9 @@
     <AndroidResource Include="Resources\drawable\IconUser.png" />
     <AndroidResource Include="Resources\drawable\IconSettingsGrey.png" />
     <AndroidResource Include="Resources\drawable\IconUserGrey.png" />
-    <AndroidResource Include="Resources\drawable\BopLogo.png" />
-    <AndroidResource Include="Resources\drawable\BopLogoFancy.png" />
     <AndroidResource Include="Resources\drawable\uberlogosmall.png" />
     <AndroidResource Include="Resources\layout\sign_in_popup.axml" />
     <AndroidResource Include="Resources\layout\sign_up_popup.axml" />
-    <AndroidResource Include="Resources\layout\loginView.axml" />
     <AndroidResource Include="Resources\drawable\ListAucklandBridge.png" />
     <AndroidResource Include="Resources\drawable\ListAucklandMuseum.png" />
     <AndroidResource Include="Resources\drawable\ListCocos.png" />
@@ -221,6 +218,16 @@
     <AndroidResource Include="Resources\drawable\ListSwashbucklers.png" />
     <AndroidResource Include="Resources\drawable\ListViewLocation.psd" />
     <AndroidResource Include="Resources\drawable\ListWaiheke.png" />
+    <AndroidResource Include="Resources\drawable\button_obround.png" />
+    <AndroidResource Include="Resources\drawable\skytowerBlurred.png" />
+    <AndroidResource Include="Resources\drawable\Bop_Logo_Black_Block.png" />
+    <AndroidResource Include="Resources\drawable\Bop_Logo_Black.png" />
+    <AndroidResource Include="Resources\drawable\Bop_Logo_White_Block.png" />
+    <AndroidResource Include="Resources\drawable\Bop_Logo_White.png" />
+    <AndroidResource Include="Resources\drawable\facebookButton.png" />
+    <AndroidResource Include="Resources\drawable\signinButton.png" />
+    <AndroidResource Include="Resources\layout\Layout.axml" />
+    <AndroidResource Include="Resources\drawable\signupText.png" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="googleplayservices-location">
