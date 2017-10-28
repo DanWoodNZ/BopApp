@@ -19,6 +19,7 @@ namespace Bop
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            //Hard coded number of locations, to be replace when view is updated
             int numberOfLocations = 7;
             List<ImageButton> listLocations = new List<ImageButton>();
 
@@ -43,38 +44,6 @@ namespace Bop
                     Toast.MakeText(this, "Pressed test1", ToastLength.Short).Show(); //When clicked, shows a toast message on screen
                 };
             }
-
-
-            ImageButton mapButton = FindViewById<ImageButton>(Resource.Id.floatMapButton);
-            mapButton.Click += (o, e) =>
-            {
-                Toast.MakeText(this, "Pressed map button", ToastLength.Short).Show();
-                SetContentView(Resource.Layout.Map);
-               // SetUpMap();
-
-            };
-
-
-        }
-    
-
-
-        //Setups the ImageButton to go from a item in the list view to that items page.
-        private void SetupListView()
-        {
-            //Controlling the first image button with a click event
-            ImageButton button = FindViewById<ImageButton>(Resource.Id.test1); //Select the FIrstImage button in the list view
-            button.Click += (o, e) =>
-            {
-                Toast.MakeText(this, "Pressed test1", ToastLength.Short).Show(); //When clicked, shows a toast message on screen
-                SetContentView(Resource.Layout.LocationView);
-               // PopulateLocationPage(2);
-               // SetupBackButton();
-            };
-
-            //Add a event to the map button click, which takes the user to the map screen
-           
-
         }
     }
 }
