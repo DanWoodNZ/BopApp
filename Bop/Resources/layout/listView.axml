@@ -10,10 +10,10 @@
         p1:layout_height="70px"
         p1:id="@+id/toolbar1">
         <ImageView
-            p1:src="@drawable/boplogofancy"
+            p1:src="@drawable/bop_logo_white_block"
             p1:layout_width="100px"
             p1:layout_height="65px"
-            p1:id="@+id/imageView3"
+            p1:id="@+id/bopLogo"
             p1:layout_gravity="left"
             p1:layout_marginRight="30px" />
         <ImageView
@@ -28,7 +28,7 @@
             p1:minHeight="25px"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content"
-            p1:id="@+id/searchView1"
+            p1:id="@+id/searchView"
             p1:layout_margin="10px"
             p1:searchIcon="@android:drawable/ic_menu_search" />
     </Toolbar>
