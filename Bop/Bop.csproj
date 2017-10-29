@@ -227,7 +227,6 @@
     <AndroidResource Include="Resources\drawable\submitButton.png" />
     <AndroidResource Include="Resources\layout\signUpPopup.axml" />
     <AndroidResource Include="Resources\drawable\createAccountTitle.png" />
-    <AndroidResource Include="Resources\layout\Layout.axml" />
     <AndroidResource Include="Resources\drawable\uberlogo.png" />
   </ItemGroup>
   <ItemGroup>
