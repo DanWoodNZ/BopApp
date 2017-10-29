@@ -77,7 +77,7 @@ namespace Bop
         {
             Dialog.Window.RequestFeature(WindowFeatures.NoTitle);//removes title bar
             base.OnActivityCreated(savedInstancesState);
-        //    Dialog.Window.Attributes.WindowAnimations = Resource.Style.dialog_animation;//animation set*/
+        //    Dialog.Window.Attributes.WindowAnimations = Resource.Style.dialog_animation;//animation set
         }
-    }
+    */}
 }
