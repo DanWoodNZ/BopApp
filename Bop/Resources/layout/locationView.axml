@@ -150,7 +150,7 @@
         android:minHeight="25px"
         android:layout_gravity="bottom">
         <ImageButton
-            android:src="@drawable/uberlogo"
+            android:src="@drawable/uber"
             android:id="@+id/uberButton"
             android:layout_width="65px"
             android:layout_height="65px"

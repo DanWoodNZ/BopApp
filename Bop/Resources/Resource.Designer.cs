@@ -608,11 +608,11 @@ namespace Bop
 			// aapt resource value: 0x7f020047
 			public const int notification_icon_background = 2130837575;
 			
-			// aapt resource value: 0x7f020050
-			public const int notification_template_icon_bg = 2130837584;
+			// aapt resource value: 0x7f02004f
+			public const int notification_template_icon_bg = 2130837583;
 			
-			// aapt resource value: 0x7f020051
-			public const int notification_template_icon_low_bg = 2130837585;
+			// aapt resource value: 0x7f020050
+			public const int notification_template_icon_low_bg = 2130837584;
 			
 			// aapt resource value: 0x7f020048
 			public const int notification_tile_bg = 2130837576;
@@ -634,9 +634,6 @@ namespace Bop
 			
 			// aapt resource value: 0x7f02004e
 			public const int uber = 2130837582;
-			
-			// aapt resource value: 0x7f02004f
-			public const int uberlogo = 2130837583;
 			
 			static Drawable()
 			{

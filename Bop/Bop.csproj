@@ -150,7 +150,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomListAdapter.cs" />
     <Compile Include="DatabaseConnection.cs" />
     <Compile Include="Controllers.cs" />
     <Compile Include="Locations.cs" />

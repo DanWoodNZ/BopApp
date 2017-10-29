@@ -16,7 +16,7 @@ namespace Bop
     [Activity(Label = "Bop", MainLauncher = true)]
     public class MainActivity : Activity, IOnMapReadyCallback
     {
-        
+
         private GoogleMap GMap;
         private List<Locations> locations;
 
@@ -42,7 +42,7 @@ namespace Bop
             backButton.Click += (o, e) =>
             {
                 SetContentView(Resource.Layout.listView);
-              
+
 
             };
 
@@ -64,8 +64,8 @@ namespace Bop
             CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(new LatLng(-36.873887, 174.737457), 15);
             GMap.MoveCamera(camera);
 
-           markers = GenerateMarkers();
-           PlaceMarkers(markers);
+            markers = GenerateMarkers();
+            PlaceMarkers(markers);
         }
 
         public List<MarkerOptions> GenerateMarkers()
@@ -73,7 +73,7 @@ namespace Bop
             List<MarkerOptions> markers = new List<MarkerOptions>();
             LatLng coordinates;
 
-        
+
 
             for (int i = 0; i < locations.Count; i++)
             {
@@ -92,7 +92,7 @@ namespace Bop
             }
         }
 
-        public void RetrieveLocationData ()
+        public void RetrieveLocationData()
         {
             Task.Run(async () =>
             {
@@ -146,27 +146,19 @@ namespace Bop
             SetContentView(Resource.Layout.listView);
 
 
-            // Initializing listview
-            listView = FindViewById(Resource.Id.feedList);
-            listView.ItemClick += OnListItemClick;
-            listView.Adapter = new CusotmListAdapter(this, locations);
-           
-            
 
-            void OnListItemClick(object sender, AdapterView.ItemClickEventArgs e) {
-            Post locations = result.posts.ElementAt(e.Position);
-            
+
         }
 
-    }
+
 
         public void GetLocationView()
         {
             Console.WriteLine("LOCATL TABLE CONNECTED. Size of array is == " + locations.Count);
         }
 
-       
-        
+
+
     }
 }
 
