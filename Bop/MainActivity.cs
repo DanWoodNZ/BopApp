@@ -33,51 +33,16 @@ namespace Bop
 
 
         //Setups the the button the the LocationView to go back to the ListView
-        private void SetupBackButton()
-        {
-            ImageButton button1 = FindViewById<ImageButton>(Resource.Id.imageButton1);
-            button1.Click += (o, e) =>
-            {
-                Toast.MakeText(this, "Pressed imageButton1", ToastLength.Short).Show();
-                SetContentView(Resource.Layout.listView);
 
-                RetrieveLocationData();
 
-                SetupListView();
-            };
-        }
 
-        //Setups the ImageButton to go from a item in the list view to that items page.
-        private void SetupListView()
-        {
-            //Controlling the first image button with a click event
-            ImageButton button = FindViewById<ImageButton>(Resource.Id.test1); //Select the FIrstImage button in the list view
-            button.Click += (o, e) =>
-            {
-                Toast.MakeText(this, "Pressed test1", ToastLength.Short).Show(); //When clicked, shows a toast message on screen
-                SetContentView(Resource.Layout.locationView);
-                PopulateLocationPage(2);
-                SetupBackButton();
-            };
-
-            //Add a event to the map button click, which takes the user to the map screen
-            ImageButton mapButton = FindViewById<ImageButton>(Resource.Id.floatMapButton);
-            mapButton.Click += (o, e) =>
-            {
-                Toast.MakeText(this, "Pressed map button", ToastLength.Short).Show();
-                SetContentView(Resource.Layout.mapView);
-                SetUpMap();
-            };
-
-        }
 
         private void SetUpMap()
         {
             Button backButton = FindViewById<Button>(Resource.Id.mapBackButton);
             backButton.Click += (o, e) =>
             {
-                SetContentView(Resource.Layout.listView);
-                SetupListView();
+
 
             };
 
@@ -171,27 +136,8 @@ namespace Bop
             Console.WriteLine("retrieveLocationData");
         }
 
-        public void PopulateLocationPage(int SelectedLocation)
-        {
-            SetContentView(Resource.Layout.locationView);
 
-            TextView locationName = FindViewById<TextView>(Resource.Id.locationHeader);
-            locationName.Text = locations[SelectedLocation].LocationName;
 
-            TextView locationDescription = FindViewById<TextView>(Resource.Id.textView1);
-            locationDescription.Text = locations[SelectedLocation].LocationDescription;
-        }
-
-       //method to get images adreseses stored in the rsources/drable folder and add them to 
-       public void getImageAdresses()
-        {
-            for (int i = 0; i < locations.Count; i++)
-            {
-                string locationName = locations[i].LocationName;
-                locationName = locationName.Replace(" ", String.Empty);
-                locations[i].ImageAdresses.Add( "Resource/drawable/List" + locationName);
-            }
-        } 
 
 
         //Method to create 
@@ -209,15 +155,77 @@ namespace Bop
             locationListButtons.Add(FindViewById<ImageButton>(Resource.Id.test6));
             locationListButtons.Add(FindViewById<ImageButton>(Resource.Id.test7));
 
-           
-
             for (int i = 0; i < numberOfLocations; i++)
             {
                 locationListButtons[i].Click += (o, e) =>
                 {
-                   Toast.MakeText(this, "Pressed test", ToastLength.Short).Show(); //When clicked, shows a toast message on screen
+                    ImageButton btn = (ImageButton)o;
+
+                    int locationSelection = 0;
+
+                    switch (btn.Id)
+                    {
+                        
+                        case Resource.Id.test1:
+                            locationSelection = 1;
+                            break;
+
+                        case Resource.Id.test2:
+                            locationSelection = 2;
+                            break;
+
+                        case Resource.Id.test3:
+                            locationSelection = 3;
+                            break;
+
+                        case Resource.Id.test4:
+                            locationSelection = 4;
+                            break;
+
+                        case Resource.Id.test5:
+                            locationSelection = 5;
+                            break;
+
+                        case Resource.Id.test6:
+                            locationSelection = 6;
+                            break;
+
+                        case Resource.Id.test7:
+                            locationSelection = 7;
+                            break;
+
+                        case Resource.Id.test8:
+                            locationSelection = 8;
+                            break;
+
+                        case Resource.Id.test9:
+                            locationSelection = 9;
+                            break;  
+                    }
+
+                    GetLocationView(locationSelection);
                 };
             }
+        }
+
+        public void GetLocationView(int locationSelection)
+        {
+            locationSelection = locationSelection - 1;
+
+            SetContentView(Resource.Layout.locationView);
+
+            TextView locationAbout = FindViewById<TextView>(Resource.Id.locationViewAbout);
+            TextView locationName = FindViewById<TextView>(Resource.Id.locationViewName);
+            ImageButton backButton = FindViewById<ImageButton>(Resource.Id.locationViewBackButton);  
+          
+            locationAbout.Text = locations[locationSelection].LocationDescription;
+            locationName.Text = locations[locationSelection].LocationName;
+
+            backButton.Click += (o, e) =>
+            {
+                GetLocationListView();
+            };
+
         }
     }
 }
