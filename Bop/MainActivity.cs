@@ -19,6 +19,7 @@ namespace Bop
 
         private GoogleMap GMap;
         private List<Locations> locations;
+        private DatabaseConnection connection = new DatabaseConnection();
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -26,15 +27,10 @@ namespace Bop
             base.OnCreate(savedInstanceState);
 
             //Call to method to fill local locations with location data from Azure Database
-            RetrieveLocationData();
 
+            locations = connection.RetrieveLocationData();
             GetLocationListView();
         }
-
-
-
-
-
 
         private void SetUpMap()
         {
@@ -92,49 +88,7 @@ namespace Bop
             }
         }
 
-        public void RetrieveLocationData()
-        {
-            Task.Run(async () =>
-            {
-                // Initialization for Azure Mobile Apps
-                Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
-                // This MobileServiceClient has been configured to communicate with the Azure Mobile App and
-                // Azure Gateway using the application url. You're all set to start working with your Mobile App!
-                Microsoft.WindowsAzure.MobileServices.MobileServiceClient BopAppClient = new Microsoft.WindowsAzure.MobileServices.MobileServiceClient(
-                "https://bopapp.azurewebsites.net");
-
-                Console.WriteLine("MOBILE SERVICE CLIENT CONNECTED");
-
-                //Mobile stored version of database.
-                IMobileServiceTable<Locations> table = BopAppClient.GetTable<Locations>();
-
-                Console.WriteLine("MOBILE SERVICE TABLE CONNECTED");
-
-                try
-                {
-                    locations = await table.ToListAsync();
-
-                    Console.WriteLine("LOCATL TABLE CONNECTED. Size of array is == " + locations.Count);
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine("ERROR: " + e.Message);
-                }
-
-                Console.WriteLine($"Are we on the UI thread? {Looper.MainLooper.Thread == Looper.MyLooper()?.Thread}");
-
-                Console.WriteLine("Done fetching/calculating data");
-
-                RunOnUiThread(() =>
-                {
-                    // Update the data fetched/calculated on the UI thread;
-                    Console.WriteLine($"Are we on the UI thread? {Looper.MainLooper.Thread == Looper.MyLooper().Thread}");
-                });
-
-            }).Wait();
-
-            Console.WriteLine("retrieveLocationData");
-        }
+       
 
 
 
