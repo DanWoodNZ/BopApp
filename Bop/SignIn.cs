@@ -31,7 +31,7 @@ namespace Bop
                 FragmentTransaction transaction = FragmentManager.BeginTransaction();
                 DialogSignUp dialogSignUp = new DialogSignUp();
                 dialogSignUp.Show(transaction, "dialog fragment");
-                dialogSignUp.onSignUpComplete += signUpDialog_mOnSignUpComplete;
+                dialogSignUp.OnSignUpComplete += signUpDialog_mOnSignUpComplete;
             };
             signInButton.Click += (object sender, EventArgs args) =>
             {
