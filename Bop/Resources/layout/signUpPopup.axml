@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1"
+        android:background="#a5000000">
+        <ImageView
+            android:src="@drawable/createaccounttitle"
+            android:layout_width="500px"
+            android:layout_height="100px"
+            android:id="@+id/createAccHeader"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="50px"
+            android:layout_marginBottom="50px" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="650px"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2"
+            android:layout_gravity="center"
+            android:layout_margin="40px">
+            <TextView
+                android:text="Name:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="200px"
+                android:layout_height="match_parent"
+                android:id="@+id/nameText" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/nameField" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="650px"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout3"
+            android:layout_gravity="center"
+            android:layout_margin="40px">
+            <TextView
+                android:text="Email:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="200px"
+                android:layout_height="match_parent"
+                android:id="@+id/emailText" />
+            <EditText
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/emailField" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="650px"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout4"
+            android:layout_gravity="center"
+            android:layout_margin="40px">
+            <TextView
+                android:text="Password:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="200px"
+                android:layout_height="match_parent"
+                android:id="@+id/passwordText" />
+            <EditText
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/passwordField" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="650px"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout5"
+            android:layout_gravity="center"
+            android:layout_margin="40px">
+            <TextView
+                android:text="Re-Enter:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="200px"
+                android:layout_height="match_parent"
+                android:id="@+id/reEnterText" />
+            <EditText
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/reEnterField" />
+        </LinearLayout>
+        <ImageButton
+            android:src="@drawable/submitbutton"
+            android:layout_width="650px"
+            android:layout_height="100px"
+            android:id="@+id/submitButton"
+            android:layout_margin="60px"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:padding="0px"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+</LinearLayout>

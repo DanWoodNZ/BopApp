@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="vertical"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/linearLayout1">
+    <TextView
+        p1:text="Create Account"
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/createAccTitle"
+        p1:gravity="center"
+        p1:textStyle="bold"
+        p1:typeface="sans"
+        p1:textSize="25dp"
+        p1:layout_margin="50px" />
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/linearLayout5">
+        <TextView
+            p1:text="First Name:"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_height="match_parent"
+            p1:id="@+id/textView4"
+            p1:layout_width="250px"
+            p1:layout_margin="30px"
+            p1:gravity="right" />
+        <EditText
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:id="@+id/editText4"
+            p1:layout_weight="100"
+            p1:layout_marginRight="40px" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/linearLayout2">
+        <TextView
+            p1:text="Email:"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="250px"
+            p1:layout_height="match_parent"
+            p1:id="@+id/textView1"
+            p1:layout_margin="30px"
+            p1:gravity="right" />
+        <EditText
+            p1:inputType="textEmailAddress"
+            p1:id="@+id/editText1"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:layout_weight="100"
+            p1:layout_marginRight="40px" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/linearLayout3">
+        <TextView
+            p1:text="Password:"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="250px"
+            p1:layout_height="match_parent"
+            p1:id="@+id/textView2"
+            p1:layout_margin="30px"
+            p1:gravity="right" />
+        <EditText
+            p1:inputType="textPassword"
+            p1:id="@+id/editText2"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:layout_gravity="right"
+            p1:layout_weight="100"
+            p1:layout_marginRight="40px" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/linearLayout4">
+        <TextView
+            p1:text="Re-Enter Password"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="250px"
+            p1:layout_height="match_parent"
+            p1:id="@+id/textView3"
+            p1:layout_margin="30px"
+            p1:gravity="right" />
+        <EditText
+            p1:inputType="textPassword"
+            p1:id="@+id/editText3"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:layout_weight="100"
+            p1:layout_marginRight="40px" />
+    </LinearLayout>
+    <ImageButton
+        p1:src="@drawable/submitbutton"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/imageButton1"
+        p1:scaleType="fitCenter" />
+</LinearLayout>
