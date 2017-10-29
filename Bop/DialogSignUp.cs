@@ -42,24 +42,25 @@ namespace Bop
     }
     class DialogSignUp : DialogFragment
     {
-        private EditText mTxtFirstName;
-        private EditText mTxtEmail;
-        private EditText mTxtPassword;
+        private EditText nameField;
+        private EditText emailField;
+        private EditText passwordField;
+        private EditText reEnterField;
         private Button mBtnSignUp;
 
         public event EventHandler<OnSignUpEventArgs> onSignUpComplete;
-
+/*
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             base.OnCreateView(inflater, container, savedInstanceState);
             //View view = new View(null); //Add this code to return a view and to get the code to compile.
 
-           // var view = inflater.Inflate(Resource.Layout.dialog_sign_up, container, false);
+           var view = inflater.Inflate(Resource.Layout.SignUpPopup, container, false);
 
-           // mTxtFirstName = view.FindViewById<EditText>(Resource.Id.txtFirstName);
-          //  mTxtEmail = view.FindViewById<EditText>(Resource.Id.txtEmail);
-           // mTxtPassword = view.FindViewById<EditText>(Resource.Id.txtPassword);
-          //  mBtnSignUp = view.FindViewById<Button>(Resource.Id.btnDialogEmail);
+            nameField = view.FindViewById<EditText>(Resource.Id.nameField);
+            emailField = view.FindViewById<EditText>(Resource.Id.emailField);
+            passwordField = view.FindViewById<EditText>(Resource.Id.passwordField);
+            mBtnSignUp = view.FindViewById<Button>(Resource.Id.btnDialogEmail);
 
             mBtnSignUp.Click += mBtnSignUp_Click;
 
@@ -76,7 +77,7 @@ namespace Bop
         {
             Dialog.Window.RequestFeature(WindowFeatures.NoTitle);//removes title bar
             base.OnActivityCreated(savedInstancesState);
-        //    Dialog.Window.Attributes.WindowAnimations = Resource.Style.dialog_animation;//animation set
+        //    Dialog.Window.Attributes.WindowAnimations = Resource.Style.dialog_animation;//animation set*/
         }
     }
 }
