@@ -611,11 +611,11 @@ namespace Bop
 			// aapt resource value: 0x7f020048
 			public const int notification_icon_background = 2130837576;
 			
-			// aapt resource value: 0x7f020051
-			public const int notification_template_icon_bg = 2130837585;
+			// aapt resource value: 0x7f020050
+			public const int notification_template_icon_bg = 2130837584;
 			
-			// aapt resource value: 0x7f020052
-			public const int notification_template_icon_low_bg = 2130837586;
+			// aapt resource value: 0x7f020051
+			public const int notification_template_icon_low_bg = 2130837585;
 			
 			// aapt resource value: 0x7f020049
 			public const int notification_tile_bg = 2130837577;
@@ -637,9 +637,6 @@ namespace Bop
 			
 			// aapt resource value: 0x7f02004f
 			public const int uberlogo = 2130837583;
-			
-			// aapt resource value: 0x7f020050
-			public const int uberlogosmall = 2130837584;
 			
 			static Drawable()
 			{
@@ -798,31 +795,17 @@ namespace Bop
 			// aapt resource value: 0x7f0d002c
 			public const int linearLayout2 = 2131558444;
 			
+			// aapt resource value: 0x7f0d0055
+			public const int linearLayout3 = 2131558485;
+			
 			// aapt resource value: 0x7f0d0056
-			public const int linearLayout3 = 2131558486;
+			public const int linearLayout4 = 2131558486;
 			
-<<<<<<< HEAD
-			// aapt resource value: 0x7f0d005d
-			public const int linearLayout3 = 2131558493;
-			
-			// aapt resource value: 0x7f0d005e
-			public const int linearLayout4 = 2131558494;
-			
-			// aapt resource value: 0x7f0d0060
-			public const int linearLayout5 = 2131558496;
-=======
-			// aapt resource value: 0x7f0d0057
-			public const int linearLayout4 = 2131558487;
-			
-			// aapt resource value: 0x7f0d0059
-			public const int linearLayout5 = 2131558489;
+			// aapt resource value: 0x7f0d0058
+			public const int linearLayout5 = 2131558488;
 			
 			// aapt resource value: 0x7f0d001e
 			public const int listView1 = 2131558430;
-			
-			// aapt resource value: 0x7f0d0029
-			public const int locationHeader = 2131558441;
->>>>>>> f7cc754... Updated to a listview in listview.xml
 			
 			// aapt resource value: 0x7f0d002a
 			public const int locationSubheader = 2131558442;
@@ -836,19 +819,11 @@ namespace Bop
 			// aapt resource value: 0x7f0d003c
 			public const int media_actions = 2131558460;
 			
-<<<<<<< HEAD
-			// aapt resource value: 0x7f0d005c
-			public const int nameField = 2131558492;
-			
-			// aapt resource value: 0x7f0d0032
-			public const int nameText = 2131558450;
-=======
-			// aapt resource value: 0x7f0d0055
-			public const int nameField = 2131558485;
-			
 			// aapt resource value: 0x7f0d0054
-			public const int nameText = 2131558484;
->>>>>>> f7cc754... Updated to a listview in listview.xml
+			public const int nameField = 2131558484;
+			
+			// aapt resource value: 0x7f0d0029
+			public const int nameText = 2131558441;
 			
 			// aapt resource value: 0x7f0d0022
 			public const int natureButton = 2131558434;
@@ -871,13 +846,8 @@ namespace Bop
 			// aapt resource value: 0x7f0d004c
 			public const int passwordField = 2131558476;
 			
-<<<<<<< HEAD
-			// aapt resource value: 0x7f0d005f
-			public const int passwordText = 2131558495;
-=======
-			// aapt resource value: 0x7f0d0058
-			public const int passwordText = 2131558488;
->>>>>>> f7cc754... Updated to a listview in listview.xml
+			// aapt resource value: 0x7f0d0057
+			public const int passwordText = 2131558487;
 			
 			// aapt resource value: 0x7f0d0030
 			public const int phoneText = 2131558448;
@@ -885,19 +855,11 @@ namespace Bop
 			// aapt resource value: 0x7f0d0026
 			public const int profileButton = 2131558438;
 			
-<<<<<<< HEAD
-			// aapt resource value: 0x7f0d0062
-			public const int reEnterField = 2131558498;
-			
-			// aapt resource value: 0x7f0d0061
-			public const int reEnterText = 2131558497;
-=======
-			// aapt resource value: 0x7f0d005b
-			public const int reEnterField = 2131558491;
-			
 			// aapt resource value: 0x7f0d005a
-			public const int reEnterText = 2131558490;
->>>>>>> f7cc754... Updated to a listview in listview.xml
+			public const int reEnterField = 2131558490;
+			
+			// aapt resource value: 0x7f0d0059
+			public const int reEnterText = 2131558489;
 			
 			// aapt resource value: 0x7f0d001c
 			public const int relativeLayout1 = 2131558428;
@@ -932,13 +894,8 @@ namespace Bop
 			// aapt resource value: 0x7f0d003b
 			public const int status_bar_latest_event_content = 2131558459;
 			
-<<<<<<< HEAD
-			// aapt resource value: 0x7f0d0063
-			public const int submitButton = 2131558499;
-=======
-			// aapt resource value: 0x7f0d005c
-			public const int submitButton = 2131558492;
->>>>>>> f7cc754... Updated to a listview in listview.xml
+			// aapt resource value: 0x7f0d005b
+			public const int submitButton = 2131558491;
 			
 			// aapt resource value: 0x7f0d0009
 			public const int terrain = 2131558409;
