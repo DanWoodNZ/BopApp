@@ -14,30 +14,30 @@ namespace Bop
 {
     public class OnSignUpEventArgs : EventArgs
     {
-        private string mFirstName;
-        private string mEmail;
-        private string mPassword;
+        private string txtUserName;
+        private string txtEmail;
+        private string txtPassword;
 
-        public string FirstName
+        public string UserName
         {
-            get { return mFirstName;}
-            set { mFirstName = value; }
+            get { return txtUserName; }
+            set { txtUserName = value; }
         }
         public string Email
         {
-            get { return mEmail; }
-            set { mEmail = value;  }
+            get { return txtEmail; }
+            set { txtEmail = value;  }
         }
         public string Password
         {
-            get { return mPassword;}
-            set { mPassword = value; }
+            get { return txtPassword;}
+            set { txtPassword = value; }
         }
-        public OnSignUpEventArgs(string firstName, string email, string password)
+        public OnSignUpEventArgs(string txtUserName, string email, string password)
         {
-            FirstName = firstName;
-            Email = email;
-            Password = password;
+            UserName = txtUserName;
+            Email = txtEmail;
+            Password = txtPassword;
         }
     }
     class DialogSignUp : DialogFragment
@@ -46,10 +46,10 @@ namespace Bop
         private EditText emailField;
         private EditText passwordField;
         private EditText reEnterField;
-        private Button mBtnSignUp;
+        private ImageButton submitButton;
 
-        public event EventHandler<OnSignUpEventArgs> onSignUpComplete;
-/*
+        public event EventHandler<OnSignUpEventArgs> OnSignUpComplete;
+
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             base.OnCreateView(inflater, container, savedInstanceState);
@@ -60,24 +60,24 @@ namespace Bop
             nameField = view.FindViewById<EditText>(Resource.Id.nameField);
             emailField = view.FindViewById<EditText>(Resource.Id.emailField);
             passwordField = view.FindViewById<EditText>(Resource.Id.passwordField);
-            mBtnSignUp = view.FindViewById<Button>(Resource.Id.btnDialogEmail);
+            submitButton = view.FindViewById<ImageButton>(Resource.Id.submitButton);
 
-            mBtnSignUp.Click += mBtnSignUp_Click;
+            submitButton.Click += submitButton_Click;
 
            return view;
         }
 
-        void mBtnSignUp_Click(object sender, EventArgs e)
+        void submitButton_Click(object sender, EventArgs e)
         {
             //user has clicked the sign up button
-            onSignUpComplete.Invoke(this, new OnSignUpEventArgs(mTxtFirstName.Text, mTxtEmail.Text, mTxtPassword.Text));
+            OnSignUpComplete.Invoke(this, new OnSignUpEventArgs(nameField.Text, emailField.Text, passwordField.Text));
             this.Dismiss();
         }
         public override void OnActivityCreated(Bundle savedInstancesState)
         {
             Dialog.Window.RequestFeature(WindowFeatures.NoTitle);//removes title bar
             base.OnActivityCreated(savedInstancesState);
-        //    Dialog.Window.Attributes.WindowAnimations = Resource.Style.dialog_animation;//animation set
+            Dialog.Window.Attributes.WindowAnimations = Resource.Style.popUpAnimations;//animation set
         }
-    */}
+    }
 }

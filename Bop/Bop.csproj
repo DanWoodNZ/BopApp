@@ -266,7 +266,9 @@
   <ItemGroup>
     <Folder Include="controller\" />
     <Folder Include="model\" />
-    <Folder Include="Resources\Style\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\styles\popUpAnimations.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
