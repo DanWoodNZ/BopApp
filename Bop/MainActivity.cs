@@ -16,18 +16,19 @@ namespace Bop
     [Activity(Label = "Bop", MainLauncher = true)]
     public class MainActivity : Activity, IOnMapReadyCallback
     {
+        
         private GoogleMap GMap;
         private List<Locations> locations;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            RetrieveLocationData();
             RequestWindowFeature(Android.Views.WindowFeatures.NoTitle);
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.ListView);
 
-            SetupListView();
+            //Call to method to fill local locations with location data from Azure Database
+            RetrieveLocationData();
 
-            
+            GetLocationListView();
         }
 
 
@@ -45,7 +46,6 @@ namespace Bop
                 SetupListView();
             };
         }
-
 
         //Setups the ImageButton to go from a item in the list view to that items page.
         private void SetupListView()
@@ -134,16 +134,15 @@ namespace Bop
             {
                 // Initialization for Azure Mobile Apps
                 Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
-
                 // This MobileServiceClient has been configured to communicate with the Azure Mobile App and
                 // Azure Gateway using the application url. You're all set to start working with your Mobile App!
-                MobileServiceClient testbopClient = new MobileServiceClient(
-                "https://testbop.azurewebsites.net");
+                Microsoft.WindowsAzure.MobileServices.MobileServiceClient BopAppClient = new Microsoft.WindowsAzure.MobileServices.MobileServiceClient(
+                "https://bopapp.azurewebsites.net");
 
                 Console.WriteLine("MOBILE SERVICE CLIENT CONNECTED");
 
                 //Mobile stored version of database.
-                IMobileServiceTable<Locations> table = testbopClient.GetTable<Locations>();
+                IMobileServiceTable<Locations> table = BopAppClient.GetTable<Locations>();
 
                 Console.WriteLine("MOBILE SERVICE TABLE CONNECTED");
 
@@ -194,6 +193,31 @@ namespace Bop
                 locations[i].ImageAdresses.Add( "Resource/drawable/List" + locationName);
             }
         } 
+
+        public void GetLocationListView()
+        {
+            SetContentView(Resource.Layout.ListView);
+            int numberOfLocations = 7;
+            List<ImageButton> locationListButtons= new List<ImageButton>();
+        
+            locationListButtons.Add(FindViewById<ImageButton>(2131558439));
+            locationListButtons.Add(FindViewById<ImageButton>(2131558440));
+            locationListButtons.Add(FindViewById<ImageButton>(2131558441));
+            locationListButtons.Add(FindViewById<ImageButton>(2131558442));
+            locationListButtons.Add(FindViewById<ImageButton>(2131558443));
+            locationListButtons.Add(FindViewById<ImageButton>(2131558444));
+            locationListButtons.Add(FindViewById<ImageButton>(2131558445));
+
+           
+
+            for (int i = 0; i < numberOfLocations; i++)
+            {
+                locationListButtons[i].Click += (o, e) =>
+                {
+                   Toast.MakeText(this, "Pressed test", ToastLength.Short).Show(); //When clicked, shows a toast message on screen
+                };
+            }
+        }
     }
 }
 

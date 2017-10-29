@@ -24,17 +24,20 @@ namespace Bop
         [JsonProperty("locationName")]
         public string LocationName { get; set; }
 
+        [JsonProperty("locationAddress")]
+        public string LocationAddress { get; set; }
+
+        [JsonProperty("locationPhone")]
+        public string LocationPhone { get; set; }
+
+        [JsonProperty("locationWebsite")]
+        public string LocationWebsite { get; set; }
+
         [JsonProperty("locationDescription")]
         public string LocationDescription { get; set; }
 
         [JsonProperty("locationType")]
         public string LocationType { get; set; }
-
-        [JsonProperty("locationPrice")]
-        public int LocationPrice { get; set; }
-
-        [JsonProperty("locationRating")]
-        public int LocationRating { get; set; }
 
         [JsonProperty("locationPoints")]
         public int LocationPoints { get; set; }
