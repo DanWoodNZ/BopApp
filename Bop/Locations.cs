@@ -48,7 +48,8 @@ namespace Bop
         [JsonProperty("locationY")]
         public double LocationY { get; set; }
 
-        public ArrayList ImageAdresses { get; set; }
+        [JsonProperty("listImageUrl")]
+        public string ListImageUrl { get; set; }
 
         public Locations()
         {
