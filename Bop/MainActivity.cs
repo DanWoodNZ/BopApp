@@ -146,10 +146,7 @@ namespace Bop
             SetContentView(Resource.Layout.listView);
             int numberOfLocations = 7;
             List<ImageButton> locationListButtons= new List<ImageButton>();
-            
 
-
-           
 
             for (int i = 0; i < numberOfLocations; i++)
             {
