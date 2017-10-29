@@ -157,9 +157,12 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="view\DialogSignIn.cs" />
+    <Compile Include="view\DialogSignUp.cs" />
+    <Compile Include="view\SignIn.cs" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\Map.axml">
+    <AndroidResource Include="Resources\layout\mapView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\raw\style_json.json" />
@@ -175,8 +178,8 @@
     </None>
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Resources\AboutResources.txt" />
-    <AndroidResource Include="Resources\layout\ListView.axml" />
-    <AndroidResource Include="Resources\layout\LocationView.axml" />
+    <AndroidResource Include="Resources\layout\listView.axml" />
+    <AndroidResource Include="Resources\layout\locationView.axml" />
     <AndroidResource Include="Resources\drawable\citizenpark.jpg" />
     <AndroidResource Include="Resources\drawable\ListAucklandBungy.png" />
     <AndroidResource Include="Resources\drawable\ListAucklandZoo.png" />
@@ -192,12 +195,40 @@
     <AndroidResource Include="Resources\drawable\IconUser.png" />
     <AndroidResource Include="Resources\drawable\IconSettingsGrey.png" />
     <AndroidResource Include="Resources\drawable\IconUserGrey.png" />
-    <AndroidResource Include="Resources\drawable\BopLogo.png" />
-    <AndroidResource Include="Resources\drawable\BopLogoFancy.png" />
     <AndroidResource Include="Resources\drawable\uberlogosmall.png" />
-    <AndroidResource Include="Resources\layout\dialog_sign_in.axml" />
-    <AndroidResource Include="Resources\layout\dialog_sign_up.axml" />
-    <AndroidResource Include="Resources\layout\frontView.axml" />
+    <AndroidResource Include="Resources\layout\sign_in_popup.axml" />
+    <AndroidResource Include="Resources\layout\sign_up_popup.axml" />
+    <AndroidResource Include="Resources\drawable\ListAucklandBridge.png" />
+    <AndroidResource Include="Resources\drawable\ListAucklandMuseum.png" />
+    <AndroidResource Include="Resources\drawable\ListCocos.png" />
+    <AndroidResource Include="Resources\drawable\ListFedDeli.png" />
+    <AndroidResource Include="Resources\drawable\ListHunuaFalls.png" />
+    <AndroidResource Include="Resources\drawable\ListKarekareFalls.png" />
+    <AndroidResource Include="Resources\drawable\ListKellyTarltons.png" />
+    <AndroidResource Include="Resources\drawable\ListKitekiteFalls.png" />
+    <AndroidResource Include="Resources\drawable\ListLaZeppa.png" />
+    <AndroidResource Include="Resources\drawable\ListMissionBay.png" />
+    <AndroidResource Include="Resources\drawable\ListMotat.png" />
+    <AndroidResource Include="Resources\drawable\ListMtEden.png" />
+    <AndroidResource Include="Resources\drawable\ListOneTreeHill.png" />
+    <AndroidResource Include="Resources\drawable\ListOrphansKitchen.png" />
+    <AndroidResource Include="Resources\drawable\ListParnellGardens.png" />
+    <AndroidResource Include="Resources\drawable\ListPiha.png" />
+    <AndroidResource Include="Resources\drawable\ListPiha2.png" />
+    <AndroidResource Include="Resources\drawable\ListRangitotoIsland.png" />
+    <AndroidResource Include="Resources\drawable\ListSwashbucklers.png" />
+    <AndroidResource Include="Resources\drawable\ListViewLocation.psd" />
+    <AndroidResource Include="Resources\drawable\ListWaiheke.png" />
+    <AndroidResource Include="Resources\drawable\button_obround.png" />
+    <AndroidResource Include="Resources\drawable\skytowerBlurred.png" />
+    <AndroidResource Include="Resources\drawable\Bop_Logo_Black_Block.png" />
+    <AndroidResource Include="Resources\drawable\Bop_Logo_Black.png" />
+    <AndroidResource Include="Resources\drawable\Bop_Logo_White_Block.png" />
+    <AndroidResource Include="Resources\drawable\Bop_Logo_White.png" />
+    <AndroidResource Include="Resources\drawable\facebookButton.png" />
+    <AndroidResource Include="Resources\drawable\signinButton.png" />
+    <AndroidResource Include="Resources\layout\loginView.axml" />
+    <AndroidResource Include="Resources\drawable\signupText.png" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="googleplayservices-location">
@@ -228,19 +259,15 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ButtonSignInStyle.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ButtonSignUpStyle.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\edit_text_style.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\anim\slideRight.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\anim\slideUp.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="controller\" />
+    <Folder Include="model\" />
+    <Folder Include="Resources\Style\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

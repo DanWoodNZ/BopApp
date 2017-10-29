@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:id="@+id/mainHeader"
+        android:background="@drawable/citizenpark"
+        android:layout_height="500px">
+        <ImageButton
+            android:src="@drawable/iconbackarrow"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:id="@+id/imageButton1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_gravity="left"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="20px" />
+        <TextView
+            android:text="CITIZEN PARK"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationHeader"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_marginTop="50px"
+            android:layout_centerInParent="true" />
+        <TextView
+            android:text="Kingsland"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationSubheader"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:layout_below="@id/locationHeader" />
+        <ImageButton
+            android:src="@drawable/iconheart"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:id="@+id/imageButton2"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_gravity="top"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20px" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:background="@android:color/white"
+        android:layout_weight="100">
+        <TextView
+            android:text="ABOUT"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginBottom="10px" />
+        <TextView
+            android:text="This is where the body of information about the location will go. Here we can talk all we want about the location, how great it is and why we decided to include it within our app."
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginBottom="20px"
+            android:textSize="12dp" />
+        <TextView
+            android:text="CONTACT"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="20px"
+            android:layout_marginRight="50px"
+            android:layout_marginBottom="20px" />
+        <TextView
+            android:text="Phone: 022 123 1231"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:textSize="12dp" />
+        <TextView
+            android:text="Hours: 10am - 10pm"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:textSize="12dp" />
+        <TextView
+            android:text="Email: info@citizenpark.co.nz"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:textSize="12dp" />
+    </LinearLayout>
+    <Toolbar
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:id="@+id/toolbar1"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <ImageButton
+            android:src="@drawable/uberlogosmall"
+            android:id="@+id/imageButton3"
+            android:layout_width="300px"
+            android:layout_height="65px"
+            android:layout_gravity="left"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="35px"
+            android:layout_marginLeft="35px" />
+    </Toolbar>
+</LinearLayout>
