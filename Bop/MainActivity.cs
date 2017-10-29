@@ -159,8 +159,11 @@ namespace Bop
 
         public void GetLocationView()
         {
-
+            Console.WriteLine("LOCATL TABLE CONNECTED. Size of array is == " + locations.Count);
         }
+
+       
+        
     }
 }
 
