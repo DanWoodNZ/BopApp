@@ -39,7 +39,7 @@ namespace Bop
             button1.Click += (o, e) =>
             {
                 Toast.MakeText(this, "Pressed imageButton1", ToastLength.Short).Show();
-                SetContentView(Resource.Layout.ListView);
+                SetContentView(Resource.Layout.listView);
 
                 RetrieveLocationData();
 
@@ -55,7 +55,7 @@ namespace Bop
             button.Click += (o, e) =>
             {
                 Toast.MakeText(this, "Pressed test1", ToastLength.Short).Show(); //When clicked, shows a toast message on screen
-                SetContentView(Resource.Layout.LocationView);
+                SetContentView(Resource.Layout.locationView);
                 PopulateLocationPage(2);
                 SetupBackButton();
             };
@@ -65,9 +65,8 @@ namespace Bop
             mapButton.Click += (o, e) =>
             {
                 Toast.MakeText(this, "Pressed map button", ToastLength.Short).Show();
-                SetContentView(Resource.Layout.Map);
+                SetContentView(Resource.Layout.mapView);
                 SetUpMap();
-
             };
 
         }
@@ -77,7 +76,7 @@ namespace Bop
             Button backButton = FindViewById<Button>(Resource.Id.mapBackButton);
             backButton.Click += (o, e) =>
             {
-                SetContentView(Resource.Layout.ListView);
+                SetContentView(Resource.Layout.listView);
                 SetupListView();
 
             };
@@ -174,7 +173,7 @@ namespace Bop
 
         public void PopulateLocationPage(int SelectedLocation)
         {
-            SetContentView(Resource.Layout.LocationView);
+            SetContentView(Resource.Layout.locationView);
 
             TextView locationName = FindViewById<TextView>(Resource.Id.locationHeader);
             locationName.Text = locations[SelectedLocation].LocationName;
@@ -194,19 +193,21 @@ namespace Bop
             }
         } 
 
+
+        //Method to create 
         public void GetLocationListView()
         {
-            SetContentView(Resource.Layout.ListView);
+            SetContentView(Resource.Layout.listView);
             int numberOfLocations = 7;
             List<ImageButton> locationListButtons= new List<ImageButton>();
-        
-            locationListButtons.Add(FindViewById<ImageButton>(2131558439));
-            locationListButtons.Add(FindViewById<ImageButton>(2131558440));
-            locationListButtons.Add(FindViewById<ImageButton>(2131558441));
-            locationListButtons.Add(FindViewById<ImageButton>(2131558442));
-            locationListButtons.Add(FindViewById<ImageButton>(2131558443));
-            locationListButtons.Add(FindViewById<ImageButton>(2131558444));
-            locationListButtons.Add(FindViewById<ImageButton>(2131558445));
+            
+            locationListButtons.Add(FindViewById<ImageButton>(Resource.Id.test1));
+            locationListButtons.Add(FindViewById<ImageButton>(Resource.Id.test2));
+            locationListButtons.Add(FindViewById<ImageButton>(Resource.Id.test3));
+            locationListButtons.Add(FindViewById<ImageButton>(Resource.Id.test4));
+            locationListButtons.Add(FindViewById<ImageButton>(Resource.Id.test5));
+            locationListButtons.Add(FindViewById<ImageButton>(Resource.Id.test6));
+            locationListButtons.Add(FindViewById<ImageButton>(Resource.Id.test7));
 
            
 

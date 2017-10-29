@@ -52,17 +52,18 @@ namespace BopApp
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             base.OnCreateView(inflater, container, savedInstanceState);
+            View view = new View(null); //Add this code to retrun a view and to get the code to compile.
 
-            var view = inflater.Inflate(Resource.Layout.dialog_sign_up, container, false);
+        //    var view = inflater.Inflate(Resource.Layout.dialog_sign_up, container, false);
 
-            mTxtFirstName = view.FindViewById<EditText>(Resource.Id.txtFirstName);
-            mTxtEmail = view.FindViewById<EditText>(Resource.Id.txtEmail);
-            mTxtPassword = view.FindViewById<EditText>(Resource.Id.txtPassword);
-            mBtnSignUp = view.FindViewById<Button>(Resource.Id.btnDialogEmail);
+           // mTxtFirstName = view.FindViewById<EditText>(Resource.Id.txtFirstName);
+          //  mTxtEmail = view.FindViewById<EditText>(Resource.Id.txtEmail);
+           // mTxtPassword = view.FindViewById<EditText>(Resource.Id.txtPassword);
+          //  mBtnSignUp = view.FindViewById<Button>(Resource.Id.btnDialogEmail);
 
             mBtnSignUp.Click += mBtnSignUp_Click;
 
-            return view;
+           return view;
         }
 
         void mBtnSignUp_Click(object sender, EventArgs e)
@@ -75,7 +76,7 @@ namespace BopApp
         {
             Dialog.Window.RequestFeature(WindowFeatures.NoTitle);//removes title bar
             base.OnActivityCreated(savedInstancesState);
-            Dialog.Window.Attributes.WindowAnimations = Resource.Style.dialog_animation;//animation set
+        //    Dialog.Window.Attributes.WindowAnimations = Resource.Style.dialog_animation;//animation set
         }
     }
 }

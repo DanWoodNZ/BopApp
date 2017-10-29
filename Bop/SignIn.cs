@@ -18,18 +18,17 @@ namespace Bop
         {
             base.OnCreate(bundle);
             // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.);
-            SetContentView()
+            //SetContentView();
 
-            mBtnSignUp = FindViewById<Button>(Resource.Id.btnSignUp);
-            mBtnSignIn = FindViewById<Button>(Resource.Id.btnSignIn);
-            mBtnSignUp.Click += (object sender, EventArgs args) =>
+            //mBtnSignUp = FindViewById<Button>(Resource.Id.btnSignUp);
+           // mBtnSignIn = FindViewById<Button>(Resource.Id.btnSignIn);
+            //mBtnSignUp.Click += (object sender, EventArgs args) =>
             {
                 //Pull up dialog
                 FragmentTransaction transaction = FragmentManager.BeginTransaction();
-                DialogSignUp dialogSignUp = new DialogSignUp();
-                dialogSignUp.Show(transaction, "dialog fragment");
-                dialogSignUp.mOnSignUpComplete += signUpDialog_mOnSignUpComplete;
+             //  DialogSignUp dialogSignUp = new DialogSignUp();
+               // dialogSignUp.Show(transaction, "dialog fragment");
+              //  dialogSignUp.mOnSignUpComplete += signUpDialog_mOnSignUpComplete;
             };
             mBtnSignIn.Click += (object sender, EventArgs args) =>
             {
@@ -42,12 +41,14 @@ namespace Bop
             };
             
         }
-        void signUpDialog_mOnSignUpComplete(object sender, OnSignUpEventArgs e)
-        {
+
+
+        //void signUpDialog_mOnSignUpComplete(object sender, OnSignUpEventArgs e)
+        //{
           
             
             //throw new NotImplementedException();
-        }
+       // }
 
    }
 }
