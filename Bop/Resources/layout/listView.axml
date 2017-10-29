@@ -52,7 +52,7 @@
                 p1:id="@+id/listView1" />
         </ScrollView>
         <ImageButton
-            p1:src="@drawable/common_google_signin_btn_icon_light_normal"
+            p1:src="@android:drawable/ic_dialog_map"
             p1:layout_width="120px"
             p1:layout_height="120px"
             p1:id="@+id/floatMapButton"

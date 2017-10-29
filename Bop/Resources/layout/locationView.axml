@@ -5,56 +5,6 @@
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px">
-    <RelativeLayout
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="match_parent"
-        android:id="@+id/mainHeader"
-        android:background="@drawable/citizenpark"
-        android:layout_height="500px">
-        <ImageButton
-            android:src="@drawable/iconbackarrow"
-            android:layout_width="40px"
-            android:layout_height="40px"
-            android:id="@+id/backButton"
-            android:background="@android:color/transparent"
-            android:scaleType="fitCenter"
-            android:layout_gravity="left"
-            android:layout_alignParentLeft="true"
-            android:layout_margin="20px" />
-        <TextView
-            android:text="CITIZEN PARK"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/nameText"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
-            android:textSize="30dp"
-            android:gravity="center"
-            android:layout_marginTop="50px"
-            android:layout_centerInParent="true" />
-        <TextView
-            android:text="Kingsland"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/locationSubheader"
-            android:gravity="center"
-            android:textColor="@android:color/white"
-            android:textSize="20dp"
-            android:layout_below="@id/nameText" />
-        <ImageButton
-            android:src="@drawable/iconheart"
-            android:layout_width="40px"
-            android:layout_height="40px"
-            android:id="@+id/favouriteButton"
-            android:background="@android:color/transparent"
-            android:scaleType="fitCenter"
-            android:layout_gravity="top"
-            android:layout_alignParentRight="true"
-            android:layout_margin="20px" />
-    </RelativeLayout>
     <LinearLayout
         android:orientation="vertical"
         android:minWidth="25px"
@@ -64,6 +14,61 @@
         android:id="@+id/linearLayout2"
         android:background="@android:color/white"
         android:layout_weight="100">
+        <RelativeLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:id="@+id/relativeLayout1">
+            <ImageView
+                android:src="@drawable/citizenpark"
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop" />
+            <ImageButton
+                android:src="@drawable/iconbackarrow"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:id="@+id/backButton"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:layout_gravity="left"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="20px" />
+            <ImageButton
+                android:src="@drawable/iconheart"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:id="@+id/favouriteButton"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:layout_gravity="top"
+                android:layout_alignParentRight="true"
+                android:layout_margin="20px" />
+            <TextView
+                android:text="CITIZEN PARK"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nameText"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_marginTop="50px"
+                android:layout_centerInParent="true" />
+            <TextView
+                android:text="Kingsland"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/locationSubheader"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_below="@id/nameText" />
+        </RelativeLayout>
         <TextView
             android:text="ABOUT"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -143,7 +148,7 @@
         android:id="@+id/toolbar1"
         android:minWidth="25px"
         android:minHeight="25px"
-        android:layout_weight="100">
+        android:layout_gravity="bottom">
         <ImageButton
             android:src="@drawable/uberlogo"
             android:id="@+id/uberButton"
@@ -152,6 +157,7 @@
             android:layout_gravity="right"
             android:background="@android:color/transparent"
             android:scaleType="centerCrop"
-            android:layout_marginRight="20px" />
+            android:layout_marginRight="20px"
+            android:layout_marginBottom="20px" />
     </Toolbar>
 </LinearLayout>
