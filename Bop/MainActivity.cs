@@ -41,7 +41,7 @@ namespace Bop
             Button backButton = FindViewById<Button>(Resource.Id.mapBackButton);
             backButton.Click += (o, e) =>
             {
-                SetContentView(Resource.Layout.listView);
+               
 
 
             };
@@ -143,10 +143,6 @@ namespace Bop
         //Method to create 
         public void GetLocationListView()
         {
-            SetContentView(Resource.Layout.listView);
-
-
-
 
         }
 
