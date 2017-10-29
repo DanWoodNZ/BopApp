@@ -34,8 +34,8 @@ namespace Bop
             {
                 //Pull up dialog
                 FragmentTransaction transaction = FragmentManager.BeginTransaction();
-                DialogSignIn dialogSignIn = new DialogSignIn();
-                dialogSignIn.Show(transaction, "dialog fragment");
+            //    DialogSignIn dialogSignIn = new DialogSignIn();
+              //  dialogSignIn.Show(transaction, "dialog fragment");
 
                 
             };

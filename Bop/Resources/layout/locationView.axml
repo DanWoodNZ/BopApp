@@ -27,7 +27,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/locationHeader"
+            android:id="@+id/nameText"
             android:textColor="@android:color/white"
             android:textStyle="bold"
             android:textSize="30dp"
@@ -43,7 +43,7 @@
             android:gravity="center"
             android:textColor="@android:color/white"
             android:textSize="20dp"
-            android:layout_below="@id/locationHeader" />
+            android:layout_below="@id/nameText" />
         <ImageButton
             android:src="@drawable/iconheart"
             android:layout_width="40px"

@@ -214,9 +214,9 @@ namespace Bop
 
             SetContentView(Resource.Layout.locationView);
 
-            TextView locationAbout = FindViewById<TextView>(Resource.Id.locationViewAbout);
-            TextView locationName = FindViewById<TextView>(Resource.Id.locationViewName);
-            ImageButton backButton = FindViewById<ImageButton>(Resource.Id.locationViewBackButton);  
+            TextView locationAbout = FindViewById<TextView>(Resource.Id.aboutText);
+            TextView locationName = FindViewById<TextView>(Resource.Id.nameText);
+            ImageButton backButton = FindViewById<ImageButton>(Resource.Id.backButton);  
           
             locationAbout.Text = locations[locationSelection].LocationDescription;
             locationName.Text = locations[locationSelection].LocationName;

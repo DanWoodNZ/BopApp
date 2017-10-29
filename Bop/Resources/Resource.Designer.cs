@@ -795,17 +795,14 @@ namespace Bop
 			// aapt resource value: 0x7f0d001e
 			public const int linearLayout2 = 2131558430;
 			
+			// aapt resource value: 0x7f0d005d
+			public const int linearLayout3 = 2131558493;
+			
 			// aapt resource value: 0x7f0d005e
-			public const int linearLayout3 = 2131558494;
+			public const int linearLayout4 = 2131558494;
 			
-			// aapt resource value: 0x7f0d005f
-			public const int linearLayout4 = 2131558495;
-			
-			// aapt resource value: 0x7f0d0061
-			public const int linearLayout5 = 2131558497;
-			
-			// aapt resource value: 0x7f0d0032
-			public const int locationHeader = 2131558450;
+			// aapt resource value: 0x7f0d0060
+			public const int linearLayout5 = 2131558496;
 			
 			// aapt resource value: 0x7f0d0033
 			public const int locationSubheader = 2131558451;
@@ -819,11 +816,11 @@ namespace Bop
 			// aapt resource value: 0x7f0d0044
 			public const int media_actions = 2131558468;
 			
-			// aapt resource value: 0x7f0d005d
-			public const int nameField = 2131558493;
-			
 			// aapt resource value: 0x7f0d005c
-			public const int nameText = 2131558492;
+			public const int nameField = 2131558492;
+			
+			// aapt resource value: 0x7f0d0032
+			public const int nameText = 2131558450;
 			
 			// aapt resource value: 0x7f0d002b
 			public const int natureButton = 2131558443;
@@ -846,8 +843,8 @@ namespace Bop
 			// aapt resource value: 0x7f0d0054
 			public const int passwordField = 2131558484;
 			
-			// aapt resource value: 0x7f0d0060
-			public const int passwordText = 2131558496;
+			// aapt resource value: 0x7f0d005f
+			public const int passwordText = 2131558495;
 			
 			// aapt resource value: 0x7f0d0038
 			public const int phoneText = 2131558456;
@@ -855,11 +852,11 @@ namespace Bop
 			// aapt resource value: 0x7f0d002f
 			public const int profileButton = 2131558447;
 			
-			// aapt resource value: 0x7f0d0063
-			public const int reEnterField = 2131558499;
-			
 			// aapt resource value: 0x7f0d0062
-			public const int reEnterText = 2131558498;
+			public const int reEnterField = 2131558498;
+			
+			// aapt resource value: 0x7f0d0061
+			public const int reEnterText = 2131558497;
 			
 			// aapt resource value: 0x7f0d001c
 			public const int relativeLayout1 = 2131558428;
@@ -894,8 +891,8 @@ namespace Bop
 			// aapt resource value: 0x7f0d0043
 			public const int status_bar_latest_event_content = 2131558467;
 			
-			// aapt resource value: 0x7f0d0064
-			public const int submitButton = 2131558500;
+			// aapt resource value: 0x7f0d0063
+			public const int submitButton = 2131558499;
 			
 			// aapt resource value: 0x7f0d0009
 			public const int terrain = 2131558409;
