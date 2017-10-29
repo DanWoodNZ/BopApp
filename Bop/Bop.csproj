@@ -195,8 +195,6 @@
     <AndroidResource Include="Resources\drawable\IconSettingsGrey.png" />
     <AndroidResource Include="Resources\drawable\IconUserGrey.png" />
     <AndroidResource Include="Resources\drawable\uberlogosmall.png" />
-    <AndroidResource Include="Resources\layout\sign_in_popup.axml" />
-    <AndroidResource Include="Resources\layout\sign_up_popup.axml" />
     <AndroidResource Include="Resources\drawable\ListAucklandBridge.png" />
     <AndroidResource Include="Resources\drawable\ListAucklandMuseum.png" />
     <AndroidResource Include="Resources\drawable\ListCocos.png" />
@@ -228,6 +226,9 @@
     <AndroidResource Include="Resources\drawable\signinButton.png" />
     <AndroidResource Include="Resources\layout\loginView.axml" />
     <AndroidResource Include="Resources\drawable\signupText.png" />
+    <AndroidResource Include="Resources\drawable\submitButton.png" />
+    <AndroidResource Include="Resources\layout\signUpPopup.axml" />
+    <AndroidResource Include="Resources\drawable\createAccountTitle.png" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="googleplayservices-location">
