@@ -13,7 +13,8 @@ namespace Bop
     [Activity(Label = "BopApp", MainLauncher = true)]
     public class SignIn : Activity
     {
-        private Button mBtnSignUp, mBtnSignIn;
+        private Button signInButton, facebookButton, forgotPWButton, signUpButton;
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -21,16 +22,16 @@ namespace Bop
             //SetContentView();
 
             //mBtnSignUp = FindViewById<Button>(Resource.Id.btnSignUp);
-           // mBtnSignIn = FindViewById<Button>(Resource.Id.btnSignIn);
+            //mBtnSignIn = FindViewById<Button>(Resource.Id.btnSignIn);
             //mBtnSignUp.Click += (object sender, EventArgs args) =>
             {
                 //Pull up dialog
-                FragmentTransaction transaction = FragmentManager.BeginTransaction();
+            FragmentTransaction transaction = FragmentManager.BeginTransaction();
              //  DialogSignUp dialogSignUp = new DialogSignUp();
                // dialogSignUp.Show(transaction, "dialog fragment");
               //  dialogSignUp.mOnSignUpComplete += signUpDialog_mOnSignUpComplete;
             };
-            mBtnSignIn.Click += (object sender, EventArgs args) =>
+            signInButton.Click += (object sender, EventArgs args) =>
             {
                 //Pull up dialog
                 FragmentTransaction transaction = FragmentManager.BeginTransaction();

@@ -52,7 +52,7 @@ namespace BopApp
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             base.OnCreateView(inflater, container, savedInstanceState);
-            View view = new View(null); //Add this code to retrun a view and to get the code to compile.
+            View view = new View(null); //Add this code to return a view and to get the code to compile.
 
         //    var view = inflater.Inflate(Resource.Layout.dialog_sign_up, container, false);
 
