@@ -12,12 +12,12 @@ using Android.Widget;
 
 namespace Bop
 {
-    public class CusotmListAdapter : BaseAdapter<Locations>
+    public class CustomListAdapter : BaseAdapter<Locations>
     {
         Activity context;
         List<Locations> locations;
 
-        public CusotmListAdapter(Activity _context, List<Post> _list)
+        public CustomListAdapter(Activity _context, List<Locations> _list)
             : base()
         {
             this.context = _context;
@@ -34,7 +34,7 @@ namespace Bop
             return position;
         }
 
-        public override Post this[int index]
+        public override Locations this[int index]
         {
             get { return list[index]; }
         }

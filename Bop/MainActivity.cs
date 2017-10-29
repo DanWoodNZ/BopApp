@@ -144,18 +144,21 @@ namespace Bop
         public void GetLocationListView()
         {
             SetContentView(Resource.Layout.listView);
-            int numberOfLocations = 7;
-            List<ImageButton> locationListButtons= new List<ImageButton>();
 
 
-            for (int i = 0; i < numberOfLocations; i++)
-            {
-                locationListButtons[i].Click += (o, e) =>
-                {
-                   Toast.MakeText(this, "Pressed test", ToastLength.Short).Show(); //When clicked, shows a toast message on screen
-                };
-            }
+            // Initializing listview
+            listView = FindViewById(Resource.Id.feedList);
+            listView.ItemClick += OnListItemClick;
+            listView.Adapter = new CusotmListAdapter(this, locations);
+           
+            
+
+            void OnListItemClick(object sender, AdapterView.ItemClickEventArgs e) {
+            Post locations = result.posts.ElementAt(e.Position);
+            
         }
+
+    }
 
         public void GetLocationView()
         {
