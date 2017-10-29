@@ -213,7 +213,6 @@
     <AndroidResource Include="Resources\drawable\ListPiha2.png" />
     <AndroidResource Include="Resources\drawable\ListRangitotoIsland.png" />
     <AndroidResource Include="Resources\drawable\ListSwashbucklers.png" />
-    <AndroidResource Include="Resources\drawable\ListViewLocation.psd" />
     <AndroidResource Include="Resources\drawable\ListWaiheke.png" />
     <AndroidResource Include="Resources\drawable\button_obround.png" />
     <AndroidResource Include="Resources\drawable\skytowerBlurred.png" />
@@ -228,7 +227,7 @@
     <AndroidResource Include="Resources\drawable\submitButton.png" />
     <AndroidResource Include="Resources\layout\signUpPopup.axml" />
     <AndroidResource Include="Resources\drawable\createAccountTitle.png" />
-    <AndroidResource Include="Resources\drawable\uberlogo.png" />
+    <AndroidResource Include="Resources\drawable\uber.png" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="googleplayservices-location">

@@ -582,34 +582,31 @@ namespace Bop
 			public const int ListSwashbucklers = 2130837566;
 			
 			// aapt resource value: 0x7f02003f
-			public const int ListViewLocation = 2130837567;
+			public const int ListWaiheke = 2130837567;
 			
 			// aapt resource value: 0x7f020040
-			public const int ListWaiheke = 2130837568;
+			public const int notification_action_background = 2130837568;
 			
 			// aapt resource value: 0x7f020041
-			public const int notification_action_background = 2130837569;
+			public const int notification_bg = 2130837569;
 			
 			// aapt resource value: 0x7f020042
-			public const int notification_bg = 2130837570;
+			public const int notification_bg_low = 2130837570;
 			
 			// aapt resource value: 0x7f020043
-			public const int notification_bg_low = 2130837571;
+			public const int notification_bg_low_normal = 2130837571;
 			
 			// aapt resource value: 0x7f020044
-			public const int notification_bg_low_normal = 2130837572;
+			public const int notification_bg_low_pressed = 2130837572;
 			
 			// aapt resource value: 0x7f020045
-			public const int notification_bg_low_pressed = 2130837573;
+			public const int notification_bg_normal = 2130837573;
 			
 			// aapt resource value: 0x7f020046
-			public const int notification_bg_normal = 2130837574;
+			public const int notification_bg_normal_pressed = 2130837574;
 			
 			// aapt resource value: 0x7f020047
-			public const int notification_bg_normal_pressed = 2130837575;
-			
-			// aapt resource value: 0x7f020048
-			public const int notification_icon_background = 2130837576;
+			public const int notification_icon_background = 2130837575;
 			
 			// aapt resource value: 0x7f020050
 			public const int notification_template_icon_bg = 2130837584;
@@ -617,23 +614,26 @@ namespace Bop
 			// aapt resource value: 0x7f020051
 			public const int notification_template_icon_low_bg = 2130837585;
 			
+			// aapt resource value: 0x7f020048
+			public const int notification_tile_bg = 2130837576;
+			
 			// aapt resource value: 0x7f020049
-			public const int notification_tile_bg = 2130837577;
+			public const int notify_panel_notification_icon_bg = 2130837577;
 			
 			// aapt resource value: 0x7f02004a
-			public const int notify_panel_notification_icon_bg = 2130837578;
+			public const int signinButton = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int signinButton = 2130837579;
+			public const int signupText = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int signupText = 2130837580;
+			public const int skytowerBlurred = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int skytowerBlurred = 2130837581;
+			public const int submitButton = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int submitButton = 2130837582;
+			public const int uber = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
 			public const int uberlogo = 2130837583;

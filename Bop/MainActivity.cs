@@ -1,4 +1,4 @@
-﻿using Android.App;
+using Android.App;
 using Android.Widget;
 using Android.OS;
 using Android.Gms.Maps;
@@ -32,9 +32,44 @@ namespace Bop
         }
 
 
+        //Setups the the button the the LocationView to go back to the ListView
+        private void SetupBackButton()
+        {
+            ImageButton button1 = FindViewById<ImageButton>(Resource.Id.backButton);
+            //button1.Click += (o, e) => backButton;
+            {
+                Toast.MakeText(this, "Pressed imageButton1", ToastLength.Short).Show();
+                SetContentView(Resource.Layout.listView);
 
+                RetrieveLocationData();
 
+                SetupListView();
+            };
+        }
 
+        //Setups the ImageButton to go from a item in the list view to that items page.
+        private void SetupListView()
+        {
+            //Controlling the first image button with a click event
+            ImageButton button = FindViewById<ImageButton>(Resource.Id.test1); //Select the FIrstImage button in the list view
+            button.Click += (o, e) =>
+            {
+                Toast.MakeText(this, "Pressed test1", ToastLength.Short).Show(); //When clicked, shows a toast message on screen
+                SetContentView(Resource.Layout.locationView);
+                PopulateLocationPage(2);
+                SetupBackButton();
+            };
+
+            //Add a event to the map button click, which takes the user to the map screen
+            ImageButton mapButton = FindViewById<ImageButton>(Resource.Id.floatMapButton);
+            mapButton.Click += (o, e) =>
+            {
+                Toast.MakeText(this, "Pressed map button", ToastLength.Short).Show();
+                SetContentView(Resource.Layout.mapView);
+                SetUpMap();
+            };
+
+        }
 
         private void SetUpMap()
         {
@@ -42,7 +77,7 @@ namespace Bop
             backButton.Click += (o, e) =>
             {
                 SetContentView(Resource.Layout.listView);
-              
+                SetupListView();
 
             };
 
@@ -136,8 +171,27 @@ namespace Bop
             Console.WriteLine("retrieveLocationData");
         }
 
+        public void PopulateLocationPage(int SelectedLocation)
+        {
+            SetContentView(Resource.Layout.locationView);
 
+            TextView locationName = FindViewById<TextView>(Resource.Id.locationHeader);
+            locationName.Text = locations[SelectedLocation].LocationName;
 
+            TextView locationDescription = FindViewById<TextView>(Resource.Id.textView1);
+            locationDescription.Text = locations[SelectedLocation].LocationDescription;
+        }
+
+       //method to get images adreseses stored in the rsources/drable folder and add them to 
+       public void getImageAdresses()
+        {
+            for (int i = 0; i < locations.Count; i++)
+            {
+                string locationName = locations[i].LocationName;
+                locationName = locationName.Replace(" ", String.Empty);
+                locations[i].ImageAdresses.Add( "Resource/drawable/List" + locationName);
+            }
+        } 
 
 
         //Method to create 
@@ -146,7 +200,18 @@ namespace Bop
             SetContentView(Resource.Layout.listView);
             int numberOfLocations = 7;
             List<ImageButton> locationListButtons= new List<ImageButton>();
+<<<<<<< Updated upstream
 
+=======
+            
+            locationListButtons.Add(FindViewById<ImageButton>(Resource.Id.test1));
+            locationListButtons.Add(FindViewById<ImageButton>(Resource.Id.test2));
+            locationListButtons.Add(FindViewById<ImageButton>(Resource.Id.test3));
+            locationListButtons.Add(FindViewById<ImageButton>(Resource.Id.test4));
+            locationListButtons.Add(FindViewById<ImageButton>(Resource.Id.test5));
+            locationListButtons.Add(FindViewById<ImageButton>(Resource.Id.test6));
+            locationListButtons.Add(FindViewById<ImageButton>(Resource.Id.test7));
+>>>>>>> Stashed changes
 
             for (int i = 0; i < numberOfLocations; i++)
             {
@@ -156,6 +221,7 @@ namespace Bop
                 };
             }
         }
+<<<<<<< Updated upstream
 
         public void GetLocationView()
         {
@@ -164,6 +230,7 @@ namespace Bop
 
        
         
+=======
+>>>>>>> Stashed changes
     }
 }
-
