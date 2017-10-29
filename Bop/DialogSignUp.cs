@@ -62,12 +62,12 @@ namespace Bop
             passwordField = view.FindViewById<EditText>(Resource.Id.passwordField);
             submitButton = view.FindViewById<ImageButton>(Resource.Id.submitButton);
 
-            submitButton.Click += submitButton_Click;
+            submitButton.Click += SubmitButton_Click;
 
            return view;
         }
 
-        void submitButton_Click(object sender, EventArgs e)
+        void SubmitButton_Click(object sender, EventArgs e)
         {
             //user has clicked the sign up button
             OnSignUpComplete.Invoke(this, new OnSignUpEventArgs(nameField.Text, emailField.Text, passwordField.Text));
@@ -77,7 +77,7 @@ namespace Bop
         {
             Dialog.Window.RequestFeature(WindowFeatures.NoTitle);//removes title bar
             base.OnActivityCreated(savedInstancesState);
-            Dialog.Window.Attributes.WindowAnimations = Resource.Style.popUpAnimations;//animation set
+            Dialog.Window.Attributes.WindowAnimations = Resource.Animation.popUpAnimations;//animation set
         }
     }
 }
