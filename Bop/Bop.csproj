@@ -156,7 +156,6 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
-    <Compile Include="DialogSignIn.cs" />
     <Compile Include="DialogSignUp.cs" />
     <Compile Include="SignIn.cs" />
   </ItemGroup>
@@ -224,7 +223,7 @@
     <AndroidResource Include="Resources\drawable\Bop_Logo_White.png" />
     <AndroidResource Include="Resources\drawable\facebookButton.png" />
     <AndroidResource Include="Resources\drawable\signinButton.png" />
-    <AndroidResource Include="Resources\layout\loginView.axml" />
+    <AndroidResource Include="Resources\layout\signInView.axml" />
     <AndroidResource Include="Resources\drawable\signupText.png" />
     <AndroidResource Include="Resources\drawable\submitButton.png" />
     <AndroidResource Include="Resources\layout\signUpPopup.axml" />
