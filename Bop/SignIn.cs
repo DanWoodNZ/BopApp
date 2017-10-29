@@ -10,7 +10,7 @@ using Android;
 
 namespace Bop
 {
-    [Activity(Label = "BopApp", MainLauncher = true)]
+    [Activity(Label = "BopApp", MainLauncher = false)]
     public class SignIn : Activity
     {
         private Button signInButton, facebookButton, forgotPWButton, signUpButton;
@@ -18,25 +18,25 @@ namespace Bop
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            // Set our view from the "main" layout resource
+            //Set our view from the "main" layout resource
             //SetContentView();
 
-            //mBtnSignUp = FindViewById<Button>(Resource.Id.btnSignUp);
-            //mBtnSignIn = FindViewById<Button>(Resource.Id.btnSignIn);
-            //mBtnSignUp.Click += (object sender, EventArgs args) =>
-            {
-                //Pull up dialog
-            FragmentTransaction transaction = FragmentManager.BeginTransaction();
-             //  DialogSignUp dialogSignUp = new DialogSignUp();
-               // dialogSignUp.Show(transaction, "dialog fragment");
-              //  dialogSignUp.mOnSignUpComplete += signUpDialog_mOnSignUpComplete;
-            };
-            signInButton.Click += (object sender, EventArgs args) =>
+            forgotPWButton = FindViewById<Button>(Resource.Id.forgotPasswordButton);
+            signInButton = FindViewById<Button>(Resource.Id.signInButton);
+            facebookButton = FindViewById<Button>(Resource.Id.facebookButton);
+            signUpButton = FindViewById<Button>(Resource.Id.signUpButton);
+            signUpButton.Click += (object sender, EventArgs args) =>
             {
                 //Pull up dialog
                 FragmentTransaction transaction = FragmentManager.BeginTransaction();
-            //    DialogSignIn dialogSignIn = new DialogSignIn();
-              //  dialogSignIn.Show(transaction, "dialog fragment");
+                DialogSignUp dialogSignUp = new DialogSignUp();
+                dialogSignUp.Show(transaction, "dialog fragment");
+                dialogSignUp.onSignUpComplete += signUpDialog_mOnSignUpComplete;
+            };
+            signInButton.Click += (object sender, EventArgs args) =>
+            {
+                //Sign in view transition
+                
 
                 
             };
@@ -44,12 +44,12 @@ namespace Bop
         }
 
 
-        //void signUpDialog_mOnSignUpComplete(object sender, OnSignUpEventArgs e)
-        //{
+        void signUpDialog_mOnSignUpComplete(object sender, OnSignUpEventArgs e)
+        {
           
             
-            //throw new NotImplementedException();
-       // }
+            //
+        }
 
    }
 }
