@@ -22,7 +22,7 @@
             android:id="@+id/relativeLayout1">
             <ImageView
                 android:src="@drawable/citizenpark"
-                android:id="@+id/imageView1"
+                android:id="@+id/locationPicture"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="centerCrop" />
@@ -51,7 +51,7 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/nameText"
+                android:id="@+id/locationHeader"
                 android:textColor="@android:color/white"
                 android:textStyle="bold"
                 android:textSize="30dp"
@@ -67,7 +67,7 @@
                 android:gravity="center"
                 android:textColor="@android:color/white"
                 android:textSize="20dp"
-                android:layout_below="@id/nameText" />
+                android:layout_below="@id/locationHeader" />
         </RelativeLayout>
         <TextView
             android:text="ABOUT"
@@ -150,14 +150,16 @@
         android:minHeight="25px"
         android:layout_gravity="bottom">
         <ImageButton
-            android:src="@drawable/uberlogo"
+            android:src="@drawable/uber"
             android:id="@+id/uberButton"
-            android:layout_width="65px"
-            android:layout_height="65px"
+            android:layout_width="100px"
+            android:layout_height="100px"
             android:layout_gravity="right"
             android:background="@android:color/transparent"
             android:scaleType="centerCrop"
             android:layout_marginRight="20px"
-            android:layout_marginBottom="20px" />
+            android:layout_marginBottom="20px"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true" />
     </Toolbar>
 </LinearLayout>
