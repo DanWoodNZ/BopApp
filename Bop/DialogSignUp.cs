@@ -10,7 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace BopApp
+namespace Bop
 {
     public class OnSignUpEventArgs : EventArgs
     {
@@ -47,14 +47,14 @@ namespace BopApp
         private EditText mTxtPassword;
         private Button mBtnSignUp;
 
-        public event EventHandler<OnSignUpEventArgs> mOnSignUpComplete;
+        public event EventHandler<OnSignUpEventArgs> onSignUpComplete;
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             base.OnCreateView(inflater, container, savedInstanceState);
-            View view = new View(null); //Add this code to return a view and to get the code to compile.
+            //View view = new View(null); //Add this code to return a view and to get the code to compile.
 
-        //    var view = inflater.Inflate(Resource.Layout.dialog_sign_up, container, false);
+           // var view = inflater.Inflate(Resource.Layout.dialog_sign_up, container, false);
 
            // mTxtFirstName = view.FindViewById<EditText>(Resource.Id.txtFirstName);
           //  mTxtEmail = view.FindViewById<EditText>(Resource.Id.txtEmail);
@@ -69,7 +69,7 @@ namespace BopApp
         void mBtnSignUp_Click(object sender, EventArgs e)
         {
             //user has clicked the sign up button
-            mOnSignUpComplete.Invoke(this, new OnSignUpEventArgs(mTxtFirstName.Text, mTxtEmail.Text, mTxtPassword.Text));
+            onSignUpComplete.Invoke(this, new OnSignUpEventArgs(mTxtFirstName.Text, mTxtEmail.Text, mTxtPassword.Text));
             this.Dismiss();
         }
         public override void OnActivityCreated(Bundle savedInstancesState)

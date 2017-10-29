@@ -771,9 +771,6 @@ namespace Bop
 			// aapt resource value: 0x7f0d0043
 			public const int info = 2131558467;
 			
-			// aapt resource value: 0x7f0d004e
-			public const int isignInButton = 2131558478;
-			
 			// aapt resource value: 0x7f0d0015
 			public const int italic = 2131558421;
 			
@@ -881,6 +878,9 @@ namespace Bop
 			
 			// aapt resource value: 0x7f0d0025
 			public const int settingsButton = 2131558437;
+			
+			// aapt resource value: 0x7f0d004e
+			public const int signInButton = 2131558478;
 			
 			// aapt resource value: 0x7f0d0052
 			public const int signUpButton = 2131558482;

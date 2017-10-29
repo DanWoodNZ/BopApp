@@ -46,7 +46,7 @@
         p1:src="@drawable/signinbutton"
         p1:layout_width="match_parent"
         p1:layout_height="95px"
-        p1:id="@+id/isignInButton"
+        p1:id="@+id/signInButton"
         p1:background="@android:color/transparent"
         p1:scaleType="fitCenter"
         p1:adjustViewBounds="true"
