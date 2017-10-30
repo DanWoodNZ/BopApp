@@ -1,4 +1,4 @@
-using Android.App;
+﻿using Android.App;
 using Android.Widget;
 using Android.OS;
 using Android.Gms.Maps;
@@ -95,14 +95,25 @@ namespace Bop
             }
         }
 
+<<<<<<< HEAD
+=======
+       
+
+
+
+
+>>>>>>> parent of 4b0acff... Updated main and listlayout
 
         //Method to create 
         public void GetLocationListView()
         {
             ImageButton mapButton = FindViewById<ImageButton>(Resource.Id.floatMapButton);
 
+<<<<<<< HEAD
         }
 
+=======
+>>>>>>> parent of 4b0acff... Updated main and listlayout
         public void GetLocationView()
         {
             Console.WriteLine("LOCATL TABLE CONNECTED. Size of array is == " + locations.Count);
