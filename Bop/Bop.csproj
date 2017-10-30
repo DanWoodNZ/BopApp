@@ -270,7 +270,6 @@
     <AndroidResource Include="Resources\drawable\locRangitoto.jpg" />
     <AndroidResource Include="Resources\drawable\locSkycity.jpg" />
     <AndroidResource Include="Resources\drawable\locSwashbucklers.jpg" />
-    <AndroidResource Include="Resources\drawable\locView.psd" />
     <AndroidResource Include="Resources\drawable\locWaiheke.jpg" />
     <AndroidResource Include="Resources\drawable\locZoo.jpg" />
     <AndroidResource Include="Resources\drawable\locPiha.jpg" />
