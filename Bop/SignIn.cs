@@ -10,21 +10,23 @@ using Android;
 
 namespace Bop
 {
-    //[Activity(Label = "BopApp", MainLauncher = false)]
+    [Activity(Label = "Bop", MainLauncher = true)]
     public class SignIn : Activity
     {
-        private Button signInButton, facebookButton, forgotPWButton, signUpButton;
-
+        private MainActivity mapView;
+        private ImageButton signInButton, facebookButton, signUpButton;
+        private Button forgotPWButton;
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
+            //mapView.StartActivity();
             //Set our view from the "main" layout resource
             //SetContentView();
 
             forgotPWButton = FindViewById<Button>(Resource.Id.forgotPasswordButton);
-            signInButton = FindViewById<Button>(Resource.Id.signInButton);
-            facebookButton = FindViewById<Button>(Resource.Id.facebookButton);
-            signUpButton = FindViewById<Button>(Resource.Id.signUpButton);
+            signInButton = FindViewById<ImageButton>(Resource.Id.signInButton);
+            facebookButton = FindViewById<ImageButton>(Resource.Id.facebookButton);
+            signUpButton = FindViewById<ImageButton>(Resource.Id.signUpButton);
             signUpButton.Click += (object sender, EventArgs args) =>
             {
                 //Pull up dialog
@@ -35,19 +37,14 @@ namespace Bop
             };
             signInButton.Click += (object sender, EventArgs args) =>
             {
-                //Sign in view transition
-                
-
-                
+                //Sign in view transition             
             };
             
         }
 
 
         void SignUpDialog_mOnSignUpComplete(object sender, OnSignUpEventArgs e)
-        {
-          
-            
+        {           
             //
         }
 
