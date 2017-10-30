@@ -8,7 +8,7 @@
     <ImageView
         p1:src="@drawable/bop_logo_white_block"
         p1:layout_width="match_parent"
-        p1:layout_height="200px"
+        p1:layout_height="380px"
         p1:id="@+id/ibopLogo"
         p1:adjustViewBounds="true"
         p1:cropToPadding="true"
@@ -17,41 +17,41 @@
         p1:layout_marginBottom="60px" />
     <EditText
         p1:inputType="textEmailAddress"
-        p1:layout_width="500px"
+        p1:layout_width="700px"
         p1:layout_height="wrap_content"
         p1:id="@+id/emailField"
         p1:text="Email"
         p1:layout_gravity="center"
-        p1:textSize="12dp" />
+        p1:textSize="20dp" />
     <EditText
         p1:inputType="textPassword"
-        p1:layout_width="500px"
+        p1:layout_width="700px"
         p1:layout_height="wrap_content"
         p1:id="@+id/passwordField"
         p1:text="Password"
         p1:layout_gravity="center"
-        p1:textSize="12dp" />
+        p1:textSize="20dp" />
     <Button
         p1:text="Forgot Password?"
-        p1:layout_width="500px"
+        p1:layout_width="700px"
         p1:layout_height="60px"
         p1:textAllCaps="false"
         p1:id="@+id/forgotPasswordButton"
         p1:textStyle="normal"
         p1:background="@android:color/transparent"
-        p1:textSize="10dp"
+        p1:textSize="12dp"
         p1:layout_gravity="center"
         p1:gravity="right" />
     <ImageButton
         p1:src="@drawable/signinbutton"
         p1:layout_width="match_parent"
-        p1:layout_height="95px"
+        p1:layout_height="130px"
         p1:id="@+id/signInButton"
         p1:background="@android:color/transparent"
         p1:scaleType="fitCenter"
         p1:adjustViewBounds="true"
         p1:cropToPadding="true"
-        p1:layout_marginTop="60px"
+        p1:layout_marginTop="120px"
         p1:layout_marginBottom="30px" />
     <TextView
         p1:text="or login with"
@@ -61,11 +61,11 @@
         p1:id="@+id/textView2"
         p1:gravity="center"
         p1:layout_gravity="center"
-        p1:textSize="10dp" />
+        p1:textSize="12dp" />
     <ImageButton
         p1:src="@drawable/facebookbutton"
         p1:layout_width="match_parent"
-        p1:layout_height="98px"
+        p1:layout_height="135px"
         p1:id="@+id/facebookButton"
         p1:background="@android:color/transparent"
         p1:adjustViewBounds="true"
@@ -80,10 +80,11 @@
     <ImageButton
         p1:src="@drawable/signuptext"
         p1:layout_width="match_parent"
-        p1:layout_height="70px"
+        p1:layout_height="120px"
         p1:id="@+id/signUpButton"
         p1:background="@android:color/transparent"
         p1:adjustViewBounds="true"
         p1:cropToPadding="true"
-        p1:scaleType="fitCenter" />
+        p1:scaleType="fitCenter"
+        p1:layout_marginBottom="50px" />
 </LinearLayout>

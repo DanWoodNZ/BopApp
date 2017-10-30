@@ -197,7 +197,6 @@
     <None Include="Resources\AboutResources.txt" />
     <AndroidResource Include="Resources\layout\ListView.axml" />
     <AndroidResource Include="Resources\layout\LocationView.axml" />
-    <AndroidResource Include="Resources\drawable\citizenpark.jpg" />
     <AndroidResource Include="Resources\drawable\ListAucklandBungy.png" />
     <AndroidResource Include="Resources\drawable\ListAucklandZoo.png" />
     <AndroidResource Include="Resources\drawable\ListBCC.png" />
@@ -247,6 +246,34 @@
     <AndroidResource Include="Resources\drawable\createAccountTitle.png" />
     <AndroidResource Include="Resources\drawable\uber.png" />
     <AndroidResource Include="Resources\layout\ListLayout.axml" />
+    <AndroidResource Include="Resources\drawable\locAtomic.jpg" />
+    <AndroidResource Include="Resources\drawable\locAucklandMuseum.jpg" />
+    <AndroidResource Include="Resources\drawable\locBCC.jpg" />
+    <AndroidResource Include="Resources\drawable\locBridge.jpg" />
+    <AndroidResource Include="Resources\drawable\locBungy.jpg" />
+    <AndroidResource Include="Resources\drawable\locCitizen.jpg" />
+    <AndroidResource Include="Resources\drawable\locCocos.jpg" />
+    <AndroidResource Include="Resources\drawable\locFedDeli.jpg" />
+    <AndroidResource Include="Resources\drawable\locHunua.jpg" />
+    <AndroidResource Include="Resources\drawable\locKarekare.jpg" />
+    <AndroidResource Include="Resources\drawable\locKellyTarltons.jpg" />
+    <AndroidResource Include="Resources\drawable\locKitekite.jpg" />
+    <AndroidResource Include="Resources\drawable\locLaZeppa.jpg" />
+    <AndroidResource Include="Resources\drawable\locMission.jpg" />
+    <AndroidResource Include="Resources\drawable\locMotat.jpg" />
+    <AndroidResource Include="Resources\drawable\locMtEden.jpg" />
+    <AndroidResource Include="Resources\drawable\locOneTreeHill.jpg" />
+    <AndroidResource Include="Resources\drawable\locOrphans.jpg" />
+    <AndroidResource Include="Resources\drawable\locParnellRose.jpg" />
+    <AndroidResource Include="Resources\drawable\locRainbowsEnd.jpg" />
+    <AndroidResource Include="Resources\drawable\locRangitoto.jpg" />
+    <AndroidResource Include="Resources\drawable\locSkycity.jpg" />
+    <AndroidResource Include="Resources\drawable\locSwashbucklers.jpg" />
+    <AndroidResource Include="Resources\drawable\locView.psd" />
+    <AndroidResource Include="Resources\drawable\locWaiheke.jpg" />
+    <AndroidResource Include="Resources\drawable\locZoo.jpg" />
+    <AndroidResource Include="Resources\drawable\locPiha.jpg" />
+    <AndroidResource Include="Resources\drawable\locCassette.jpg" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="googleplayservices-location">

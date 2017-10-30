@@ -1,4 +1,4 @@
-using Android.App;
+﻿using Android.App;
 using Android.Widget;
 using Android.OS;
 using Android.Gms.Maps;
@@ -35,9 +35,9 @@ namespace Bop
 
             //SetContentView(Resource.Layout.MapView);
 
-<<<<<<< HEAD
-            SetUpMap();
-=======
+
+            //SetUpMap();
+
             locations = new List<Locations>()             {                 new Locations(Resource.Drawable.ListFedDeli),                 new Locations(Resource.Drawable.ListBCC),                 new Locations(Resource.Drawable.ListCocos),                 new Locations(Resource.Drawable.ListFedDeli),                 new Locations(Resource.Drawable.ListBCC),                 new Locations(Resource.Drawable.ListCocos),                 new Locations(Resource.Drawable.ListFedDeli),                 new Locations(Resource.Drawable.ListBCC),                 new Locations(Resource.Drawable.ListCocos),             };              //Console.WriteLine("User location from MAIN = " + userLocation.GetUserPosition());              SetContentView(Resource.Layout.ListView);              lv = FindViewById<ListView>(Resource.Id.listView1);             adapter = new ListViewCustomAdapter(this, Resource.Layout.ListLayout, locations);              lv.Adapter = adapter;
 
             //Console.WriteLine("User location from MAIN = "+userLocation.GetUserPosition());
@@ -45,7 +45,6 @@ namespace Bop
             //SetContentView(Resource.Layout.MapView);
 
             //SetUpMap();
->>>>>>> 8366fd3... Latest working version with listview working
 
         }
 
