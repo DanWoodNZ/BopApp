@@ -38,8 +38,6 @@ namespace Bop
         }
 
 
-        
-
         private void SetUpMap()
         {
             if (GMap == null)
