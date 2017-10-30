@@ -29,20 +29,16 @@ namespace Bop
 
             locations = connection.RetrieveLocationData();
 
-<<<<<<< HEAD
-
             Console.WriteLine("User location from MAIN = "+userLocation.GetUserPosition());
 
             SetContentView(Resource.Layout.MapView);
 
-=======
             
 
             Console.WriteLine("User location from MAIN = "+userLocation.GetUserPosition());
 
             SetContentView(Resource.Layout.MapView);
 
->>>>>>> parent of 5284842... Updated listview, listlayout and add imageholder, listviewcustomadapter
             SetUpMap();
 
         }
@@ -104,33 +100,14 @@ namespace Bop
             }
         }
 
-<<<<<<< HEAD
-=======
-       
-
-
-
-
-<<<<<<< HEAD
->>>>>>> parent of 4b0acff... Updated main and listlayout
-=======
->>>>>>> parent of 5284842... Updated listview, listlayout and add imageholder, listviewcustomadapter
-
         //Method to create 
         public void GetLocationListView()
         {
             ImageButton mapButton = FindViewById<ImageButton>(Resource.Id.floatMapButton);
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-=======
             
-          
->>>>>>> parent of 5284842... Updated listview, listlayout and add imageholder, listviewcustomadapter
+
         }
 
-=======
->>>>>>> parent of 4b0acff... Updated main and listlayout
         public void GetLocationView()
         {
             Console.WriteLine("LOCATL TABLE CONNECTED. Size of array is == " + locations.Count);
