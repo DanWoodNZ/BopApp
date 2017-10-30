@@ -975,61 +975,64 @@ namespace Bop
 			public const int ListView = 2130968578;
 			
 			// aapt resource value: 0x7f040003
-			public const int LocationView = 2130968579;
+			public const int LocationsView = 2130968579;
 			
 			// aapt resource value: 0x7f040004
-			public const int MapView = 2130968580;
+			public const int LocationView = 2130968580;
 			
 			// aapt resource value: 0x7f040005
-			public const int notification_action = 2130968581;
+			public const int MapView = 2130968581;
 			
 			// aapt resource value: 0x7f040006
-			public const int notification_action_tombstone = 2130968582;
+			public const int notification_action = 2130968582;
 			
 			// aapt resource value: 0x7f040007
-			public const int notification_media_action = 2130968583;
+			public const int notification_action_tombstone = 2130968583;
 			
 			// aapt resource value: 0x7f040008
-			public const int notification_media_cancel_action = 2130968584;
+			public const int notification_media_action = 2130968584;
 			
 			// aapt resource value: 0x7f040009
-			public const int notification_template_big_media = 2130968585;
+			public const int notification_media_cancel_action = 2130968585;
 			
 			// aapt resource value: 0x7f04000a
-			public const int notification_template_big_media_custom = 2130968586;
+			public const int notification_template_big_media = 2130968586;
 			
 			// aapt resource value: 0x7f04000b
-			public const int notification_template_big_media_narrow = 2130968587;
+			public const int notification_template_big_media_custom = 2130968587;
 			
 			// aapt resource value: 0x7f04000c
-			public const int notification_template_big_media_narrow_custom = 2130968588;
+			public const int notification_template_big_media_narrow = 2130968588;
 			
 			// aapt resource value: 0x7f04000d
-			public const int notification_template_custom_big = 2130968589;
+			public const int notification_template_big_media_narrow_custom = 2130968589;
 			
 			// aapt resource value: 0x7f04000e
-			public const int notification_template_icon_group = 2130968590;
+			public const int notification_template_custom_big = 2130968590;
 			
 			// aapt resource value: 0x7f04000f
-			public const int notification_template_lines_media = 2130968591;
+			public const int notification_template_icon_group = 2130968591;
 			
 			// aapt resource value: 0x7f040010
-			public const int notification_template_media = 2130968592;
+			public const int notification_template_lines_media = 2130968592;
 			
 			// aapt resource value: 0x7f040011
-			public const int notification_template_media_custom = 2130968593;
+			public const int notification_template_media = 2130968593;
 			
 			// aapt resource value: 0x7f040012
-			public const int notification_template_part_chronometer = 2130968594;
+			public const int notification_template_media_custom = 2130968594;
 			
 			// aapt resource value: 0x7f040013
-			public const int notification_template_part_time = 2130968595;
+			public const int notification_template_part_chronometer = 2130968595;
 			
 			// aapt resource value: 0x7f040014
-			public const int SignInView = 2130968596;
+			public const int notification_template_part_time = 2130968596;
 			
 			// aapt resource value: 0x7f040015
-			public const int SignUpPopup = 2130968597;
+			public const int SignInView = 2130968597;
+			
+			// aapt resource value: 0x7f040016
+			public const int SignUpPopup = 2130968598;
 			
 			static Layout()
 			{
