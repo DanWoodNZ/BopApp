@@ -38,7 +38,27 @@ namespace Bop
 
             //SetUpMap();
 
-            locations = new List<Locations>()             {                 new Locations(Resource.Drawable.ListFedDeli),                 new Locations(Resource.Drawable.ListBCC),                 new Locations(Resource.Drawable.ListCocos),                 new Locations(Resource.Drawable.ListFedDeli),                 new Locations(Resource.Drawable.ListBCC),                 new Locations(Resource.Drawable.ListCocos),                 new Locations(Resource.Drawable.ListFedDeli),                 new Locations(Resource.Drawable.ListBCC),                 new Locations(Resource.Drawable.ListCocos),             };              //Console.WriteLine("User location from MAIN = " + userLocation.GetUserPosition());              SetContentView(Resource.Layout.ListView);              lv = FindViewById<ListView>(Resource.Id.listView1);             adapter = new ListViewCustomAdapter(this, Resource.Layout.ListLayout, locations);              lv.Adapter = adapter;
+            locations = new List<Locations>()
+            {
+                new Locations(Resource.Drawable.ListFedDeli),
+                new Locations(Resource.Drawable.ListBCC),
+                new Locations(Resource.Drawable.ListCocos),
+                new Locations(Resource.Drawable.ListFedDeli),
+                new Locations(Resource.Drawable.ListBCC),
+                new Locations(Resource.Drawable.ListCocos),
+                new Locations(Resource.Drawable.ListFedDeli),
+                new Locations(Resource.Drawable.ListBCC),
+                new Locations(Resource.Drawable.ListCocos),
+            };
+
+            //Console.WriteLine("User location from MAIN = " + userLocation.GetUserPosition());
+
+            SetContentView(Resource.Layout.ListView);
+
+            lv = FindViewById<ListView>(Resource.Id.listView1);
+            adapter = new ListViewCustomAdapter(this, Resource.Layout.ListLayout, locations);
+
+            lv.Adapter = adapter;
 
             //Console.WriteLine("User location from MAIN = "+userLocation.GetUserPosition());
 
