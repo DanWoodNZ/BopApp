@@ -67,6 +67,12 @@ namespace Bop
             lv.Adapter = adapter;
 
             lv.ItemClick += ListViewItemClick;
+
+            ImageButton mapButton = FindViewById<ImageButton>(Resource.Id.floatMapButton);
+            mapButton.Click += (s, e) =>
+            {
+                SetUpMap();
+            };
         }
 
         public void ListViewItemClick(object sender, AdapterView.ItemClickEventArgs e)
@@ -76,6 +82,8 @@ namespace Bop
 
         private void SetUpMap()
         {
+            SetContentView(Resource.Layout.MapView);
+
             if (GMap == null)
             {
                 FragmentManager.FindFragmentById<MapFragment>(Resource.Id.googlemap).GetMapAsync(this);
@@ -89,8 +97,8 @@ namespace Bop
             GMap.UiSettings.ZoomControlsEnabled = true;
 
             List<MarkerOptions> markers = new List<MarkerOptions>();
-            MarkerOptions userMarker = new MarkerOptions().SetPosition(userLocation.GetUserPosition()).SetTitle("INSERT USERNAME").SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.uber));
-            GMap.AddMarker(userMarker);
+
+
 
             CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(userLocation.GetUserPosition(), 15);
             GMap.MoveCamera(camera);
