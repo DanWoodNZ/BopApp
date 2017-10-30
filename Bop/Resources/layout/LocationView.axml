@@ -21,7 +21,7 @@
             android:layout_height="400px"
             android:id="@+id/relativeLayout1">
             <ImageView
-                android:src="@drawable/citizenpark"
+                android:src="@drawable/locwaiheke"
                 android:id="@+id/locationPicture"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_margin="20px" />
             <TextView
-                android:text="CITIZEN PARK"
+                android:text="WAIHEKE ISLAND"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
                 android:layout_marginTop="50px"
                 android:layout_centerInParent="true" />
             <TextView
-                android:text="Kingsland"
+                android:text="Auckland"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
