@@ -1,4 +1,4 @@
-using Android.App;
+﻿using Android.App;
 using Android.Widget;
 using Android.OS;
 using Android.Gms.Maps;
@@ -96,7 +96,7 @@ namespace Bop
             }
         }
 
-
+       
 
 
 
@@ -105,18 +105,11 @@ namespace Bop
         //Method to create 
         public void GetLocationListView()
         {
-<<<<<<< HEAD
             ImageButton mapButton = FindViewById<ImageButton>(Resource.Id.floatMapButton);
             
           
         }
 
-=======
-            
-        }
-
-
->>>>>>> c8930d5... Updated main and listlayout
         public void GetLocationView()
         {
             Console.WriteLine("LOCATL TABLE CONNECTED. Size of array is == " + locations.Count);
