@@ -1,4 +1,4 @@
-﻿using Android.App;
+using Android.App;
 using Android.Widget;
 using Android.OS;
 using Android.Gms.Maps;
@@ -21,19 +21,31 @@ namespace Bop
         private List<Locations> locations;
         private DatabaseConnection connection = new DatabaseConnection();
         private UserLocationData userLocation = new UserLocationData();
+        private ListView lv;
+        private ListViewCustomAdapter adapter;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             RequestWindowFeature(Android.Views.WindowFeatures.NoTitle);
             base.OnCreate(savedInstanceState);
 
-            locations = connection.RetrieveLocationData();
+            //locations = connection.RetrieveLocationData();
 
-            Console.WriteLine("User location from MAIN = "+userLocation.GetUserPosition());
+            //Console.WriteLine("User location from MAIN = "+userLocation.GetUserPosition());
 
-            SetContentView(Resource.Layout.MapView);
+            //SetContentView(Resource.Layout.MapView);
 
+<<<<<<< HEAD
             SetUpMap();
+=======
+            locations = new List<Locations>()             {                 new Locations(Resource.Drawable.ListFedDeli),                 new Locations(Resource.Drawable.ListBCC),                 new Locations(Resource.Drawable.ListCocos),                 new Locations(Resource.Drawable.ListFedDeli),                 new Locations(Resource.Drawable.ListBCC),                 new Locations(Resource.Drawable.ListCocos),                 new Locations(Resource.Drawable.ListFedDeli),                 new Locations(Resource.Drawable.ListBCC),                 new Locations(Resource.Drawable.ListCocos),             };              //Console.WriteLine("User location from MAIN = " + userLocation.GetUserPosition());              SetContentView(Resource.Layout.ListView);              lv = FindViewById<ListView>(Resource.Id.listView1);             adapter = new ListViewCustomAdapter(this, Resource.Layout.ListLayout, locations);              lv.Adapter = adapter;
+
+            //Console.WriteLine("User location from MAIN = "+userLocation.GetUserPosition());
+
+            //SetContentView(Resource.Layout.MapView);
+
+            //SetUpMap();
+>>>>>>> 8366fd3... Latest working version with listview working
 
         }
 

@@ -36,9 +36,6 @@
     <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
     <AndroidLinkMode>None</AndroidLinkMode>
     <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
-    <AotAssemblies>false</AotAssemblies>
-    <EnableLLVM>false</EnableLLVM>
-    <BundleAssemblies>false</BundleAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
@@ -178,6 +175,8 @@
     <Compile Include="DialogSignUp.cs" />
     <Compile Include="SignIn.cs" />
     <Compile Include="UserLocationData.cs" />
+    <Compile Include="ImageHolder.cs" />
+    <Compile Include="ListViewCustomAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\MapView.axml">
