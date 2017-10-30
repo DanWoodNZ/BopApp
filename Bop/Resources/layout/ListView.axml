@@ -5,32 +5,17 @@
     p1:layout_height="match_parent"
     p1:id="@+id/linearLayout1">
     <Toolbar
-        p1:background="?android:attr/colorPrimary"
+        p1:background="#ff252525"
         p1:layout_width="match_parent"
-        p1:layout_height="70px"
+        p1:layout_height="120px"
         p1:id="@+id/toolbar1">
         <ImageView
             p1:src="@drawable/bop_logo_white_block"
-            p1:layout_width="100px"
-            p1:layout_height="65px"
+            p1:layout_width="160px"
+            p1:layout_height="120px"
             p1:id="@+id/bopLogo"
-            p1:layout_gravity="left"
+            p1:layout_gravity="center"
             p1:layout_marginRight="30px" />
-        <ImageView
-            p1:src="@android:drawable/status_bar_item_app_background"
-            p1:layout_width="wrap_content"
-            p1:layout_height="wrap_content"
-            p1:id="@+id/divider1"
-            p1:layout_gravity="left"
-            p1:layout_margin="10px" />
-        <SearchView
-            p1:minWidth="25px"
-            p1:minHeight="25px"
-            p1:layout_width="match_parent"
-            p1:layout_height="wrap_content"
-            p1:id="@+id/searchView"
-            p1:layout_margin="10px"
-            p1:searchIcon="@android:drawable/ic_menu_search" />
     </Toolbar>
     <RelativeLayout
         p1:minWidth="25px"
@@ -38,19 +23,14 @@
         p1:layout_width="match_parent"
         p1:layout_height="match_parent"
         p1:id="@+id/relativeLayout1">
-        <ScrollView
+        <ListView
             p1:minWidth="25px"
             p1:minHeight="25px"
             p1:layout_width="match_parent"
             p1:layout_height="match_parent"
-            p1:id="@+id/scrollView1">
-            <ListView
-                p1:minWidth="25px"
-                p1:minHeight="25px"
-                p1:layout_width="match_parent"
-                p1:layout_height="match_parent"
-                p1:id="@+id/listView1" />
-        </ScrollView>
+            p1:id="@+id/listView1"
+            p1:padding="0px"
+            p1:divider="@null" />
         <ImageButton
             p1:src="@android:drawable/ic_dialog_map"
             p1:layout_width="120px"
@@ -65,20 +45,20 @@
             p1:layout_centerInParent="true"
             p1:layout_alignParentBottom="true"
             p1:layout_alignParentRight="true"
-            p1:layout_marginRight="10px"
-            p1:layout_marginBottom="90px" />
+            p1:layout_marginRight="70px"
+            p1:layout_marginBottom="160px" />
         <LinearLayout
             p1:orientation="horizontal"
             p1:minWidth="25px"
             p1:minHeight="25px"
             p1:layout_width="match_parent"
-            p1:layout_height="70px"
+            p1:layout_height="100px"
             p1:id="@+id/bottomNavbar"
             p1:layout_alignParentBottom="true"
             p1:background="#f6ffffff">
             <ImageButton
-                p1:layout_width="40px"
-                p1:layout_height="40px"
+                p1:layout_width="30px"
+                p1:layout_height="60px"
                 p1:id="@+id/diningButton"
                 p1:layout_weight="100"
                 p1:adjustViewBounds="true"
@@ -89,8 +69,8 @@
                 p1:src="@drawable/icondining" />
             <ImageButton
                 p1:src="@drawable/iconnature"
-                p1:layout_width="50px"
-                p1:layout_height="40px"
+                p1:layout_width="30px"
+                p1:layout_height="60px"
                 p1:id="@+id/natureButton"
                 p1:layout_weight="100"
                 p1:layout_gravity="center"
@@ -100,8 +80,8 @@
                 p1:cropToPadding="true" />
             <ImageButton
                 p1:src="@drawable/iconentertainment"
-                p1:layout_width="50px"
-                p1:layout_height="40px"
+                p1:layout_width="30px"
+                p1:layout_height="60px"
                 p1:id="@+id/entertainmentButton"
                 p1:layout_weight="100"
                 p1:layout_gravity="center"
@@ -122,9 +102,9 @@
                 p1:cropToPadding="true"
                 p1:scaleType="fitCenter"
                 p1:background="@android:color/transparent"
-                p1:layout_width="50px"
-                p1:layout_height="40px"
-                p1:layout_marginLeft="30px"
+                p1:layout_width="80px"
+                p1:layout_height="60px"
+                p1:layout_marginLeft="50px"
                 p1:layout_marginRight="30px"
                 p1:layout_gravity="center" />
             <ImageButton
@@ -134,11 +114,11 @@
                 p1:scaleType="fitCenter"
                 p1:adjustViewBounds="true"
                 p1:cropToPadding="true"
-                p1:layout_width="50px"
-                p1:layout_height="40px"
+                p1:layout_width="80px"
+                p1:layout_height="60px"
                 p1:layout_gravity="center"
                 p1:layout_marginLeft="30px"
-                p1:layout_marginRight="30px" />
+                p1:layout_marginRight="60px" />
         </LinearLayout>
     </RelativeLayout>
 </LinearLayout>

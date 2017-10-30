@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -49,11 +48,11 @@ namespace Bop
         public double LocationY { get; set; }
 
         [JsonProperty("listImageUrl")]
-        public string ListImageUrl { get; set; }
+        public int ListImageUrl { get; set; }
 
-        public Locations()
+        public Locations(int location)
         {
-           
+            this.ListImageUrl = location;
         }
 
         public List<Locations> getLocationsList()
