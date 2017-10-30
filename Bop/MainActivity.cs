@@ -40,6 +40,8 @@ namespace Bop
         }
 
 
+        
+
         private void SetUpMap()
         {
             if (GMap == null)
@@ -60,6 +62,13 @@ namespace Bop
 
             CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(userLocation.GetUserPosition(), 15);
             GMap.MoveCamera(camera);
+
+            GMap.MyLocationChange += (s, e) =>
+            {
+                LatLng currentLatLng = userLocation.GetUserPosition();
+                Console.WriteLine("New user location = " + currentLatLng);
+
+            };
 
             markers = GenerateMarkers();
             PlaceMarkers(markers);
