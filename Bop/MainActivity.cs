@@ -1,4 +1,4 @@
-﻿using Android.App;
+using Android.App;
 using Android.Widget;
 using Android.OS;
 using Android.Gms.Maps;
@@ -21,26 +21,45 @@ namespace Bop
         private List<Locations> locations;
         private DatabaseConnection connection = new DatabaseConnection();
         private UserLocationData userLocation = new UserLocationData();
+        private ListViewCustomAdapter adapter;
+        private ListView lv;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             RequestWindowFeature(Android.Views.WindowFeatures.NoTitle);
             base.OnCreate(savedInstanceState);
 
-            locations = connection.RetrieveLocationData();
+            //locations = connection.RetrieveLocationData();
 
-            
+            locations = new List<Locations>()
+            {
+                new Locations(Resource.Drawable.ListFedDeli),
+                new Locations(Resource.Drawable.ListBCC),
+                new Locations(Resource.Drawable.ListCocos),
+                new Locations(Resource.Drawable.ListFedDeli),
+                new Locations(Resource.Drawable.ListBCC),
+                new Locations(Resource.Drawable.ListCocos),
+                new Locations(Resource.Drawable.ListFedDeli),
+                new Locations(Resource.Drawable.ListBCC),
+                new Locations(Resource.Drawable.ListCocos),
+            };
 
-            Console.WriteLine("User location from MAIN = "+userLocation.GetUserPosition());
+            //Console.WriteLine("User location from MAIN = " + userLocation.GetUserPosition());
 
-            SetContentView(Resource.Layout.MapView);
+            SetContentView(Resource.Layout.ListView);
 
-            SetUpMap();
+            lv = FindViewById<ListView>(Resource.Id.listView1);
+            adapter = new ListViewCustomAdapter(this, Resource.Layout.ListLayout, locations);
+
+            lv.Adapter = adapter;
+
+
+            //SetUpMap();
 
         }
 
 
-        
+
 
         private void SetUpMap()
         {
@@ -102,12 +121,15 @@ namespace Bop
 
 
 
+
+
+
+
+
         //Method to create 
         public void GetLocationListView()
         {
             ImageButton mapButton = FindViewById<ImageButton>(Resource.Id.floatMapButton);
-            
-          
         }
 
         public void GetLocationView()
@@ -116,4 +138,3 @@ namespace Bop
         }
     }
 }
-

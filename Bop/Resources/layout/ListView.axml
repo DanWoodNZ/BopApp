@@ -38,19 +38,13 @@
         p1:layout_width="match_parent"
         p1:layout_height="match_parent"
         p1:id="@+id/relativeLayout1">
-        <ScrollView
+        <ListView
             p1:minWidth="25px"
             p1:minHeight="25px"
             p1:layout_width="match_parent"
             p1:layout_height="match_parent"
-            p1:id="@+id/scrollView1">
-            <ListView
-                p1:minWidth="25px"
-                p1:minHeight="25px"
-                p1:layout_width="match_parent"
-                p1:layout_height="match_parent"
-                p1:id="@+id/listView1" />
-        </ScrollView>
+            p1:id="@+id/listView1"
+            p1:dividerHeight="0dp" />
         <ImageButton
             p1:src="@android:drawable/ic_dialog_map"
             p1:layout_width="120px"

@@ -693,8 +693,8 @@ namespace Bop
 			// aapt resource value: 0x7f0d0013
 			public const int blocking = 2131558419;
 			
-			// aapt resource value: 0x7f0d0019
-			public const int bopLogo = 2131558425;
+			// aapt resource value: 0x7f0d001a
+			public const int bopLogo = 2131558426;
 			
 			// aapt resource value: 0x7f0d0020
 			public const int bottomNavbar = 2131558432;
@@ -717,8 +717,8 @@ namespace Bop
 			// aapt resource value: 0x7f0d0021
 			public const int diningButton = 2131558433;
 			
-			// aapt resource value: 0x7f0d001a
-			public const int divider1 = 2131558426;
+			// aapt resource value: 0x7f0d001b
+			public const int divider1 = 2131558427;
 			
 			// aapt resource value: 0x7f0d0024
 			public const int divider2 = 2131558436;
@@ -813,6 +813,9 @@ namespace Bop
 			// aapt resource value: 0x7f0d002c
 			public const int locationSubheader = 2131558444;
 			
+			// aapt resource value: 0x7f0d0018
+			public const int locationView = 2131558424;
+			
 			// aapt resource value: 0x7f0d0035
 			public const int mapBackButton = 2131558453;
 			
@@ -861,8 +864,8 @@ namespace Bop
 			// aapt resource value: 0x7f0d005a
 			public const int reEnterText = 2131558490;
 			
-			// aapt resource value: 0x7f0d001c
-			public const int relativeLayout1 = 2131558428;
+			// aapt resource value: 0x7f0d001d
+			public const int relativeLayout1 = 2131558429;
 			
 			// aapt resource value: 0x7f0d0045
 			public const int right_icon = 2131558469;
@@ -873,11 +876,8 @@ namespace Bop
 			// aapt resource value: 0x7f0d0008
 			public const int satellite = 2131558408;
 			
-			// aapt resource value: 0x7f0d001d
-			public const int scrollView1 = 2131558429;
-			
-			// aapt resource value: 0x7f0d001b
-			public const int searchView = 2131558427;
+			// aapt resource value: 0x7f0d001c
+			public const int searchView = 2131558428;
 			
 			// aapt resource value: 0x7f0d0025
 			public const int settingsButton = 2131558437;
@@ -918,8 +918,8 @@ namespace Bop
 			// aapt resource value: 0x7f0d0004
 			public const int title = 2131558404;
 			
-			// aapt resource value: 0x7f0d0018
-			public const int toolbar1 = 2131558424;
+			// aapt resource value: 0x7f0d0019
+			public const int toolbar1 = 2131558425;
 			
 			// aapt resource value: 0x7f0d0033
 			public const int uberButton = 2131558451;
