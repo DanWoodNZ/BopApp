@@ -167,6 +167,8 @@
   <ItemGroup>
     <Compile Include="DatabaseConnection.cs" />
     <Compile Include="Controllers.cs" />
+    <Compile Include="ImageHolder.cs" />
+    <Compile Include="ListViewCustomAdapter.cs" />
     <Compile Include="Locations.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MainApplication.cs" />
@@ -175,6 +177,7 @@
     <Compile Include="DialogSignUp.cs" />
     <Compile Include="SignIn.cs" />
     <Compile Include="UserLocationData.cs" />
+    <Compile Include="Users.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\MapView.axml">
@@ -267,7 +270,6 @@
     <AndroidResource Include="Resources\drawable\locRangitoto.jpg" />
     <AndroidResource Include="Resources\drawable\locSkycity.jpg" />
     <AndroidResource Include="Resources\drawable\locSwashbucklers.jpg" />
-    <AndroidResource Include="Resources\drawable\locView.psd" />
     <AndroidResource Include="Resources\drawable\locWaiheke.jpg" />
     <AndroidResource Include="Resources\drawable\locZoo.jpg" />
     <AndroidResource Include="Resources\drawable\locPiha.jpg" />
@@ -313,6 +315,15 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\anim\popUpAnimations.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ListAtomic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ListRainbows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ListSkycity.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

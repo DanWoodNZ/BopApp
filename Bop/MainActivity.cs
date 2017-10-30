@@ -29,6 +29,11 @@ namespace Bop
             RequestWindowFeature(Android.Views.WindowFeatures.NoTitle);
             base.OnCreate(savedInstanceState);
 
+
+            Locations loc = new Locations();
+
+            locations = loc.getLocationsList();
+
             //locations = connection.RetrieveLocationData();
 
             //Console.WriteLine("User location from MAIN = "+userLocation.GetUserPosition());
@@ -38,27 +43,12 @@ namespace Bop
 
             //SetUpMap();
 
-            locations = new List<Locations>()
-            {
-                new Locations(Resource.Drawable.ListFedDeli),
-                new Locations(Resource.Drawable.ListBCC),
-                new Locations(Resource.Drawable.ListCocos),
-                new Locations(Resource.Drawable.ListFedDeli),
-                new Locations(Resource.Drawable.ListBCC),
-                new Locations(Resource.Drawable.ListCocos),
-                new Locations(Resource.Drawable.ListFedDeli),
-                new Locations(Resource.Drawable.ListBCC),
-                new Locations(Resource.Drawable.ListCocos),
-            };
+
 
             //Console.WriteLine("User location from MAIN = " + userLocation.GetUserPosition());
 
-            SetContentView(Resource.Layout.ListView);
+            SetListView();
 
-            lv = FindViewById<ListView>(Resource.Id.listView1);
-            adapter = new ListViewCustomAdapter(this, Resource.Layout.ListLayout, locations);
-
-            lv.Adapter = adapter;
 
             //Console.WriteLine("User location from MAIN = "+userLocation.GetUserPosition());
 
@@ -68,6 +58,21 @@ namespace Bop
 
         }
 
+        public void SetListView()
+        {
+            SetContentView(Resource.Layout.ListView);
+            lv = FindViewById<ListView>(Resource.Id.listView1);
+            adapter = new ListViewCustomAdapter(this, Resource.Layout.ListLayout, locations);
+
+            lv.Adapter = adapter;
+
+            lv.ItemClick += ListViewItemClick;
+        }
+
+        public void ListViewItemClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            GetLocationView();
+        }
 
         private void SetUpMap()
         {
@@ -133,7 +138,13 @@ namespace Bop
 
         public void GetLocationView()
         {
-            Console.WriteLine("LOCATL TABLE CONNECTED. Size of array is == " + locations.Count);
+            SetContentView(Resource.Layout.LocationView);
+
+            ImageButton backButton = FindViewById<ImageButton>(Resource.Id.backButton);
+            backButton.Click += (s, e) =>
+            {
+                SetListView();
+            };
         }
     }
 }
