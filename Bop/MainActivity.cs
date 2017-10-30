@@ -29,6 +29,7 @@ namespace Bop
 
             locations = connection.RetrieveLocationData();
 
+            
 
             Console.WriteLine("User location from MAIN = "+userLocation.GetUserPosition());
 
