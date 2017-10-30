@@ -23,10 +23,15 @@ namespace Bop
             //A great place to initialize Xamarin.Insights and Dependency Services!
         }
 
-        public override void OnTerminate()
+
+        
+
+        private void SetUpMap()
         {
-            base.OnTerminate();
-            UnregisterActivityLifecycleCallbacks(this);
+            if (GMap == null)
+            {
+                FragmentManager.FindFragmentById<MapFragment>(Resource.Id.googlemap).GetMapAsync(this);
+            }
         }
 
         public void OnActivityCreated(Activity activity, Bundle savedInstanceState)

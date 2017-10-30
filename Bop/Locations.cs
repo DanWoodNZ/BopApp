@@ -57,8 +57,8 @@ namespace Bop
 
         public List<Locations> getLocationsList()
         {
-            DatabaseConnection c = new DatabaseConnection();
-            List<Locations> locations = c.RetrieveLocationData();
+            DatabaseConnection connection = new DatabaseConnection();
+            List<Locations> locations = connection.RetrieveLocationData();
             return locations;
         }
             
