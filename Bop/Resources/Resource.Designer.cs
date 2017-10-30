@@ -42,16 +42,19 @@ namespace Bop
 		{
 			
 			// aapt resource value: 0x7f050000
-			public const int slide_in_right = 2131034112;
+			public const int popUpAnimations = 2131034112;
 			
 			// aapt resource value: 0x7f050001
-			public const int slide_out_left = 2131034113;
+			public const int slide_in_right = 2131034113;
 			
 			// aapt resource value: 0x7f050002
-			public const int slideRight = 2131034114;
+			public const int slide_out_left = 2131034114;
 			
 			// aapt resource value: 0x7f050003
-			public const int slideUp = 2131034115;
+			public const int slideRight = 2131034115;
+			
+			// aapt resource value: 0x7f050004
+			public const int slideUp = 2131034116;
 			
 			static Animation()
 			{

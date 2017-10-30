@@ -10,7 +10,7 @@ using Android;
 
 namespace Bop
 {
-    [Activity(Label = "BopApp", MainLauncher = false)]
+    //[Activity(Label = "BopApp", MainLauncher = false)]
     public class SignIn : Activity
     {
         private Button signInButton, facebookButton, forgotPWButton, signUpButton;
@@ -31,7 +31,7 @@ namespace Bop
                 FragmentTransaction transaction = FragmentManager.BeginTransaction();
                 DialogSignUp dialogSignUp = new DialogSignUp();
                 dialogSignUp.Show(transaction, "dialog fragment");
-                dialogSignUp.onSignUpComplete += signUpDialog_mOnSignUpComplete;
+                dialogSignUp.OnSignUpComplete += SignUpDialog_mOnSignUpComplete;
             };
             signInButton.Click += (object sender, EventArgs args) =>
             {
@@ -44,7 +44,7 @@ namespace Bop
         }
 
 
-        void signUpDialog_mOnSignUpComplete(object sender, OnSignUpEventArgs e)
+        void SignUpDialog_mOnSignUpComplete(object sender, OnSignUpEventArgs e)
         {
           
             
