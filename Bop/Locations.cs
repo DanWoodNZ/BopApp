@@ -55,5 +55,13 @@ namespace Bop
         {
            
         }
+
+        public List<Locations> getLocationsList()
+        {
+            DatabaseConnection c = new DatabaseConnection();
+            List<Locations> locations = c.RetrieveLocationData();
+            return locations;
+        }
+            
     }
 }

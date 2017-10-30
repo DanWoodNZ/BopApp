@@ -18,6 +18,7 @@ namespace Bop
     class DatabaseConnection 
     {
         List<Locations> locations = new List<Locations>();
+
         public List<Locations> RetrieveLocationData()
         {
             Task.Run(async () =>

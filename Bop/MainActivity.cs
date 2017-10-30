@@ -33,12 +33,6 @@ namespace Bop
 
             SetContentView(Resource.Layout.MapView);
 
-            
-
-            Console.WriteLine("User location from MAIN = "+userLocation.GetUserPosition());
-
-            SetContentView(Resource.Layout.MapView);
-
             SetUpMap();
 
         }
