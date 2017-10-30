@@ -29,6 +29,10 @@ namespace Bop
 
             locations = connection.RetrieveLocationData();
 
+            Console.WriteLine("User location from MAIN = "+userLocation.GetUserPosition());
+
+            SetContentView(Resource.Layout.MapView);
+
             
 
             Console.WriteLine("User location from MAIN = "+userLocation.GetUserPosition());
@@ -96,18 +100,12 @@ namespace Bop
             }
         }
 
-       
-
-
-
-
-
         //Method to create 
         public void GetLocationListView()
         {
             ImageButton mapButton = FindViewById<ImageButton>(Resource.Id.floatMapButton);
             
-          
+
         }
 
         public void GetLocationView()
