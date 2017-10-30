@@ -21,25 +21,45 @@ namespace Bop
         private List<Locations> locations;
         private DatabaseConnection connection = new DatabaseConnection();
         private UserLocationData userLocation = new UserLocationData();
+        private ListViewCustomAdapter adapter;
+        private ListView lv;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             RequestWindowFeature(Android.Views.WindowFeatures.NoTitle);
             base.OnCreate(savedInstanceState);
 
-            locations = connection.RetrieveLocationData();
+            //locations = connection.RetrieveLocationData();
+
+            locations = new List<Locations>()
+            {
+                new Locations(Resource.Drawable.ListFedDeli),
+                new Locations(Resource.Drawable.ListBCC),
+                new Locations(Resource.Drawable.ListCocos),
+                new Locations(Resource.Drawable.ListFedDeli),
+                new Locations(Resource.Drawable.ListBCC),
+                new Locations(Resource.Drawable.ListCocos),
+                new Locations(Resource.Drawable.ListFedDeli),
+                new Locations(Resource.Drawable.ListBCC),
+                new Locations(Resource.Drawable.ListCocos),
+            };
+
+            //Console.WriteLine("User location from MAIN = " + userLocation.GetUserPosition());
+
+            SetContentView(Resource.Layout.ListView);
+
+            lv = FindViewById<ListView>(Resource.Id.listView1);
+            adapter = new ListViewCustomAdapter(this, Resource.Layout.ListLayout, locations);
+
+            lv.Adapter = adapter;
 
 
-            Console.WriteLine("User location from MAIN = "+userLocation.GetUserPosition());
-
-            SetContentView(Resource.Layout.MapView);
-
-            SetUpMap();
+            //SetUpMap();
 
         }
 
 
-        
+
 
         private void SetUpMap()
         {
@@ -96,20 +116,34 @@ namespace Bop
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 5284842db2510346c36d52420371dc3e1a139a91
        
 
 
 
 
+<<<<<<< HEAD
 >>>>>>> parent of 4b0acff... Updated main and listlayout
+=======
+
+
+
+
+
+>>>>>>> 5284842db2510346c36d52420371dc3e1a139a91
 
         //Method to create 
         public void GetLocationListView()
         {
             ImageButton mapButton = FindViewById<ImageButton>(Resource.Id.floatMapButton);
+<<<<<<< HEAD
 
 <<<<<<< HEAD
+=======
+>>>>>>> 5284842db2510346c36d52420371dc3e1a139a91
         }
 
 =======
@@ -120,4 +154,3 @@ namespace Bop
         }
     }
 }
-
