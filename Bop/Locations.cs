@@ -49,12 +49,11 @@ namespace Bop
         public double LocationY { get; set; }
 
         [JsonProperty("listImageUrl")]
-        public int ListImageUrl { get; set; }
+        public string ListImageUrl { get; set; }
 
-        public Locations(int image)
+        public Locations()
         {
-            this.ListImageUrl = image;
+           
         }
-
     }
 }

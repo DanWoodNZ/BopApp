@@ -788,7 +788,6 @@ namespace Bop
 			
 			// aapt resource value: 0x7f0d0017
 			public const int linearLayout1 = 2131558423;
-<<<<<<< HEAD
 			
 			// aapt resource value: 0x7f0d0027
 			public const int linearLayout2 = 2131558439;
@@ -813,35 +812,6 @@ namespace Bop
 			
 			// aapt resource value: 0x7f0d002c
 			public const int locationSubheader = 2131558444;
-=======
-			
-			// aapt resource value: 0x7f0d0027
-			public const int linearLayout2 = 2131558439;
-			
-			// aapt resource value: 0x7f0d0056
-			public const int linearLayout3 = 2131558486;
-			
-			// aapt resource value: 0x7f0d0057
-			public const int linearLayout4 = 2131558487;
-			
-			// aapt resource value: 0x7f0d0059
-			public const int linearLayout5 = 2131558489;
-			
-			// aapt resource value: 0x7f0d001e
-			public const int listView1 = 2131558430;
-			
-			// aapt resource value: 0x7f0d002b
-			public const int locationHeader = 2131558443;
-			
-			// aapt resource value: 0x7f0d0028
-			public const int locationPicture = 2131558440;
-			
-			// aapt resource value: 0x7f0d002c
-			public const int locationSubheader = 2131558444;
-			
-			// aapt resource value: 0x7f0d0018
-			public const int locationView = 2131558424;
->>>>>>> 5284842db2510346c36d52420371dc3e1a139a91
 			
 			// aapt resource value: 0x7f0d0035
 			public const int mapBackButton = 2131558453;
@@ -887,44 +857,27 @@ namespace Bop
 			
 			// aapt resource value: 0x7f0d005b
 			public const int reEnterField = 2131558491;
-<<<<<<< HEAD
-=======
-			
-			// aapt resource value: 0x7f0d005a
-			public const int reEnterText = 2131558490;
->>>>>>> 5284842db2510346c36d52420371dc3e1a139a91
 			
 			// aapt resource value: 0x7f0d005a
 			public const int reEnterText = 2131558490;
 			
-<<<<<<< HEAD
 			// aapt resource value: 0x7f0d001c
 			public const int relativeLayout1 = 2131558428;
 			
 			// aapt resource value: 0x7f0d0045
 			public const int right_icon = 2131558469;
 			
-=======
-			// aapt resource value: 0x7f0d0045
-			public const int right_icon = 2131558469;
-			
->>>>>>> 5284842db2510346c36d52420371dc3e1a139a91
 			// aapt resource value: 0x7f0d0040
 			public const int right_side = 2131558464;
 			
 			// aapt resource value: 0x7f0d0008
 			public const int satellite = 2131558408;
 			
-<<<<<<< HEAD
 			// aapt resource value: 0x7f0d001d
 			public const int scrollView1 = 2131558429;
 			
 			// aapt resource value: 0x7f0d001b
 			public const int searchView = 2131558427;
-=======
-			// aapt resource value: 0x7f0d001c
-			public const int searchView = 2131558428;
->>>>>>> 5284842db2510346c36d52420371dc3e1a139a91
 			
 			// aapt resource value: 0x7f0d0025
 			public const int settingsButton = 2131558437;
