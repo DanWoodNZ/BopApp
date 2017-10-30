@@ -1,122 +1,63 @@
-﻿using Android.App;
-using Android.Widget;
+﻿using System;
+
+using Android.App;
 using Android.OS;
-using Android.Gms.Maps;
-using Android.Gms.Maps.Model;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Microsoft.WindowsAzure.MobileServices;
-using Newtonsoft.Json.Linq;
-using System.Threading;
+using Android.Runtime;
+using Plugin.CurrentActivity;
 
 namespace Bop
 {
-    [Activity(Label = "Bop", MainLauncher = true)]
-    public class MainActivity : Activity, IOnMapReadyCallback
+    //You can specify additional application information in this attribute
+    [Application]
+    public class MainApplication : Application, Application.IActivityLifecycleCallbacks
     {
-
-        private GoogleMap GMap;
-        private List<Locations> locations;
-        private DatabaseConnection connection = new DatabaseConnection();
-        private UserLocationData userLocation = new UserLocationData();
-        private ListView lv;
-        private ListViewCustomAdapter adapter;
-
-        protected override void OnCreate(Bundle savedInstanceState)
+        public MainApplication(IntPtr handle, JniHandleOwnership transer)
+          : base(handle, transer)
         {
-            RequestWindowFeature(Android.Views.WindowFeatures.NoTitle);
-            base.OnCreate(savedInstanceState);
-
-            //locations = connection.RetrieveLocationData();
-
-            //Console.WriteLine("User location from MAIN = "+userLocation.GetUserPosition());
-
-            //SetContentView(Resource.Layout.MapView);
-
-
-            //SetUpMap();
-
-            locations = new List<Locations>()             {                 new Locations(Resource.Drawable.ListFedDeli),                 new Locations(Resource.Drawable.ListBCC),                 new Locations(Resource.Drawable.ListCocos),                 new Locations(Resource.Drawable.ListFedDeli),                 new Locations(Resource.Drawable.ListBCC),                 new Locations(Resource.Drawable.ListCocos),                 new Locations(Resource.Drawable.ListFedDeli),                 new Locations(Resource.Drawable.ListBCC),                 new Locations(Resource.Drawable.ListCocos),             };              //Console.WriteLine("User location from MAIN = " + userLocation.GetUserPosition());              SetContentView(Resource.Layout.ListView);              lv = FindViewById<ListView>(Resource.Id.listView1);             adapter = new ListViewCustomAdapter(this, Resource.Layout.ListLayout, locations);              lv.Adapter = adapter;
-
-            //Console.WriteLine("User location from MAIN = "+userLocation.GetUserPosition());
-
-            //SetContentView(Resource.Layout.MapView);
-
-            //SetUpMap();
-
         }
 
-
-        
-
-        private void SetUpMap()
+        public override void OnCreate()
         {
-            if (GMap == null)
-            {
-                FragmentManager.FindFragmentById<MapFragment>(Resource.Id.googlemap).GetMapAsync(this);
-            }
+            base.OnCreate();
+            RegisterActivityLifecycleCallbacks(this);
+            //A great place to initialize Xamarin.Insights and Dependency Services!
         }
 
-        public void OnMapReady(GoogleMap googleMap)
+        public override void OnTerminate()
         {
-            this.GMap = googleMap;
-            GMap.SetMapStyle(MapStyleOptions.LoadRawResourceStyle(this, Resource.Raw.style_json));
-            GMap.UiSettings.ZoomControlsEnabled = true;
-
-            List<MarkerOptions> markers = new List<MarkerOptions>();
-            MarkerOptions userMarker = new MarkerOptions().SetPosition(userLocation.GetUserPosition()).SetTitle("INSERT USERNAME").SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.uber));
-            GMap.AddMarker(userMarker);
-
-            CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(userLocation.GetUserPosition(), 15);
-            GMap.MoveCamera(camera);
-
-            GMap.MyLocationChange += (s, e) =>
-            {
-                LatLng currentLatLng = userLocation.GetUserPosition();
-                Console.WriteLine("New user location = " + currentLatLng);
-
-            };
-
-            markers = GenerateMarkers();
-            PlaceMarkers(markers);
+            base.OnTerminate();
+            UnregisterActivityLifecycleCallbacks(this);
         }
 
-        public List<MarkerOptions> GenerateMarkers()
+        public void OnActivityCreated(Activity activity, Bundle savedInstanceState)
         {
-            List<MarkerOptions> markers = new List<MarkerOptions>();
-            LatLng coordinates;
-
-            for (int i = 0; i < locations.Count; i++)
-            {
-                coordinates = new LatLng(locations[i].LocationX, locations[i].LocationY);
-                markers.Add(new MarkerOptions().SetPosition(coordinates).SetTitle(locations[i].LocationName).SetIcon(BitmapDescriptorFactory.DefaultMarker(14)));
-            }
-
-            return markers;
+            CrossCurrentActivity.Current.Activity = activity;
         }
 
-        public void PlaceMarkers(List<MarkerOptions> markers)
+        public void OnActivityDestroyed(Activity activity)
         {
-            for (int i = 0; i < markers.Count; i++)
-            {
-                GMap.AddMarker(markers[i]);
-            }
         }
 
-        //Method to create 
-        public void GetLocationListView()
+        public void OnActivityPaused(Activity activity)
         {
-            ImageButton mapButton = FindViewById<ImageButton>(Resource.Id.floatMapButton);
-            
-
         }
 
-        public void GetLocationView()
+        public void OnActivityResumed(Activity activity)
         {
-            Console.WriteLine("LOCATL TABLE CONNECTED. Size of array is == " + locations.Count);
+            CrossCurrentActivity.Current.Activity = activity;
+        }
+
+        public void OnActivitySaveInstanceState(Activity activity, Bundle outState)
+        {
+        }
+
+        public void OnActivityStarted(Activity activity)
+        {
+            CrossCurrentActivity.Current.Activity = activity;
+        }
+
+        public void OnActivityStopped(Activity activity)
+        {
         }
     }
 }
-

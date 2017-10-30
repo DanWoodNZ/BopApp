@@ -26,11 +26,11 @@ namespace Bop
         public string Email
         {
             get { return txtEmail; }
-            set { txtEmail = value;  }
+            set { txtEmail = value; }
         }
         public string Password
         {
-            get { return txtPassword;}
+            get { return txtPassword; }
             set { txtPassword = value; }
         }
         public OnSignUpEventArgs(string txtUserName, string email, string password)
@@ -55,16 +55,17 @@ namespace Bop
             base.OnCreateView(inflater, container, savedInstanceState);
             //View view = new View(null); //Add this code to return a view and to get the code to compile.
 
-           var view = inflater.Inflate(Resource.Layout.SignUpPopup, container, false);
+            var view = inflater.Inflate(Resource.Layout.SignUpPopup, container, false);
 
             nameField = view.FindViewById<EditText>(Resource.Id.nameField);
             emailField = view.FindViewById<EditText>(Resource.Id.emailField);
             passwordField = view.FindViewById<EditText>(Resource.Id.passwordField);
+            reEnterField = view.FindViewById<EditText>(Resource.Id.reEnterField);
             submitButton = view.FindViewById<ImageButton>(Resource.Id.submitButton);
 
             submitButton.Click += SubmitButton_Click;
 
-           return view;
+            return view;
         }
 
         void SubmitButton_Click(object sender, EventArgs e)
