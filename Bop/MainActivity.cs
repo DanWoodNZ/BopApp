@@ -20,29 +20,28 @@ namespace Bop
         private GoogleMap GMap;
         private List<Locations> locations;
         private DatabaseConnection connection = new DatabaseConnection();
+        private UserLocationData userLocation = new UserLocationData();
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             RequestWindowFeature(Android.Views.WindowFeatures.NoTitle);
             base.OnCreate(savedInstanceState);
 
-            //Call to method to fill local locations with location data from Azure Database
-
             locations = connection.RetrieveLocationData();
-            GetLocationListView();
+
+            
+
+            Console.WriteLine("User location from MAIN = "+userLocation.GetUserPosition());
+
+            SetContentView(Resource.Layout.MapView);
+
+            SetUpMap();
+
         }
+
 
         private void SetUpMap()
         {
-            Button backButton = FindViewById<Button>(Resource.Id.mapBackButton);
-            backButton.Click += (o, e) =>
-            {
-               
-
-
-            };
-
-
             if (GMap == null)
             {
                 FragmentManager.FindFragmentById<MapFragment>(Resource.Id.googlemap).GetMapAsync(this);
@@ -56,8 +55,10 @@ namespace Bop
             GMap.UiSettings.ZoomControlsEnabled = true;
 
             List<MarkerOptions> markers = new List<MarkerOptions>();
+            MarkerOptions userMarker = new MarkerOptions().SetPosition(userLocation.GetUserPosition()).SetTitle("INSERT USERNAME").SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.uber));
+            GMap.AddMarker(userMarker);
 
-            CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(new LatLng(-36.873887, 174.737457), 15);
+            CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(userLocation.GetUserPosition(), 15);
             GMap.MoveCamera(camera);
 
             markers = GenerateMarkers();
@@ -68,8 +69,6 @@ namespace Bop
         {
             List<MarkerOptions> markers = new List<MarkerOptions>();
             LatLng coordinates;
-
-
 
             for (int i = 0; i < locations.Count; i++)
             {
@@ -97,18 +96,15 @@ namespace Bop
         //Method to create 
         public void GetLocationListView()
         {
-
+            ImageButton mapButton = FindViewById<ImageButton>(Resource.Id.floatMapButton);
+            
+          
         }
-
-
 
         public void GetLocationView()
         {
             Console.WriteLine("LOCATL TABLE CONNECTED. Size of array is == " + locations.Count);
         }
-
-
-
     }
 }
 
