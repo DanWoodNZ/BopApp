@@ -175,8 +175,6 @@
     <Compile Include="DialogSignUp.cs" />
     <Compile Include="SignIn.cs" />
     <Compile Include="UserLocationData.cs" />
-    <Compile Include="ImageHolder.cs" />
-    <Compile Include="ListViewCustomAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\MapView.axml">
