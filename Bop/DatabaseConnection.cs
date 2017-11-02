@@ -44,6 +44,7 @@ namespace Bop
 
                     Console.WriteLine("LOCATL TABLE CONNECTED. Size of array is == " + locations.Count);
                 }
+
                 catch (System.Exception e)
                 {
                     Console.WriteLine("ERROR: " + e.Message);

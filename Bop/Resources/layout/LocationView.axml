@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
@@ -10,15 +9,14 @@
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:id="@+id/linearLayout2"
-        android:background="@android:color/white"
-        android:layout_weight="100">
+        android:background="@android:color/white">
         <RelativeLayout
             android:minWidth="25px"
             android:minHeight="25px"
             android:layout_width="match_parent"
-            android:layout_height="600px"
+            android:layout_height="500px"
             android:id="@+id/relativeLayout1">
             <ImageView
                 android:src="@drawable/lockarekare"
@@ -69,97 +67,104 @@
                 android:textSize="20dp"
                 android:layout_below="@id/locationHeader" />
         </RelativeLayout>
-        <TextView
-            android:text="ABOUT"
-            android:textAppearance="?android:attr/textAppearanceMedium"
+        <ScrollView
+            android:minWidth="25px"
+            android:minHeight="25px"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/aboutHeader"
-            android:textColor="@android:color/black"
-            android:textSize="16dp"
-            android:textStyle="bold"
-            android:layout_marginLeft="50px"
-            android:layout_marginTop="50px"
-            android:layout_marginRight="50px"
-            android:layout_marginBottom="10px" />
-        <TextView
-            android:text="This is where the body of information about the location will go. Here we can talk all we want about the location, how great it is and why we decided to include it within our app."
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/aboutText"
-            android:textColor="@android:color/black"
-            android:layout_marginTop="20px"
-            android:layout_marginLeft="50px"
-            android:layout_marginRight="50px"
-            android:layout_marginBottom="20px"
-            android:textSize="14dp" />
-        <TextView
-            android:text="CONTACT"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/contactHeader"
-            android:textColor="@android:color/black"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:layout_marginLeft="50px"
-            android:layout_marginTop="20px"
-            android:layout_marginRight="50px"
-            android:layout_marginBottom="20px" />
-        <TextView
-            android:text="Phone: 022 123 1231"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/phoneText"
-            android:textColor="@android:color/black"
-            android:layout_marginTop="10px"
-            android:layout_marginLeft="50px"
-            android:layout_marginRight="50px"
-            android:textSize="14dp" />
-        <TextView
-            android:text="Hours: 10am - 10pm"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/hoursText"
-            android:textColor="@android:color/black"
-            android:layout_marginTop="10px"
-            android:layout_marginLeft="50px"
-            android:layout_marginRight="50px"
-            android:textSize="14dp" />
-        <TextView
-            android:text="Email: info@citizenpark.co.nz"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/emailText"
-            android:textColor="@android:color/black"
-            android:layout_marginTop="10px"
-            android:layout_marginLeft="50px"
-            android:layout_marginRight="50px"
-            android:textSize="14dp" />
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout3">
+                <TextView
+                    android:text="ABOUT"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/aboutHeader"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginTop="50px"
+                    android:layout_marginRight="50px"
+                    android:layout_marginBottom="10px" />
+                <TextView
+                    android:text="This is where the body of information about the location will go. Here we can talk all we want about the location, how great it is and why we decided to include it within our app."
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/aboutText"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="20px"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    android:layout_marginBottom="20px"
+                    android:textSize="14dp" />
+                <TextView
+                    android:text="CONTACT"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/contactHeader"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginTop="20px"
+                    android:layout_marginRight="50px"
+                    android:layout_marginBottom="20px" />
+                <TextView
+                    android:text="Phone: 022 123 1231"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phoneText"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="10px"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    android:textSize="14dp" />
+                <TextView
+                    android:text="Hours: 10am - 10pm"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hoursText"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="10px"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    android:textSize="14dp" />
+                <TextView
+                    android:text="Email: info@auckland.co.nz"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/emailText"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="10px"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    android:textSize="14dp"
+                    android:layout_marginBottom="50px" />
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
-    <Toolbar
-        android:background="@android:color/white"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/toolbar1"
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_gravity="bottom">
-        <ImageButton
-            android:src="@drawable/uber"
-            android:id="@+id/uberButton"
-            android:layout_width="150px"
-            android:layout_height="150px"
-            android:layout_gravity="right"
-            android:background="@android:color/transparent"
-            android:scaleType="centerCrop"
-            android:layout_marginRight="20px"
-            android:layout_marginBottom="20px"
-            android:adjustViewBounds="true"
-            android:cropToPadding="true" />
-    </Toolbar>
-</LinearLayout>
+    <ImageButton
+        android:src="@drawable/uber"
+        android:id="@+id/uberButton"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_gravity="right"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="20px"
+        android:layout_marginBottom="20px"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

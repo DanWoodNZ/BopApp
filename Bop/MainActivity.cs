@@ -10,163 +10,92 @@ using System.Threading.Tasks;
 using Microsoft.WindowsAzure.MobileServices;
 using Newtonsoft.Json.Linq;
 using System.Threading;
+using Android.Content;
+using Android.Views.InputMethods;
 
 namespace Bop
 {
     [Activity(Label = "Bop", MainLauncher = true)]
-    public class MainActivity : Activity, IOnMapReadyCallback
+    public class MainActivity : Activity
     {
-
         private GoogleMap GMap;
-        private List<Locations> locations;
+        public static List<Locations> locations;
+        public Locations location;
         private DatabaseConnection connection = new DatabaseConnection();
         private UserLocationData userLocation = new UserLocationData();
         private ListView lv;
         private ListViewCustomAdapter adapter;
         private int rowNumber;
 
-        protected override void OnCreate(Bundle savedInstanceState)
+
+
+        static protected string signInEmail, signInPassword, signUpEmail, signUpPassword, signInConfirmPassword;
+        private ImageButton signInButton, facebookButton, signUpButton;
+        private Button forgotPWButton;
+        private EditText emailField, password;
+        protected override void OnCreate(Bundle bundle)
         {
+            base.OnCreate(bundle);
+            //Set our view from the "main" layout resource
             RequestWindowFeature(Android.Views.WindowFeatures.NoTitle);
-            base.OnCreate(savedInstanceState);
 
 
-            Locations loc = new Locations();
-
-            locations = loc.getLocationsList();
-
-            //locations = connection.RetrieveLocationData();
-
-            //Console.WriteLine("User location from MAIN = "+userLocation.GetUserPosition());
-
-            //SetContentView(Resource.Layout.MapView);
-
-
-            //SetUpMap();
-
-
-
-            //Console.WriteLine("User location from MAIN = " + userLocation.GetUserPosition());
-
-            SetListView();
-
-
-            //Console.WriteLine("User location from MAIN = "+userLocation.GetUserPosition());
-
-            //SetContentView(Resource.Layout.MapView);
-
-            //SetUpMap();
-
-        }
-
-        public void SetListView()
-        {
-            SetContentView(Resource.Layout.ListView);
-            lv = FindViewById<ListView>(Resource.Id.listView1);
-            adapter = new ListViewCustomAdapter(this, Resource.Layout.ListLayout, locations);
-
-            lv.Adapter = adapter;
-
-            lv.ItemClick += ListViewItemClick;
-
-            ImageButton mapButton = FindViewById<ImageButton>(Resource.Id.floatMapButton);
-
-            mapButton.Click += (s, e) =>
+            SetContentView(Resource.Layout.SignInView);
+            emailField = FindViewById<EditText>(Resource.Id.emailField);
+            password = FindViewById<EditText>(Resource.Id.passwordField);
+            forgotPWButton = FindViewById<Button>(Resource.Id.forgotPasswordButton);
+            signInButton = FindViewById<ImageButton>(Resource.Id.signInButton);
+            facebookButton = FindViewById<ImageButton>(Resource.Id.facebookButton);
+            signUpButton = FindViewById<ImageButton>(Resource.Id.signUpButton);
+            //MapActivity mapActivity = new MapActivity().OnCreate(bundle);
+            //InputMethodManager imm = (InputMethodManager)GetSystemService(Context.InputMethodService);
+            signUpButton.Click += (object sender, EventArgs args) =>
             {
-                SetUpMap();
+                //Pull up dialog
+                FragmentTransaction transaction = FragmentManager.BeginTransaction();
+                DialogSignUp dialogSignUp = new DialogSignUp();
+                dialogSignUp.Show(transaction, "dialog fragment");
+                dialogSignUp.OnSignUpComplete += SignUpDialog_mOnSignUpComplete;
+
             };
-        }
-
-        public void ListViewItemClick(object sender, AdapterView.ItemClickEventArgs e)
-        {
-            rowNumber = e.Position;
-            GetLocationView();
-        }
-
-        private void SetUpMap()
-        {
-            SetContentView(Resource.Layout.MapView);
-
-            if (GMap == null)
+            signInButton.Click += (object sender, EventArgs args) =>
             {
-                FragmentManager.FindFragmentById<MapFragment>(Resource.Id.googlemap).GetMapAsync(this);
-            }
-        }
+                //Get entered field values
+                signInEmail = emailField.Text;
+                signInPassword = password.Text;
 
-        public void OnMapReady(GoogleMap googleMap)
-        {
-            this.GMap = googleMap;
-            GMap.SetMapStyle(MapStyleOptions.LoadRawResourceStyle(this, Resource.Raw.style_json));
-            GMap.UiSettings.ZoomControlsEnabled = true;
+                if (true)
+                {
+                    //Dismiss Keybaord
+                    InputMethodManager imm = (InputMethodManager)GetSystemService(Context.InputMethodService);
+                    imm.HideSoftInputFromWindow(signInButton.WindowToken, 0);
 
-            List<MarkerOptions> markers = new List<MarkerOptions>();
+                    var list = new Intent(this, typeof(ListViewActivity));
 
-            CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(userLocation.GetUserPosition(), 15);
-            GMap.MoveCamera(camera);
+                    StartActivity(list);
+                }
+                else
+                {
+                    //Dismiss Keybaord
+                    InputMethodManager imm = (InputMethodManager)GetSystemService(Context.InputMethodService);
+                    //imm.HideSoftInputFromWindow(signInButton.WindowToken, 0);
 
-            GMap.MyLocationChange += (s, e) =>
-            {
-                LatLng currentLatLng = userLocation.GetUserPosition();
-                Console.WriteLine("New user location = " + currentLatLng);
+                    Toast.MakeText(ApplicationContext, "Invalid login", ToastLength.Long).Show();
+                }
+
 
             };
 
-            markers = GenerateMarkers();
-            PlaceMarkers(markers);
         }
 
-        public List<MarkerOptions> GenerateMarkers()
+
+        void SignUpDialog_mOnSignUpComplete(object sender, OnSignUpEventArgs e)
         {
-            List<MarkerOptions> markers = new List<MarkerOptions>();
-            LatLng coordinates;
-
-            for (int i = 0; i < locations.Count; i++)
-            {
-                coordinates = new LatLng(locations[i].LocationX, locations[i].LocationY);
-                markers.Add(new MarkerOptions().SetPosition(coordinates).SetTitle(locations[i].LocationName).SetIcon(BitmapDescriptorFactory.DefaultMarker(14)));
-            }
-
-            return markers;
-        }
-
-        public void PlaceMarkers(List<MarkerOptions> markers)
-        {
-            for (int i = 0; i < markers.Count; i++)
-            {
-                GMap.AddMarker(markers[i]);
-            }
-        }
-
-        //Method to create 
-        public void GetLocationListView()
-        {
-            ImageButton mapButton = FindViewById<ImageButton>(Resource.Id.floatMapButton);
-            
-        }
-
-        public void GetLocationView()
-        {
-            SetContentView(Resource.Layout.LocationView);
-
-            ImageButton backButton = FindViewById<ImageButton>(Resource.Id.backButton);
-            backButton.Click += (s, e) =>
-            {
-                SetListView();
-            };
-
-            TextView about = FindViewById<TextView>(Resource.Id.aboutText);
-
-            about.Text = locations[rowNumber].LocationDescription;
-
-            TextView name = FindViewById<TextView>(Resource.Id.locationHeader);
-
-            name.Text = locations[rowNumber].LocationName;
-
-            ImageView locationImage  = FindViewById<ImageView>(Resource.Id.locationPicture);
 
 
-            locationImage.SetImageResource(locations[rowNumber].LocationImageUrl);
 
+
+            //
         }
     }
 }

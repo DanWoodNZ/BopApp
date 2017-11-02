@@ -6,7 +6,7 @@
     p1:id="@+id/linearLayout1"
     p1:background="@drawable/skytowerblurred">
     <ImageView
-        p1:src="@drawable/bop_logo_white_block"
+        p1:src="@drawable/boplogosmall"
         p1:layout_width="match_parent"
         p1:layout_height="380px"
         p1:id="@+id/ibopLogo"

@@ -10,7 +10,7 @@
         p1:layout_height="120px"
         p1:id="@+id/toolbar1">
         <ImageView
-            p1:src="@drawable/bop_logo_white_block"
+            p1:src="@drawable/boplogosmall"
             p1:layout_width="160px"
             p1:layout_height="120px"
             p1:id="@+id/bopLogo"
@@ -32,7 +32,7 @@
             p1:padding="0px"
             p1:divider="@null" />
         <ImageButton
-            p1:src="@android:drawable/ic_dialog_map"
+            p1:src="@drawable/iconmap"
             p1:layout_width="120px"
             p1:layout_height="120px"
             p1:id="@+id/floatMapButton"
