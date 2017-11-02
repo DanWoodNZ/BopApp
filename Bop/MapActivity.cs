@@ -40,7 +40,7 @@ namespace Bop
             GMap.UiSettings.ZoomControlsEnabled = true;
 
             List<MarkerOptions> markers = new List<MarkerOptions>();
-            MarkerOptions userMarker = new MarkerOptions().SetPosition(userLocation.GetUserPosition()).SetTitle("INSERT USERNAME").SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.mapMan));
+            MarkerOptions userMarker = new MarkerOptions().SetPosition(new LatLng(-36.852392, 174.764473)).SetTitle("Map").SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.mapMan));
             GMap.AddMarker(userMarker);
 
             CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom( new LatLng(-36.852392, 174.764473), 15);
