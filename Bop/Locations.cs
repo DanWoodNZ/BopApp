@@ -47,7 +47,8 @@ namespace Bop
         [JsonProperty("locationY")]
         public double LocationY { get; set; }
 
-        
+        public int LocationImageUrl { get; set; }
+
         public int ListImageUrl { get; set; }
 
         public Locations()
@@ -86,8 +87,33 @@ namespace Bop
             locations[23].ListImageUrl = (Resource.Drawable.ListPiha);
             locations[24].ListImageUrl = (Resource.Drawable.ListMtEden);
             locations[25].ListImageUrl = (Resource.Drawable.ListParnellGardens);
-          
-            
+
+            locations[0].LocationImageUrl = (Resource.Drawable.locCitizen);
+            locations[1].LocationImageUrl = (Resource.Drawable.locFedDeli);
+            locations[2].LocationImageUrl = (Resource.Drawable.locCassette);
+            locations[3].LocationImageUrl = (Resource.Drawable.locBCC);
+            locations[4].LocationImageUrl = (Resource.Drawable.locLaZeppa);
+            locations[5].LocationImageUrl = (Resource.Drawable.locSwashbucklers);
+            locations[6].LocationImageUrl = (Resource.Drawable.locAtomic);
+            locations[7].LocationImageUrl = (Resource.Drawable.locOrphans);
+            locations[8].LocationImageUrl = (Resource.Drawable.locCocos);
+            locations[9].LocationImageUrl = (Resource.Drawable.locSkycity);
+            locations[10].LocationImageUrl = (Resource.Drawable.locZoo);
+            locations[11].LocationImageUrl = (Resource.Drawable.locBridge);
+            locations[12].LocationImageUrl = (Resource.Drawable.locBungy);
+            locations[13].LocationImageUrl = (Resource.Drawable.locKellyTarltons);
+            locations[14].LocationImageUrl = (Resource.Drawable.locMotat);
+            locations[15].LocationImageUrl = (Resource.Drawable.locAucklandMuseum);
+            locations[16].LocationImageUrl = (Resource.Drawable.locRainbowsEnd);
+            locations[17].LocationImageUrl = (Resource.Drawable.locWaiheke);
+            locations[18].LocationImageUrl = (Resource.Drawable.locHunua);
+            locations[19].LocationImageUrl = (Resource.Drawable.locKitekite);
+            locations[20].LocationImageUrl = (Resource.Drawable.locMission);
+            locations[21].LocationImageUrl = (Resource.Drawable.locRangitoto);
+            locations[22].LocationImageUrl = (Resource.Drawable.locOneTreeHill);
+            locations[23].LocationImageUrl = (Resource.Drawable.locPiha);
+            locations[24].LocationImageUrl = (Resource.Drawable.locMtEden);
+            locations[25].LocationImageUrl = (Resource.Drawable.locParnellRose);
 
             return locations;
 

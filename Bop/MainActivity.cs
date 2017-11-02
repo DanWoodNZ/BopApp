@@ -23,6 +23,7 @@ namespace Bop
         private UserLocationData userLocation = new UserLocationData();
         private ListView lv;
         private ListViewCustomAdapter adapter;
+        private int rowNumber;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -69,6 +70,7 @@ namespace Bop
             lv.ItemClick += ListViewItemClick;
 
             ImageButton mapButton = FindViewById<ImageButton>(Resource.Id.floatMapButton);
+
             mapButton.Click += (s, e) =>
             {
                 SetUpMap();
@@ -77,6 +79,7 @@ namespace Bop
 
         public void ListViewItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
+            rowNumber = e.Position;
             GetLocationView();
         }
 
@@ -97,8 +100,6 @@ namespace Bop
             GMap.UiSettings.ZoomControlsEnabled = true;
 
             List<MarkerOptions> markers = new List<MarkerOptions>();
-
-
 
             CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(userLocation.GetUserPosition(), 15);
             GMap.MoveCamera(camera);
@@ -141,7 +142,6 @@ namespace Bop
         {
             ImageButton mapButton = FindViewById<ImageButton>(Resource.Id.floatMapButton);
             
-
         }
 
         public void GetLocationView()
@@ -153,6 +153,20 @@ namespace Bop
             {
                 SetListView();
             };
+
+            TextView about = FindViewById<TextView>(Resource.Id.aboutText);
+
+            about.Text = locations[rowNumber].LocationDescription;
+
+            TextView name = FindViewById<TextView>(Resource.Id.locationHeader);
+
+            name.Text = locations[rowNumber].LocationName;
+
+            ImageView locationImage  = FindViewById<ImageView>(Resource.Id.locationPicture);
+
+
+            locationImage.SetImageResource(locations[rowNumber].LocationImageUrl);
+
         }
     }
 }
