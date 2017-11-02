@@ -17,7 +17,6 @@ namespace Bop
         private string txtUserName;
         private string txtEmail;
         private string txtPassword;
-        private string txtRePassword;
 
         public string UserName
         {
@@ -34,17 +33,11 @@ namespace Bop
             get { return txtPassword; }
             set { txtPassword = value; }
         }
-        public string RePassword
-        {
-            get { return txtRePassword; }
-            set { txtRePassword = value; }
-        }
-        public OnSignUpEventArgs(string txtUserName, string email, string password, string reEnterPassword)
+        public OnSignUpEventArgs(string txtUserName, string email, string password)
         {
             UserName = txtUserName;
             Email = txtEmail;
             Password = txtPassword;
-            RePassword = reEnterPassword;
         }
     }
     class DialogSignUp : DialogFragment
@@ -78,7 +71,7 @@ namespace Bop
         void SubmitButton_Click(object sender, EventArgs e)
         {
             //user has clicked the sign up button
-            OnSignUpComplete.Invoke(this, new OnSignUpEventArgs(nameField.Text, emailField.Text, passwordField.Text, reEnterField.Text));
+            OnSignUpComplete.Invoke(this, new OnSignUpEventArgs(nameField.Text, emailField.Text, passwordField.Text));
             this.Dismiss();
         }
         public override void OnActivityCreated(Bundle savedInstancesState)

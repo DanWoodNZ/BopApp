@@ -16,74 +16,23 @@ namespace Bop
     [Activity(Label = "Bop")]
     public class MapActivity : Activity, IOnMapReadyCallback
     {
-
-        private GoogleMap GMap;
-        private List<Locations> locations;
-        private DatabaseConnection connection = new DatabaseConnection();
-        private UserLocationData userLocation = new UserLocationData();
-        private ListView lv;
-        private ListViewCustomAdapter adapter;
+        static private GoogleMap GMap;
+        static private List<Locations> locations;
+        static private DatabaseConnection connection = new DatabaseConnection();
+        static private UserLocationData userLocation = new UserLocationData();
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             RequestWindowFeature(Android.Views.WindowFeatures.NoTitle);
-            
-
-
-            Locations loc = new Locations();
-
-            locations = loc.getLocationsList();
-
-            //locations = connection.RetrieveLocationData();
-
-            //Console.WriteLine("User location from MAIN = "+userLocation.GetUserPosition());
-
-            //SetContentView(Resource.Layout.MapView);
-
-
-            //SetUpMap();
-
-
-
-            //Console.WriteLine("User location from MAIN = " + userLocation.GetUserPosition());
-
-            SetListView();
-
-
-            //Console.WriteLine("User location from MAIN = "+userLocation.GetUserPosition());
-
-            //SetContentView(Resource.Layout.MapView);
-
-            //SetUpMap();
             base.OnCreate(savedInstanceState);
-        }
-
-        public void SetListView()
-        {
-            SetContentView(Resource.Layout.ListView);
-            lv = FindViewById<ListView>(Resource.Id.listView1);
-            adapter = new ListViewCustomAdapter(this, Resource.Layout.ListLayout, locations);
-
-            lv.Adapter = adapter;
-
-            lv.ItemClick += ListViewItemClick;
-
-            ImageButton mapButton = FindViewById<ImageButton>(Resource.Id.floatMapButton);
-            mapButton.Click += (s, e) =>
-            {
-                SetUpMap();
-            };
-        }
-
-        public void ListViewItemClick(object sender, AdapterView.ItemClickEventArgs e)
-        {
-            GetLocationView();
+            locations = connection.RetrieveLocationData();
+            Console.WriteLine("User location from MAIN = " + userLocation.GetUserPosition());
+            SetContentView(Resource.Layout.MapView);
+            SetUpMap();
         }
 
         private void SetUpMap()
         {
-            SetContentView(Resource.Layout.MapView);
-
             if (GMap == null)
             {
                 FragmentManager.FindFragmentById<MapFragment>(Resource.Id.googlemap).GetMapAsync(this);
@@ -92,13 +41,13 @@ namespace Bop
 
         public void OnMapReady(GoogleMap googleMap)
         {
-            this.GMap = googleMap;
+            GMap = googleMap;
             GMap.SetMapStyle(MapStyleOptions.LoadRawResourceStyle(this, Resource.Raw.style_json));
             GMap.UiSettings.ZoomControlsEnabled = true;
 
             List<MarkerOptions> markers = new List<MarkerOptions>();
-
-
+            MarkerOptions userMarker = new MarkerOptions().SetPosition(userLocation.GetUserPosition()).SetTitle("INSERT USERNAME").SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.uber));
+            GMap.AddMarker(userMarker);
 
             CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(userLocation.GetUserPosition(), 15);
             GMap.MoveCamera(camera);
@@ -107,9 +56,7 @@ namespace Bop
             {
                 LatLng currentLatLng = userLocation.GetUserPosition();
                 Console.WriteLine("New user location = " + currentLatLng);
-
             };
-
             markers = GenerateMarkers();
             PlaceMarkers(markers);
         }
@@ -135,7 +82,6 @@ namespace Bop
                 GMap.AddMarker(markers[i]);
             }
         }
-
         //Method to create 
         public void GetLocationListView()
         {
@@ -146,13 +92,7 @@ namespace Bop
 
         public void GetLocationView()
         {
-            SetContentView(Resource.Layout.LocationView);
-
-            ImageButton backButton = FindViewById<ImageButton>(Resource.Id.backButton);
-            backButton.Click += (s, e) =>
-            {
-                SetListView();
-            };
+            Console.WriteLine("LOCATL TABLE CONNECTED. Size of array is == " + locations.Count);
         }
     }
 }
